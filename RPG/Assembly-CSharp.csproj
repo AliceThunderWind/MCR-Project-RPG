@@ -67,10 +67,11 @@
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\Mediator\Mediator.cs" />
     <Compile Include="Assets\Scripts\FireHit.cs" />
+    <Compile Include="Assets\Scripts\Command\HpDisplayCommand.cs" />
     <Compile Include="Assets\Scripts\Command\HpIncreaseCommand.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\FountainHit.cs" />
-    <Compile Include="Assets\Scripts\Command\HpDisplayCommand.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

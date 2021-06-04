@@ -65,9 +65,7 @@ public class Player : MonoBehaviour
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
-        if (Input.GetButtonDown("SwordAttack")){
-            Debug.Log("sword attack");
-        }
+        
         if (Input.GetButtonDown("SwordAttack") && currentState != PlayerState.SwordAttack)
         {
             StartCoroutine(AttackCo());
