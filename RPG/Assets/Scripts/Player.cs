@@ -11,8 +11,9 @@ public enum PlayerState
 public class Player : MonoBehaviour
 {
 
-    public float speed;
-    public float health;
+    [SerializeField] private float speed;
+    [SerializeField] private float health;
+
     private Rigidbody2D myRigidbody;
     private Vector3 change;
     private Animator animator;
