@@ -7,29 +7,49 @@ using UnityEngine.UI;
 public class GUIHPHandler : MonoBehaviour
 {
     private Mediator mediator = Mediator.Instance;
+
+    private float health;
+
+    [SerializeField] private Image[] hearts;
+
+    [SerializeField] private Sprite fullHeart;
+    [SerializeField] private Sprite halfHeart;
+    [SerializeField] private Sprite femptyHeart;
+
+
+
+
     // Start is called before the first frame update
     void Start()
     {
-        mediator.Subscribe<HpSetCommand>(OnHpSet);
-        mediator.Subscribe<HpIncreaseCommand>(OnHpIncrease);
-        mediator.Subscribe<HpDecreaseCommand>(OnHpDecrease);
+        mediator.Subscribe<HpDisplayCommand>(OnHpDisplay);
+        InitHealth();
     }
 
-
-    void OnHpSet(HpSetCommand command)
+    public void InitHealth()
     {
-       GetComponent<Text>().text = command.Hp.ToString("0");
+        this.health = 100f;
+        displayHealth();
     }
 
-    void OnHpIncrease(HpIncreaseCommand command)
+    private void displayHealth()
     {
-        float newHp = float.Parse(GetComponent<Text>().text) + command.Hp;
-        GetComponent<Text>().text = newHp.ToString();
+        GetComponentInChildren<Text>().text = this.health.ToString("0");
+        float units = this.health / 20;
+        for (int i = 0; i < 5; ++i)
+            hearts[i].gameObject.SetActive(false);
+
+        for (int i = 0; i < units; ++i)
+        {
+            hearts[i].gameObject.SetActive(true);
+            hearts[i].sprite = fullHeart;
+        }
     }
 
-    private void OnHpDecrease(HpDecreaseCommand command)
+    void OnHpDisplay(HpDisplayCommand command)
     {
-        float newHp = float.Parse(GetComponent<Text>().text) - command.Hp;
-        GetComponent<Text>().text = newHp.ToString();
+        this.health = command.Hp;
+        displayHealth();
     }
+
 }

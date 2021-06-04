@@ -33,25 +33,29 @@ public class Player : MonoBehaviour
         
         mediator.Subscribe<HpIncreaseCommand>(OnHpIncrease);
         mediator.Subscribe<HpDecreaseCommand>(OnHpDecrease);
-        StartCoroutine(InitHpCo());
+        StartCoroutine(DisplayHp());
     }
 
-    private IEnumerator InitHpCo()
+    private IEnumerator DisplayHp()
     {
-        yield return new WaitForSeconds(.3f);
-        HpSetCommand cmd = new HpSetCommand();
-        cmd.Hp = health;
+        yield return new WaitForSeconds(.1f);
+        HpDisplayCommand cmd = new HpDisplayCommand();
+        cmd.Hp = this.health;
         mediator.Publish(cmd);
     }
 
     private void OnHpIncrease(HpIncreaseCommand c)
     {
-        health += c.Hp;
+        this.health += c.Hp;
+        if (this.health > 100) this.health = 100;
+        StartCoroutine(DisplayHp());
     }
 
     private void OnHpDecrease(HpDecreaseCommand c)
     {
-        health -= c.Hp;
+        this.health -= c.Hp;
+        if (this.health < 0) this.health = 0;
+        StartCoroutine(DisplayHp());
     }
 
 
