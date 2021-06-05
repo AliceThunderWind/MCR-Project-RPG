@@ -56,13 +56,14 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Command\ICommand.cs" />
     <Compile Include="Assets\Scripts\Command\HpDecreaseCommand.cs" />
     <Compile Include="Assets\Scripts\Command\PlayerChangePositionCommand.cs" />
     <Compile Include="Assets\Scripts\Command\HpSetCommand.cs" />
     <Compile Include="Assets\Scripts\Pot.cs" />
     <Compile Include="Assets\Scripts\Handlers\GUIHPHandler.cs" />
-    <Compile Include="Assets\Scripts\Command\PlayerHitCommand.cs" />
+    <Compile Include="Assets\Scripts\Command\HitCommand.cs" />
     <Compile Include="Assets\Scripts\PlayerHit.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\Mediator\Mediator.cs" />
@@ -71,7 +72,8 @@
     <Compile Include="Assets\Scripts\Command\HpIncreaseCommand.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\FountainHit.cs" />
-    <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Hit\IHittable.cs" />
+    <Compile Include="Assets\Scripts\Hit\HitMediator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

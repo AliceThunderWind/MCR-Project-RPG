@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHit : MonoBehaviour
 {
-
+    private float damage = 10f;
     private Mediator mediator = Mediator.Instance;
 
     // Start is called before the first frame update
@@ -29,8 +29,9 @@ public class PlayerHit : MonoBehaviour
          * attackable tag
          */
         if (other.CompareTag("attackable")) { 
-            PlayerHitCommand cmd = new PlayerHitCommand();
-            cmd.What = other;
+            HitCommand cmd = new HitCommand();
+            cmd.What    = other;
+            cmd.Damage  = damage;
             mediator.Publish(cmd);
         }
     }
