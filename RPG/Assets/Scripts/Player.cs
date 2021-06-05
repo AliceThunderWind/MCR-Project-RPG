@@ -1,3 +1,4 @@
+using Assets.Scripts.Hit;
 using System;
 using System.Collections;
 using UnityEngine;
@@ -6,9 +7,10 @@ public enum PlayerState
 {
     Walk,
     SwordAttack,
-    Interact
+    Interact,
+    Die
 }
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IHittable
 {
 
     [SerializeField] private float speed;
@@ -20,7 +22,8 @@ public class Player : MonoBehaviour
     private PlayerState currentState;
     private Mediator mediator = Mediator.Instance;
 
-    private int nextPositionUpdate = 1; // delay update in seconds
+    private float positionUpdateInterval = 0.3f; // delay update in seconds
+    private bool isHit = false; // prevent multiple hits triggered by a single hit -> multiple collider objects
 
     // Start is called before the first frame update
     void Start()
@@ -84,7 +87,7 @@ public class Player : MonoBehaviour
         currentState = PlayerState.SwordAttack;
         yield return null; // wait one frame
         animator.SetBool("attacking", false);
-        yield return new WaitForSeconds(.3f); // cool down
+        yield return new WaitForSeconds(.15f); // cool down
         currentState = PlayerState.Walk;
     }
 
@@ -112,14 +115,53 @@ public class Player : MonoBehaviour
         myRigidbody.MovePosition(newPosition);
         
         // Pubish new Position (every second)
-        if (Time.time >= nextPositionUpdate)
+        if (Time.time >= positionUpdateInterval)
         {
             Debug.Log("Move Publish : " + ++count + " TIME : " + Time.time);
-            nextPositionUpdate = Mathf.FloorToInt(Time.time) + 1;
+            positionUpdateInterval = Time.time + 0.3f;
 
             PlayerChangePositionCommand cmd = new PlayerChangePositionCommand();
             cmd.Position = newPosition;
             mediator.Publish(cmd);
         }
+    }
+    public void apply(float damage)
+    {
+        if (!isHit)
+        {
+            isHit = true;
+            health -= damage;
+           
+            if (health <= 0)
+            {
+                health = 0;
+
+                currentState = PlayerState.Die;
+                StartCoroutine(DieCo());
+            }
+            else
+            {
+                StartCoroutine(HitCooldownCo());
+            }
+            HpDisplayCommand cmd = new HpDisplayCommand();
+            cmd.Hp = this.health;
+            mediator.Publish(cmd);
+        }
+    }
+
+    private IEnumerator HitCooldownCo()
+    {
+        // prevent multiple hits triggered by a single hit -> multiple collider objects
+        yield return new WaitForSeconds(0.1f);
+        isHit = false;
+    }
+
+    IEnumerator DieCo()
+    {
+        animator.SetBool("attacking", false);
+        animator.SetBool("moving", false);
+        animator.SetBool("die", true);
+        yield return new WaitForSeconds(2f);
+        gameObject.SetActive(false);
     }
 }

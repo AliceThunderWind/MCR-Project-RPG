@@ -1,3 +1,4 @@
+using Assets.Scripts.Hit;
 using System;
 using System.Collections;
 using UnityEngine;
@@ -7,14 +8,16 @@ public enum EnemyState
     WalkRandom,
     WalkInDirection,
     SpearAttack,
-    Interact
+    Interact,
+    Die
 }
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IHittable
 {
 
     [SerializeField] private float walkSpeed;
     private float fightSpeed;
     private float health;
+    private bool isHit = false; // prevent multiple hits triggered by a single hit -> multiple collider objects
 
     private Rigidbody2D myRigidbody;
     private Vector3 change;
@@ -22,9 +25,12 @@ public class Enemy : MonoBehaviour
     private EnemyState currentState;
     private Mediator mediator = Mediator.Instance;
 
-    private const float visibility  = 5f;
+    private const float visibility      = 5f;
+    private const float fightDistance   = 1.5f;
+    private bool launchedAttack         = false;
     private float distanceToPlayer;
     private float directionToPlayer;
+    private Vector3 playerPosition;
     
     // for random walk in 5 second periode with 5s pause
     private const float period      = 5f;
@@ -58,13 +64,37 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         //Debug.Log(Time.time + " | act time : " + nextActionTime + " stop time : " + nextStopTime);
+        if (currentState == EnemyState.Die) return;
+
+        distanceToPlayer = Vector3.Distance(playerPosition, transform.position);
+        directionToPlayer = direction(transform.position, playerPosition);
+        if (distanceToPlayer < fightDistance)
+        {
+            currentState = EnemyState.SpearAttack;
+        }
+        else if (distanceToPlayer < visibility)
+        {
+            currentState = EnemyState.WalkInDirection;
+        }
+        else
+        {
+            currentState = EnemyState.WalkRandom;
+        }
+
+
         switch (currentState) {
             case EnemyState.WalkRandom:
                 randomWalk();
                 break;
+
             case EnemyState.WalkInDirection:
                 change = vectorFromAngle(directionToPlayer);
                 MoveCharacter();
+                break;
+
+            case EnemyState.SpearAttack:
+                currentState = EnemyState.SpearAttack;
+                if(!launchedAttack) StartCoroutine(AttackCo());
                 break;
         }
        
@@ -101,28 +131,20 @@ public class Enemy : MonoBehaviour
 
     private IEnumerator AttackCo()
     {
-        animator.SetBool("attacking", true);
-        currentState = EnemyState.SpearAttack;
-        yield return null; // wait one frame
-        animator.SetBool("attacking", false);
-        yield return new WaitForSeconds(1.0f); // cool down
-        currentState = EnemyState.WalkRandom;
+        launchedAttack = true;
+        animator.SetBool("moving", false);
+        while(currentState == EnemyState.SpearAttack) { 
+            animator.SetBool("attacking", true);
+            yield return null; // cool down
+            animator.SetBool("attacking", false);
+            yield return new WaitForSeconds(1.0f); // cool down
+        }
+        launchedAttack = false;
     }
 
     private void OnPlayerChangePosition(PlayerChangePositionCommand c)
     {
-
-        distanceToPlayer = Vector3.Distance(c.Position, transform.position);
-        if (distanceToPlayer < visibility)
-        {
-            currentState = EnemyState.WalkInDirection;
-            directionToPlayer = direction(transform.position, c.Position);
-
-        }
-        else
-        {
-            currentState = EnemyState.WalkRandom;
-        }
+        playerPosition = c.Position;       
     }
 
 
@@ -134,8 +156,8 @@ public class Enemy : MonoBehaviour
         animator.SetBool("moving", true);
         change.Normalize();
         Vector3 newPosition = transform.position + change * speed * Time.deltaTime;
-        myRigidbody.MovePosition(newPosition);
-        
+
+        myRigidbody.MovePosition(newPosition);       
        
     }
 
@@ -155,5 +177,41 @@ public class Enemy : MonoBehaviour
     private Vector3 vectorFromAngle(float angle)
     {
         return new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad), 0);
+    }
+
+    public void apply(float damage)
+    {
+        if (!isHit)
+        {
+            isHit = true;
+            health -= damage;
+            if (health <= 0)
+            {
+                health = 0;
+                
+                currentState = EnemyState.Die;
+                StartCoroutine(DieCo());
+            }
+            else
+            {
+                StartCoroutine(HitCooldownCo());
+            }
+        }
+    }
+
+    private IEnumerator HitCooldownCo()
+    {
+        // prevent multiple hits triggered by a single hit -> multiple collider objects
+        yield return new WaitForSeconds(0.1f);
+        isHit = false;
+    }
+
+    IEnumerator DieCo()
+    {
+        animator.SetBool("attacking", false);
+        animator.SetBool("moving", false);
+        animator.SetBool("die", true);
+        yield return new WaitForSeconds(2f);
+        gameObject.SetActive(false);
     }
 }
