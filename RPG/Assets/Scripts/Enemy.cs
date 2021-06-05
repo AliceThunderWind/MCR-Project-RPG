@@ -25,9 +25,10 @@ public class Enemy : MonoBehaviour
     private const float visibility  = 5f;
     private float distanceToPlayer;
     private float directionToPlayer;
-
+    
+    // for random walk in 5 second periode with 5s pause
     private const float period      = 5f;
-    private float nextActionTime    = 5.0f;
+    private float nextStartTime     = 5.0f;
     private float nextStopTime;
     
 
@@ -37,51 +38,21 @@ public class Enemy : MonoBehaviour
     void Start()
     {
 
-        animator = GetComponent<Animator>();
-        myRigidbody = GetComponent<Rigidbody2D>();
-        currentState = EnemyState.WalkRandom;
+        animator        = GetComponent<Animator>();
+        myRigidbody     = GetComponent<Rigidbody2D>();
+        currentState    = EnemyState.WalkRandom;
+        
+        health          = 100f;
+        fightSpeed      = 4 * walkSpeed;
+        nextStopTime    = nextStartTime + period;
+
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
         animator.SetBool("moving", false);
-        health = 100f;
-        fightSpeed = 4 * walkSpeed;
-        nextStopTime = nextActionTime + period;
 
         change = RandomVector();
         mediator.Subscribe<PlayerChangePositionCommand>(OnPlayerChangePosition);
     }
-
-    private void OnPlayerChangePosition(PlayerChangePositionCommand c)
-    {
-        
-        distanceToPlayer = Vector3.Distance(c.Position, transform.position);
-        if(distanceToPlayer < visibility) {
-            currentState = EnemyState.WalkInDirection;
-            directionToPlayer = direction(transform.position, c.Position);
-           
-        } else {
-            currentState = EnemyState.WalkRandom;
-        }
-    }
-
-    private Vector3 RandomVector()
-    {
-        float random = UnityEngine.Random.Range(0f, 360f);
-        return vectorFromAngle(random);
-    }
-
-    private float direction(Vector3 from, Vector3 to)
-    {
-        float dir = Vector3.Angle(to - from, Vector3.right);
-        if (to.y < from.y) dir *= -1;
-        return dir;
-    }
-
-    private Vector3 vectorFromAngle(float angle)
-    {
-        return new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad), 0);
-    }
-   
 
     // Update is called once per frame
     void Update()
@@ -101,7 +72,8 @@ public class Enemy : MonoBehaviour
 
     private void randomWalk()
     {
-        if (Time.time > nextActionTime && Time.time < nextStopTime)
+        // Debug.Log("Time : " + Time.time + " start : " + nextStartTime + " stop : " + nextStopTime);
+        if (Time.time > nextStartTime && Time.time < nextStopTime)
         {
             if (change != Vector3.zero)
             {
@@ -118,12 +90,11 @@ public class Enemy : MonoBehaviour
         }
 
 
-        if (Time.time > nextStopTime + period)
+        if (Time.time > nextStopTime)
         {
 
             change = RandomVector();
-
-            nextActionTime = Time.time + period;
+            nextStartTime = Time.time + period;
             nextStopTime = Time.time + 2 * period;
         }
     }
@@ -138,7 +109,23 @@ public class Enemy : MonoBehaviour
         currentState = EnemyState.WalkRandom;
     }
 
-   
+    private void OnPlayerChangePosition(PlayerChangePositionCommand c)
+    {
+
+        distanceToPlayer = Vector3.Distance(c.Position, transform.position);
+        if (distanceToPlayer < visibility)
+        {
+            currentState = EnemyState.WalkInDirection;
+            directionToPlayer = direction(transform.position, c.Position);
+
+        }
+        else
+        {
+            currentState = EnemyState.WalkRandom;
+        }
+    }
+
+
     void MoveCharacter()
     {
         float speed = currentState == EnemyState.WalkRandom ? walkSpeed : fightSpeed;
@@ -150,5 +137,23 @@ public class Enemy : MonoBehaviour
         myRigidbody.MovePosition(newPosition);
         
        
+    }
+
+    private Vector3 RandomVector()
+    {
+        float random = UnityEngine.Random.Range(0f, 360f);
+        return vectorFromAngle(random);
+    }
+
+    private float direction(Vector3 from, Vector3 to)
+    {
+        float dir = Vector3.Angle(to - from, Vector3.right);
+        if (to.y < from.y) dir *= -1;
+        return dir;
+    }
+
+    private Vector3 vectorFromAngle(float angle)
+    {
+        return new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad), 0);
     }
 }
