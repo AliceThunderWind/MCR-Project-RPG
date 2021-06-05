@@ -1,0 +1,5004 @@
+fileFormatVersion: 2
+guid: 129e02178d4b13c49b9d201d8cad520f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -863710478063461638
+    second: Warrior_axe_0
+  - first:
+      213: 530161300710735167
+    second: Warrior_axe_1
+  - first:
+      213: 2595904161560641812
+    second: Warrior_axe_2
+  - first:
+      213: -2397534957264817822
+    second: Warrior_axe_3
+  - first:
+      213: -23227443760610639
+    second: Warrior_axe_4
+  - first:
+      213: 8760780166373012610
+    second: Warrior_axe_5
+  - first:
+      213: 7085955840205013634
+    second: Warrior_axe_6
+  - first:
+      213: 8422036544487714551
+    second: Warrior_axe_7
+  - first:
+      213: -8276797447876134066
+    second: Warrior_axe_8
+  - first:
+      213: -8611337091051414597
+    second: Warrior_axe_9
+  - first:
+      213: -342261087457995657
+    second: Warrior_axe_10
+  - first:
+      213: -4617427852226932038
+    second: Warrior_axe_11
+  - first:
+      213: 8456871998083897316
+    second: Warrior_axe_12
+  - first:
+      213: -1814473438685050088
+    second: Warrior_axe_13
+  - first:
+      213: -6620512316564925931
+    second: Warrior_axe_14
+  - first:
+      213: 8012182818295080763
+    second: Warrior_axe_15
+  - first:
+      213: -3385761832288399402
+    second: Warrior_axe_16
+  - first:
+      213: -8351794387172496898
+    second: Warrior_axe_17
+  - first:
+      213: 8550875995690233188
+    second: Warrior_axe_18
+  - first:
+      213: -2785853196918506758
+    second: Warrior_axe_19
+  - first:
+      213: 3376576537661078341
+    second: Warrior_axe_20
+  - first:
+      213: -6406687299593137995
+    second: Warrior_axe_21
+  - first:
+      213: -770251932459338658
+    second: Warrior_axe_22
+  - first:
+      213: -5637447990772029244
+    second: Warrior_axe_23
+  - first:
+      213: 2870656307092715194
+    second: Warrior_axe_24
+  - first:
+      213: -3668595720949686762
+    second: Warrior_axe_25
+  - first:
+      213: -7849637361587161466
+    second: Warrior_axe_26
+  - first:
+      213: -6334439374477022371
+    second: Warrior_axe_27
+  - first:
+      213: -2455819225148190295
+    second: Warrior_axe_28
+  - first:
+      213: -654123894067184663
+    second: Warrior_axe_29
+  - first:
+      213: 424963642645058424
+    second: Warrior_axe_30
+  - first:
+      213: 8455667180740951937
+    second: Warrior_axe_31
+  - first:
+      213: -7009428913862773741
+    second: Warrior_axe_32
+  - first:
+      213: 8556725877496314916
+    second: Warrior_axe_33
+  - first:
+      213: 1641222714084193455
+    second: Warrior_axe_34
+  - first:
+      213: 3337264449751072295
+    second: Warrior_axe_35
+  - first:
+      213: 33093110877389063
+    second: Warrior_axe_36
+  - first:
+      213: 1187824947694813162
+    second: Warrior_axe_37
+  - first:
+      213: -7188077292732997658
+    second: Warrior_axe_38
+  - first:
+      213: 4218138130075613942
+    second: Warrior_axe_39
+  - first:
+      213: 5544561228269019652
+    second: Warrior_axe_40
+  - first:
+      213: -9208636374529907926
+    second: Warrior_axe_41
+  - first:
+      213: 3987607167567828197
+    second: Warrior_axe_42
+  - first:
+      213: -1811507392937450611
+    second: Warrior_axe_43
+  - first:
+      213: 868456646620367066
+    second: Warrior_axe_44
+  - first:
+      213: -8997297098880376140
+    second: Warrior_axe_45
+  - first:
+      213: 8376995556377805454
+    second: Warrior_axe_46
+  - first:
+      213: -3685699784897295610
+    second: Warrior_axe_47
+  - first:
+      213: -3601907285399477421
+    second: Warrior_axe_48
+  - first:
+      213: -9150054130811741543
+    second: Warrior_axe_49
+  - first:
+      213: 4018912133175431982
+    second: Warrior_axe_50
+  - first:
+      213: 1871511347863115770
+    second: Warrior_axe_51
+  - first:
+      213: 5675136812169730883
+    second: Warrior_axe_52
+  - first:
+      213: 4873320082606038600
+    second: Warrior_axe_53
+  - first:
+      213: -4823542696026103160
+    second: Warrior_axe_54
+  - first:
+      213: 3286142346451681530
+    second: Warrior_axe_55
+  - first:
+      213: -6427193462566901849
+    second: Warrior_axe_56
+  - first:
+      213: 1732982941953926209
+    second: Warrior_axe_57
+  - first:
+      213: 5017680662189900524
+    second: Warrior_axe_58
+  - first:
+      213: -6194680132026388080
+    second: Warrior_axe_59
+  - first:
+      213: -1374437929472521489
+    second: Warrior_axe_60
+  - first:
+      213: -8929298474673625209
+    second: Warrior_axe_61
+  - first:
+      213: 2612650599411540809
+    second: Warrior_axe_62
+  - first:
+      213: -114676469768287955
+    second: Warrior_axe_63
+  - first:
+      213: 5868943006220553455
+    second: Warrior_axe_64
+  - first:
+      213: 8317516337317099649
+    second: Warrior_axe_65
+  - first:
+      213: 3320548680655228956
+    second: Warrior_axe_66
+  - first:
+      213: -760308784455369087
+    second: Warrior_axe_67
+  - first:
+      213: 1523819219457060086
+    second: Warrior_axe_68
+  - first:
+      213: 6353852570777354345
+    second: Warrior_axe_69
+  - first:
+      213: -6768486676808515758
+    second: Warrior_axe_70
+  - first:
+      213: 6374339301604843280
+    second: Warrior_axe_71
+  - first:
+      213: -4087965589225972203
+    second: Warrior_axe_72
+  - first:
+      213: -6828376885799749180
+    second: Warrior_axe_73
+  - first:
+      213: -4767874955804381844
+    second: Warrior_axe_74
+  - first:
+      213: -7583854482878270663
+    second: Warrior_axe_75
+  - first:
+      213: -7743684581109464828
+    second: Warrior_axe_76
+  - first:
+      213: 5053764389096447553
+    second: Warrior_axe_77
+  - first:
+      213: 8180093640654030408
+    second: Warrior_axe_78
+  - first:
+      213: -8038949356374147555
+    second: Warrior_axe_79
+  - first:
+      213: 8433358291707806480
+    second: Warrior_axe_80
+  - first:
+      213: 3201552852825930017
+    second: Warrior_axe_81
+  - first:
+      213: -7632023401426890759
+    second: Warrior_axe_82
+  - first:
+      213: -5234373040505576436
+    second: Warrior_axe_83
+  - first:
+      213: 1373654790021485011
+    second: Warrior_axe_84
+  - first:
+      213: -6453135939015249014
+    second: Warrior_axe_85
+  - first:
+      213: 7981072448089796303
+    second: Warrior_axe_86
+  - first:
+      213: 4726362183752490018
+    second: Warrior_axe_87
+  - first:
+      213: 4331461291015515324
+    second: Warrior_axe_88
+  - first:
+      213: 8617021643886135345
+    second: Warrior_axe_89
+  - first:
+      213: 5682719902442876339
+    second: Warrior_axe_90
+  - first:
+      213: 9077288437232455300
+    second: Warrior_axe_91
+  - first:
+      213: -748040459071524072
+    second: Warrior_axe_92
+  - first:
+      213: 592296177887221101
+    second: Warrior_axe_93
+  - first:
+      213: 4267629186344624796
+    second: Warrior_axe_94
+  - first:
+      213: 6429292796446939115
+    second: Warrior_axe_95
+  - first:
+      213: 2143742962591896980
+    second: Warrior_axe_96
+  - first:
+      213: -3802163592957399302
+    second: Warrior_axe_97
+  - first:
+      213: 219900276521522798
+    second: Warrior_axe_98
+  - first:
+      213: -7711300124687316154
+    second: Warrior_axe_99
+  - first:
+      213: -8037279725825130561
+    second: Warrior_axe_100
+  - first:
+      213: -3921542383543058172
+    second: Warrior_axe_101
+  - first:
+      213: -1724216796748717013
+    second: Warrior_axe_102
+  - first:
+      213: -8629475751735588186
+    second: Warrior_axe_103
+  - first:
+      213: -2470130310800499295
+    second: Warrior_axe_104
+  - first:
+      213: -7741134709237891735
+    second: Warrior_axe_105
+  - first:
+      213: -3440686522509913636
+    second: Warrior_axe_106
+  - first:
+      213: 2774879187455625525
+    second: Warrior_axe_107
+  - first:
+      213: -1741294819316544310
+    second: Warrior_axe_108
+  - first:
+      213: -8377207471408744682
+    second: Warrior_axe_109
+  - first:
+      213: -859697916659849058
+    second: Warrior_axe_110
+  - first:
+      213: 6682548320230894603
+    second: Warrior_axe_111
+  - first:
+      213: -3129333955074797778
+    second: Warrior_axe_112
+  - first:
+      213: 8115580012152278772
+    second: Warrior_axe_113
+  - first:
+      213: -8967723936697602597
+    second: Warrior_axe_114
+  - first:
+      213: 2785268463527168103
+    second: Warrior_axe_115
+  - first:
+      213: -2499409101779722389
+    second: Warrior_axe_116
+  - first:
+      213: 7474707963471964657
+    second: Warrior_axe_117
+  - first:
+      213: -7459415105474548538
+    second: Warrior_axe_118
+  - first:
+      213: -246856887102078516
+    second: Warrior_axe_119
+  - first:
+      213: -2433882281599091560
+    second: Warrior_axe_120
+  - first:
+      213: -5645633884150396576
+    second: Warrior_axe_121
+  - first:
+      213: -9109643331023995030
+    second: Warrior_axe_122
+  - first:
+      213: 1998235394221625166
+    second: Warrior_axe_123
+  - first:
+      213: -167391851666218123
+    second: Warrior_axe_124
+  - first:
+      213: -8233588272074281532
+    second: Warrior_axe_125
+  - first:
+      213: 1932217837226964201
+    second: Warrior_axe_126
+  - first:
+      213: 1937226229259881714
+    second: Warrior_axe_127
+  - first:
+      213: 396510834347645519
+    second: Warrior_axe_128
+  - first:
+      213: -5172000375530943510
+    second: Warrior_axe_129
+  - first:
+      213: -976742477699418885
+    second: Warrior_axe_130
+  - first:
+      213: -4790500899513077644
+    second: Warrior_axe_131
+  - first:
+      213: 1469077695351914405
+    second: Warrior_axe_132
+  - first:
+      213: -8609591938514246146
+    second: Warrior_axe_133
+  - first:
+      213: -5928883352558884406
+    second: Warrior_axe_134
+  - first:
+      213: 267685777766586919
+    second: Warrior_axe_135
+  - first:
+      213: 2694405506216020632
+    second: Warrior_axe_136
+  - first:
+      213: 8724585249483114971
+    second: Warrior_axe_137
+  - first:
+      213: -7131392749010041684
+    second: Warrior_axe_138
+  - first:
+      213: 8994843364277435923
+    second: Warrior_axe_139
+  - first:
+      213: 3802521412020337786
+    second: Warrior_axe_140
+  - first:
+      213: 2040967099185573199
+    second: Warrior_axe_141
+  - first:
+      213: 3089950541977732620
+    second: Warrior_axe_142
+  - first:
+      213: -4927218823443520966
+    second: Warrior_axe_143
+  - first:
+      213: -6735855782228445685
+    second: Warrior_axe_144
+  - first:
+      213: 6636783542952671680
+    second: Warrior_axe_145
+  - first:
+      213: -4422570848631415978
+    second: Warrior_axe_146
+  - first:
+      213: -2137606407121580082
+    second: Warrior_axe_147
+  - first:
+      213: 5054919682881094652
+    second: Warrior_axe_148
+  - first:
+      213: -4556793343180300012
+    second: Warrior_axe_149
+  - first:
+      213: 4842935378672746380
+    second: Warrior_axe_150
+  - first:
+      213: -8129193466089526568
+    second: Warrior_axe_151
+  - first:
+      213: -4493956485114492668
+    second: Warrior_axe_152
+  - first:
+      213: -4082832054010068293
+    second: Warrior_axe_153
+  - first:
+      213: 304166406486456393
+    second: Warrior_axe_154
+  - first:
+      213: -1685192201048192767
+    second: Warrior_axe_155
+  - first:
+      213: 351454742608787549
+    second: Warrior_axe_156
+  - first:
+      213: 2001504529493634299
+    second: Warrior_axe_157
+  - first:
+      213: -55278212173950978
+    second: Warrior_axe_158
+  - first:
+      213: 6723060123746329426
+    second: Warrior_axe_159
+  - first:
+      213: -6181122541423053906
+    second: Warrior_axe_160
+  - first:
+      213: -5953408968846274500
+    second: Warrior_axe_161
+  - first:
+      213: -1000815751827079040
+    second: Warrior_axe_162
+  - first:
+      213: 6425075052969324866
+    second: Warrior_axe_163
+  - first:
+      213: 2661569325732138174
+    second: Warrior_axe_164
+  - first:
+      213: 8466547371957657852
+    second: Warrior_axe_165
+  - first:
+      213: 5479213388850460569
+    second: Warrior_axe_166
+  - first:
+      213: 5777147658869511748
+    second: Warrior_axe_167
+  - first:
+      213: -1035474900185227675
+    second: Warrior_axe_168
+  - first:
+      213: 4126339671434357376
+    second: Warrior_axe_169
+  - first:
+      213: -6607265851924395390
+    second: Warrior_axe_170
+  - first:
+      213: -450040789949228528
+    second: Warrior_axe_171
+  - first:
+      213: -1824808878274185740
+    second: Warrior_axe_172
+  - first:
+      213: -2073206774293697847
+    second: Warrior_axe_173
+  - first:
+      213: 1130353091398831682
+    second: Warrior_axe_174
+  - first:
+      213: -6701701934253574570
+    second: Warrior_axe_175
+  - first:
+      213: 7875583586850327187
+    second: Warrior_axe_176
+  - first:
+      213: 4877186027681000224
+    second: Warrior_axe_177
+  - first:
+      213: 3665911247251941930
+    second: Warrior_axe_178
+  - first:
+      213: 1953367902388791692
+    second: Warrior_axe_179
+  - first:
+      213: -1868963888839135871
+    second: Warrior_axe_180
+  - first:
+      213: -39835384480073440
+    second: Warrior_axe_194
+  - first:
+      213: 5549131095379637567
+    second: Warrior_axe_195
+  - first:
+      213: 2874720620352991063
+    second: Warrior_axe_181
+  - first:
+      213: -1476106258587292942
+    second: Warrior_axe_182
+  - first:
+      213: 5092808390324596052
+    second: Warrior_axe_183
+  - first:
+      213: 3384093881630300644
+    second: Warrior_axe_184
+  - first:
+      213: 6090232203383287587
+    second: Warrior_axe_185
+  - first:
+      213: 8187061360783459433
+    second: Warrior_axe_186
+  - first:
+      213: -1143437714988487065
+    second: Warrior_axe_187
+  - first:
+      213: 1095811601859925217
+    second: Warrior_axe_188
+  - first:
+      213: -7594257951258185433
+    second: Warrior_axe_189
+  - first:
+      213: 6405595254521444546
+    second: Warrior_axe_190
+  - first:
+      213: -5683074507959425466
+    second: Warrior_axe_191
+  - first:
+      213: 5013045376150831317
+    second: Warrior_axe_192
+  - first:
+      213: -2384770448589980480
+    second: Warrior_axe_193
+  - first:
+      213: 5401064847069899200
+    second: Warrior_axe_196
+  - first:
+      213: 8052146665672802428
+    second: Warrior_axe_197
+  - first:
+      213: 9031870329451750961
+    second: Warrior_axe_198
+  - first:
+      213: -8134659838831547888
+    second: Warrior_axe_199
+  - first:
+      213: -3708917365125596107
+    second: Warrior_axe_200
+  - first:
+      213: 7455002441655339388
+    second: Warrior_axe_201
+  - first:
+      213: -6644974991697518577
+    second: Warrior_axe_202
+  - first:
+      213: -9147628954839524008
+    second: Warrior_axe_203
+  - first:
+      213: 823169589764879451
+    second: Warrior_axe_204
+  - first:
+      213: 3355006293520322706
+    second: Warrior_axe_205
+  - first:
+      213: 8244881555318535396
+    second: Warrior_axe_206
+  - first:
+      213: -6926144593517649406
+    second: Warrior_axe_207
+  - first:
+      213: -6425697062688686321
+    second: Warrior_axe_208
+  - first:
+      213: 8561991866678428643
+    second: Warrior_axe_210
+  - first:
+      213: 5456043100993039993
+    second: Warrior_axe_212
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Warrior_axe_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2047
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa9e3675eb7304f0800000000000000
+      internalID: -863710478063461638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2047
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3db582e4e28b5700800000000000000
+      internalID: 530161300710735167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2047
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411c7ccc411860420800000000000000
+      internalID: 2595904161560641812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2047
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26136a7b8ae3abed0800000000000000
+      internalID: -2397534957264817822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2047
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2cb9153ca7daff0800000000000000
+      internalID: -23227443760610639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2047
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28473fb052b849970800000000000000
+      internalID: 8760780166373012610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2047
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282468d2b4f565260800000000000000
+      internalID: 7085955840205013634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1983
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe6c878d9511e470800000000000000
+      internalID: 8422036544487714551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1983
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4bbb71d298e22d80800000000000000
+      internalID: -8276797447876134066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1983
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb1cbe5a826e7880800000000000000
+      internalID: -8611337091051414597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_10
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1983
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77490a5ba5b004bf0800000000000000
+      internalID: -342261087457995657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_11
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1983
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2d40425d99befb0800000000000000
+      internalID: -4617427852226932038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1983
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e71dbc9648dc5570800000000000000
+      internalID: 8456871998083897316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1983
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81bcbc06502b1d6e0800000000000000
+      internalID: -1814473438685050088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1919
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5129c0400273f14a0800000000000000
+      internalID: -6620512316564925931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1919
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3767f7a2ddf03f60800000000000000
+      internalID: 8012182818295080763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1919
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfcf545d8b5301d0800000000000000
+      internalID: -3385761832288399402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_17
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1919
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef96b7b2147781c80800000000000000
+      internalID: -8351794387172496898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1919
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46de781e960daa670800000000000000
+      internalID: 8550875995690233188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_19
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1919
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa39490749a659d0800000000000000
+      internalID: -2785853196918506758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_20
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1919
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54bf43c98720cde20800000000000000
+      internalID: 3376576537661078341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1855
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b09eb858dfd617a0800000000000000
+      internalID: -6406687299593137995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1855
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54f33ac2f38f45f0800000000000000
+      internalID: -770251932459338658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1855
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c82b4ebbe2c3c1b0800000000000000
+      internalID: -5637447990772029244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1855
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6fe70b3be96d720800000000000000
+      internalID: 2870656307092715194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_25
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1855
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e964cf0a7861dc0800000000000000
+      internalID: -3668595720949686762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_26
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1855
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68676f6a86c701390800000000000000
+      internalID: -7849637361587161466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_27
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1855
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5bac0143fc8718a0800000000000000
+      internalID: -6334439374477022371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1791
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1977c1d6d2bedd0800000000000000
+      internalID: -2455819225148190295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_29
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1791
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ebb707b8c51ce6f0800000000000000
+      internalID: -654123894067184663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_30
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1791
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87390527e26c5e500800000000000000
+      internalID: 424963642645058424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1791
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f3ef63080985570800000000000000
+      internalID: 8455667180740951937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1791
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3147bd65a8189be90800000000000000
+      internalID: -7009428913862773741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_33
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1791
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c7f80a9d89fb670800000000000000
+      internalID: 8556725877496314916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_34
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1791
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa47a46ec5bc6c610800000000000000
+      internalID: 1641222714084193455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_35
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1791
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72eb3f0e558505e20800000000000000
+      internalID: 3337264449751072295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1727
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7010c5e4202957000800000000000000
+      internalID: 33093110877389063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1727
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef32be1f700c7010800000000000000
+      internalID: 1187824947694813162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_38
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1727
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef199c49c1de3c90800000000000000
+      internalID: -7188077292732997658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_39
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1727
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6faffa8d746d98a30800000000000000
+      internalID: 4218138130075613942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_40
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1727
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402e06e8f0d32fc40800000000000000
+      internalID: 5544561228269019652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_41
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1727
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23676eb10a543080800000000000000
+      internalID: -9208636374529907926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_42
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1727
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e49ea67793d65730800000000000000
+      internalID: 3987607167567828197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_43
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1727
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8328f7bf9b3cd6e0800000000000000
+      internalID: -1811507392937450611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1663
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad842a408b06d0c00800000000000000
+      internalID: 868456646620367066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_45
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1663
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2259255fd232380800000000000000
+      internalID: -8997297098880376140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_46
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1663
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82cce64311114470800000000000000
+      internalID: 8376995556377805454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_47
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1663
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b8674c293c9dcc0800000000000000
+      internalID: -3685699784897295610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_48
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1663
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3536fdb5864730ec0800000000000000
+      internalID: -3601907285399477421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_49
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1663
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ade514f3a740180800000000000000
+      internalID: -9150054130811741543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_50
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1663
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23dd61ca4b06c730800000000000000
+      internalID: 4018912133175431982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_51
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1663
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af75e7ab7a1f8f910800000000000000
+      internalID: 1871511347863115770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1599
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b9e1dccd222ce40800000000000000
+      internalID: 5675136812169730883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_53
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1599
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e92809bc281a340800000000000000
+      internalID: 4873320082606038600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_54
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1599
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8822f6469755f0db0800000000000000
+      internalID: -4823542696026103160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_55
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1599
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af00f99ad09ba9d20800000000000000
+      internalID: 3286142346451681530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_56
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1599
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7acf839950ec6a0800000000000000
+      internalID: -6427193462566901849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_57
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1599
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144a9f0ddcacc0810800000000000000
+      internalID: 1732982941953926209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_58
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1599
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce20d2a3af162a540800000000000000
+      internalID: 5017680662189900524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_59
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1599
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091b561ad33180aa0800000000000000
+      internalID: -6194680132026388080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1535
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea87f73cf30dece0800000000000000
+      internalID: -1374437929472521489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_61
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1535
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78724a3c852c41480800000000000000
+      internalID: -8929298474673625209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_62
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1535
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943e224b0eff14420800000000000000
+      internalID: 2612650599411540809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_63
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1535
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d298d5bbb56986ef0800000000000000
+      internalID: -114676469768287955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_64
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1535
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec0ac4b19ca27150800000000000000
+      internalID: 5868943006220553455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_65
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1535
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1883b4b6a01cd6370800000000000000
+      internalID: 8317516337317099649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_66
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1535
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c10d8d99e65f41e20800000000000000
+      internalID: 3320548680655228956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_67
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1535
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ebde65037d275f0800000000000000
+      internalID: -760308784455369087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_68
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1535
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fca6ada181b52510800000000000000
+      internalID: 1523819219457060086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_69
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1471
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960036cbf3b6d2850800000000000000
+      internalID: 6353852570777354345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_70
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1471
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f3dd97a318112a0800000000000000
+      internalID: -6768486676808515758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_71
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1471
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fd7f572d3367850800000000000000
+      internalID: 6374339301604843280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_72
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1471
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e5a20a4f0a447c0800000000000000
+      internalID: -4087965589225972203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_73
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1471
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9fa61966bbc31a0800000000000000
+      internalID: -6828376885799749180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_74
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1471
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d6ccd2dfa15ddb0800000000000000
+      internalID: -4767874955804381844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_75
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1471
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93379cf578cb0c690800000000000000
+      internalID: -7583854482878270663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_76
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1471
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4010d4ab6e7e88490800000000000000
+      internalID: -7743684581109464828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_77
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1471
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14edc969fe3922640800000000000000
+      internalID: 5053764389096447553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8468d9083d7858170800000000000000
+      internalID: 8180093640654030408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_79
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1eb6fd072aef6090800000000000000
+      internalID: -8038949356374147555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_80
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013c6d83fae490570800000000000000
+      internalID: 8433358291707806480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_81
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129f35a6b533e6c20800000000000000
+      internalID: 3201552852825930017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_82
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff4b70172b951690800000000000000
+      internalID: -7632023401426890759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_83
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04a8cad375cb57b0800000000000000
+      internalID: -5234373040505576436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_84
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d19e3be0c3301310800000000000000
+      internalID: 1373654790021485011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_85
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8370bbbd0bd176a0800000000000000
+      internalID: -6453135939015249014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_86
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fceac032b1772ce60800000000000000
+      internalID: 7981072448089796303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_87
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1343
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c18626d59679140800000000000000
+      internalID: 4726362183752490018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_88
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1343
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbca55958117c1c30800000000000000
+      internalID: 4331461291015515324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_89
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1343
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1388fa9b78fc59770800000000000000
+      internalID: 8617021643886135345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_90
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1343
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd662794a31dde40800000000000000
+      internalID: 5682719902442876339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_91
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1343
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e40097db109fd70800000000000000
+      internalID: 9077288437232455300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_92
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1343
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813fb6f6a2d6e95f0800000000000000
+      internalID: -748040459071524072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_93
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1343
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d651ac45c32483800800000000000000
+      internalID: 592296177887221101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_94
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1343
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c922925522aa93b30800000000000000
+      internalID: 4267629186344624796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_95
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1343
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be792390cbf693950800000000000000
+      internalID: 6429292796446939115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1279
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495980fcdda10cd10800000000000000
+      internalID: 2143742962591896980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_97
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1279
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afee9df5b500c3bc0800000000000000
+      internalID: -3802163592957399302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_98
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1279
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66531ce22e3d0300800000000000000
+      internalID: 219900276521522798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_99
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1279
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b469f8465fbf490800000000000000
+      internalID: -7711300124687316154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_100
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1279
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf7eb53ca8d57090800000000000000
+      internalID: -8037279725825130561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_101
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1279
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4010749baf1e399c0800000000000000
+      internalID: -3921542383543058172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_102
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1215
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24e70a65f95218e0800000000000000
+      internalID: -1724216796748717013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_103
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1215
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa04f35681fd3880800000000000000
+      internalID: -8629475751735588186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_104
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1215
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad9fc3d19558bdd0800000000000000
+      internalID: -2470130310800499295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_105
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1215
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96dbd690ff6f19490800000000000000
+      internalID: -7741134709237891735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_106
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1215
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1925a56d93040d0800000000000000
+      internalID: -3440686522509913636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_107
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1215
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539cae64be9528620800000000000000
+      internalID: 2774879187455625525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1151
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: accc86d669da5d7e0800000000000000
+      internalID: -1741294819316544310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_109
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1151
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617fee8603e2ebb80800000000000000
+      internalID: -8377207471408744682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_110
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1151
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98a857bc4db114f0800000000000000
+      internalID: -859697916659849058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_111
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1151
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ceeb5aa4e2dbc50800000000000000
+      internalID: 6682548320230894603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_112
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1151
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2fc238095f5294d0800000000000000
+      internalID: -3129333955074797778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_113
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1151
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fec89ad50550a070800000000000000
+      internalID: 8115580012152278772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_114
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1087
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd2f55b79e3c8380800000000000000
+      internalID: -8967723936697602597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_115
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1087
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76882ac19e247a620800000000000000
+      internalID: 2785268463527168103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_116
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1087
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f9a041aa0505dd0800000000000000
+      internalID: -2499409101779722389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_117
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1087
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9a7824a4f7bb760800000000000000
+      internalID: 7474707963471964657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_118
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1087
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cca106bb75da7890800000000000000
+      internalID: -7459415105474548538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_119
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1087
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc10ce518fcf29cf0800000000000000
+      internalID: -246856887102078516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c3b2cc5fc193ed0800000000000000
+      internalID: -2433882281599091560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_121
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0698e4be4eda6a1b0800000000000000
+      internalID: -5645633884150396576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_122
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ffec7c7ab049180800000000000000
+      internalID: -9109643331023995030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_123
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f413201882bbb10800000000000000
+      internalID: 1998235394221625166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_124
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573e32f6ffd4dadf0800000000000000
+      internalID: -167391851666218123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_125
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cda038071b6cbd80800000000000000
+      internalID: -8233588272074281532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_126
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e43698b2ed90da10800000000000000
+      internalID: 1932217837226964201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_127
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fcca9cddf862ea10800000000000000
+      internalID: 1937226229259881714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_128
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a92e6c080b08500800000000000000
+      internalID: 396510834347645519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_129
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb8a469f0d5938b0800000000000000
+      internalID: -5172000375530943510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_130
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4f0bb34e9e172f0800000000000000
+      internalID: -976742477699418885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_131
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470755420d8b48db0800000000000000
+      internalID: -4790500899513077644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_132
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1023
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af76e26166336410800000000000000
+      internalID: 1469077695351914405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_133
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5aacb5fb5948880800000000000000
+      internalID: -8609591938514246146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_134
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac92000e00068bda0800000000000000
+      internalID: -5928883352558884406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_135
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a933febc207b300800000000000000
+      internalID: 267685777766586919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_136
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89accd64883746520800000000000000
+      internalID: 2694405506216020632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_137
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9cd004f04f31970800000000000000
+      internalID: 8724585249483114971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_138
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4c5791414380d90800000000000000
+      internalID: -7131392749010041684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_139
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e3902126a14dc70800000000000000
+      internalID: 8994843364277435923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_140
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7cf94ed31545c430800000000000000
+      internalID: 3802521412020337786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_141
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d273163c8f25c10800000000000000
+      internalID: 2040967099185573199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_142
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06cb1c85a5b1ea20800000000000000
+      internalID: 3089950541977732620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_143
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32e70ae5900f9bb0800000000000000
+      internalID: -4927218823443520966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_144
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06330aaade6582a0800000000000000
+      internalID: -6735855782228445685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_145
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 959
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c93ad818779a1c50800000000000000
+      internalID: 6636783542952671680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_146
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b9355be3fdf92c0800000000000000
+      internalID: -4422570848631415978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_147
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf4be95c42b552e0800000000000000
+      internalID: -2137606407121580082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_148
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf302426baea62640800000000000000
+      internalID: 5054919682881094652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_149
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411afd8e89403c0c0800000000000000
+      internalID: -4556793343180300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_150
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ff5f36110953340800000000000000
+      internalID: 4842935378672746380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_151
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8daae47ec9d4f2f80800000000000000
+      internalID: -8129193466089526568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_152
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40900b4036242a1c0800000000000000
+      internalID: -4493956485114492668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_153
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2c62fe0edd657c0800000000000000
+      internalID: -4082832054010068293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_154
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9487b333cbd983400800000000000000
+      internalID: 304166406486456393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_155
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10983462f9efc98e0800000000000000
+      internalID: -1685192201048192767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_156
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58b2dfe93e90e400800000000000000
+      internalID: 351454742608787549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_157
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfcadc0e3c5c6cb10800000000000000
+      internalID: 2001504529493634299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_158
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 895
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff8d8742cc9b3ff0800000000000000
+      internalID: -55278212173950978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_159
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2536e7fef8b1d4d50800000000000000
+      internalID: 6723060123746329426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_160
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3b15d2ccd383aa0800000000000000
+      internalID: -6181122541423053906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_161
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c301b49d51e316da0800000000000000
+      internalID: -5953408968846274500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_162
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0804bb250636c12f0800000000000000
+      internalID: -1000815751827079040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_163
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241f57b18b37a2950800000000000000
+      internalID: 6425075052969324866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_164
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc075d333bcfe420800000000000000
+      internalID: 2661569325732138174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_165
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0ad832af73f7570800000000000000
+      internalID: 8466547371957657852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_166
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997fefa0c831a0c40800000000000000
+      internalID: 5479213388850460569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_167
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44695e5ef2d8c2050800000000000000
+      internalID: 5777147658869511748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_168
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e50a0801141a1f0800000000000000
+      internalID: -1035474900185227675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_169
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a6272a114b34930800000000000000
+      internalID: 4126339671434357376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_170
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a4a77e6b64e44a0800000000000000
+      internalID: -6607265851924395390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_171
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 831
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ad3a4394221c9f0800000000000000
+      internalID: -450040789949228528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_172
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 767
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5fc735ef9fca6e0800000000000000
+      internalID: -1824808878274185740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_173
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 767
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca6a405c6d7a33e0800000000000000
+      internalID: -2073206774293697847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_174
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 767
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e8793d522dfaf00800000000000000
+      internalID: 1130353091398831682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_175
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 767
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65674421995cef2a0800000000000000
+      internalID: -6701701934253574570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_176
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 767
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a4c1dab81bb4d60800000000000000
+      internalID: 7875583586850327187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_177
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 767
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02bac6b0ade3fa340800000000000000
+      internalID: 4877186027681000224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_178
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 767
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2aaf864bdeefd230800000000000000
+      internalID: 3665911247251941930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_179
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 639
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89a88102c1cb1b10800000000000000
+      internalID: 1953367902388791692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_180
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 639
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18de5bbce3b1016e0800000000000000
+      internalID: -1868963888839135871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_194
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 447
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029f29acde9727ff0800000000000000
+      internalID: -39835384480073440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_195
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 255
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f357d28a459720d40800000000000000
+      internalID: 5549131095379637567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_181
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 639
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f61ac5c2f05e720800000000000000
+      internalID: 2874720620352991063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_182
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 639
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa6c26bd21d38be0800000000000000
+      internalID: -1476106258587292942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_183
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 639
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d2d668f3a4da640800000000000000
+      internalID: 5092808390324596052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_184
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 639
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e99525a477b6fe20800000000000000
+      internalID: 3384093881630300644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_186
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 447
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96403d34ee84e9170800000000000000
+      internalID: 8187061360783459433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_187
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 447
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ea357d471b120f0800000000000000
+      internalID: -1143437714988487065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_188
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 447
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4dc9598da153f00800000000000000
+      internalID: 1095811601859925217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_190
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 447
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8bda812fe35e850800000000000000
+      internalID: 6405595254521444546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_192
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 447
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d08268953ae19540800000000000000
+      internalID: 5013045376150831317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_196
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 255
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c96372ccdf64fa40800000000000000
+      internalID: 5401064847069899200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_198
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 255
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136ac543636a75d70800000000000000
+      internalID: 9031870329451750961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_199
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 253
+        width: 92
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a2fc1d9f1eb1f80800000000000000
+      internalID: -8134659838831547888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_201
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 255
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79498ee83d757760800000000000000
+      internalID: 7455002441655339388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_205
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 63
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2909a78c2706f8e20800000000000000
+      internalID: 3355006293520322706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_197
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 255
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7006c6fab8febf60800000000000000
+      internalID: 8052146665672802428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_206
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 63
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e47eef5714bb6270800000000000000
+      internalID: 8244881555318535396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_207
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 63
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2026360403461ef90800000000000000
+      internalID: -6926144593517649406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_208
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 63
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f7b28f09653d6a0800000000000000
+      internalID: -6425697062688686321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_210
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 63
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e3c6274d3e42d670800000000000000
+      internalID: 8561991866678428643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_axe_212
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 63
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e29e10b42c7bb40800000000000000
+      internalID: 5456043100993039993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

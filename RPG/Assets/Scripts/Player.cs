@@ -84,7 +84,7 @@ public class Player : MonoBehaviour
         currentState = PlayerState.SwordAttack;
         yield return null; // wait one frame
         animator.SetBool("attacking", false);
-        yield return new WaitForSeconds(1.0f); // cool down
+        yield return new WaitForSeconds(.3f); // cool down
         currentState = PlayerState.Walk;
     }
 
