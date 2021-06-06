@@ -74,6 +74,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 110771aa5136bcd47baf3adccbab7685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 50
+  thrust: 60
 --- !u!1 &5690924507818839907
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,6 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 110771aa5136bcd47baf3adccbab7685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 50
+  thrust: 60
 --- !u!1 &5690924508109674531
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,6 +229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 110771aa5136bcd47baf3adccbab7685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 50
+  thrust: 60
 --- !u!1 &5690924509264319680
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,11 +349,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5690924509264319680}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eebd5bdd3c05524abb91d4032969c33, type: 3}
+  m_Script: {fileID: 11500000, guid: 6739f285d2c912c47a95778f2027b7a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
   health: 100
+  attackDuration: 0
+  hitCoolDown: 0.15
 --- !u!50 &5690924509264319706
 Rigidbody2D:
   serializedVersion: 4
@@ -464,3 +472,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 110771aa5136bcd47baf3adccbab7685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 50
+  thrust: 60
