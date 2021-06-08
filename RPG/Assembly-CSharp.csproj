@@ -56,7 +56,9 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Hit\IBreakeable.cs" />
     <Compile Include="Assets\Scripts\Command\ICommand.cs" />
+    <Compile Include="Assets\Scripts\Command\HitCharacterCommand.cs" />
     <Compile Include="Assets\Scripts\Command\HpDecreaseCommand.cs" />
     <Compile Include="Assets\Scripts\Command\PlayerChangePositionCommand.cs" />
     <Compile Include="Assets\Scripts\Hit\IFighter.cs" />
@@ -65,8 +67,10 @@
     <Compile Include="Assets\Scripts\Pot.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIHPHandler.cs" />
     <Compile Include="Assets\Scripts\Character\Character.cs" />
+    <Compile Include="Assets\Scripts\Utils\MutableTuple.cs" />
     <Compile Include="Assets\Scripts\Hit\Hitters\WeaponHit.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\Command\HitObjectCommand.cs" />
     <Compile Include="Assets\Scripts\Character\Enemy.cs" />
     <Compile Include="Assets\Scripts\Mediator\Mediator.cs" />
     <Compile Include="Assets\Scripts\Hit\Hitters\FireHit.cs" />
@@ -74,11 +78,6 @@
     <Compile Include="Assets\Scripts\Command\HpDisplayCommand.cs" />
     <Compile Include="Assets\Scripts\Command\HpIncreaseCommand.cs" />
     <Compile Include="Assets\Scripts\Hit\Hitters\FountainHit.cs" />
-    <Compile Include="Assets\Scripts\Hit\IBreakeable.cs" />
-    <Compile Include="Assets\Scripts\Hit\IEntity.cs" />
-    <Compile Include="Assets\Scripts\Command\HitCharacterCommand.cs" />
-    <Compile Include="Assets\Scripts\Command\HitObjectCommand.cs" />
-    <Compile Include="Assets\Scripts\Utils\MutableTuple.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
