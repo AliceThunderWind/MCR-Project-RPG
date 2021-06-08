@@ -27,14 +27,19 @@ public class WeaponHit : MonoBehaviour
          * Each object that can be attacked by the player will have to use
          * attackable tag
          */
+
         if (other.CompareTag("attackable")) {
             if (thrust > 0f)
                 knockBack(other);
 
-
-            HitCommand cmd = new HitCommand();
+            HitCharacterCommand cmd = new HitCharacterCommand();
             cmd.What    = other;
             cmd.Damage  = damage;
+            mediator.Publish(cmd);
+
+        }else if(other.CompareTag("brakeable")) {
+            HitObjectCommand cmd = new HitObjectCommand();
+            cmd.What = other;
             mediator.Publish(cmd);
         }
     }

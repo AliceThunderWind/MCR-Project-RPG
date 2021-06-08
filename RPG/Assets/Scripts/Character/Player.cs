@@ -3,7 +3,7 @@ using Assets.Scripts.Hit;
 using System.Collections;
 using UnityEngine;
 
-public class Player : Character, IHittable
+public class Player : Character, IFighter
 {
     
 
@@ -21,8 +21,7 @@ public class Player : Character, IHittable
         animator.SetBool("moving", false);
         health = 100f;
         
-        mediator.Subscribe<HpIncreaseCommand>(OnHpIncrease);
-        mediator.Subscribe<HpDecreaseCommand>(OnHpDecrease);
+      
         StartCoroutine(DisplayHp());
     }
 
@@ -34,19 +33,6 @@ public class Player : Character, IHittable
         mediator.Publish(cmd);
     }
 
-    private void OnHpIncrease(HpIncreaseCommand c)
-    {
-        this.health += c.Hp;
-        if (this.health > 100) this.health = 100;
-        StartCoroutine(DisplayHp());
-    }
-
-    private void OnHpDecrease(HpDecreaseCommand c)
-    {
-        this.health -= c.Hp;
-        if (this.health < 0) this.health = 0;
-        StartCoroutine(DisplayHp());
-    }
 
 
     // Update is called once per frame
@@ -68,16 +54,20 @@ public class Player : Character, IHittable
 
     }
 
-    public override void apply(float damage)
+    public override void damage(float damage)
     {
-        base.apply(damage);
+        base.damage(damage);
         HpDisplayCommand cmd = new HpDisplayCommand();
         cmd.Hp = health;
         mediator.Publish(cmd);
     }
 
- 
-
+    public override void heal(float damage)
+    {
+        base.heal(damage);
+        StartCoroutine(DisplayHp());
+    }
+    
     // static int count = 0;
 
     protected override Vector3 MoveCharacter(float speed)

@@ -2,7 +2,7 @@ using Assets.Scripts.Hit;
 using System.Collections;
 using UnityEngine;
 
-public class Pot : MonoBehaviour, IHittable
+public class Pot : MonoBehaviour, IBrakeable
 {
 
     private Animator anim;
@@ -31,7 +31,7 @@ public class Pot : MonoBehaviour, IHittable
         gameObject.SetActive(false);
     }
 
-    public void apply(float damage)
+    public void brake()
     {
         Smash();
     }

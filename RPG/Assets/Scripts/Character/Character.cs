@@ -18,7 +18,7 @@ public enum CharacterState
 
 namespace Assets.Scripts.Characters
 {
-    abstract public class Character : MonoBehaviour, IHittable
+    abstract public class Character : MonoBehaviour, IFighter
     {
         protected Mediator mediator = Mediator.Instance;
 
@@ -34,7 +34,7 @@ namespace Assets.Scripts.Characters
 
         protected bool isHit = false; // prevent multiple hits triggered by a single hit -> multiple collider objects
 
-        virtual public void apply(float damage)
+        virtual public void damage(float damage)
         {
             if (!isHit)
             {
@@ -50,6 +50,14 @@ namespace Assets.Scripts.Characters
                     StartCoroutine(HitCooldownCo());
                 }
             }
+        }
+
+
+        virtual public void heal(float hp)
+        {
+            this.health += hp;
+            if (this.health > 100) this.health = 100;
+           
         }
 
         private IEnumerator HitCooldownCo()

@@ -10,7 +10,7 @@ public enum EnemyState
     Chase,
     SpearAttack
 }
-public class Enemy : Character, IHittable
+public class Enemy : Character, IFighter
 {
 
     private float chaseSpeed;
@@ -18,7 +18,7 @@ public class Enemy : Character, IHittable
             
     private EnemyState currentState;
 
-    private const float visibility      = 5f;
+    private const float visibility      = 7.5f;
     private const float fightDistance   = 1.45f;
     private bool launchedAttack         = false;
     private float distanceToPlayer;
