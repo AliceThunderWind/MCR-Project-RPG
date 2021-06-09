@@ -38,7 +38,7 @@ public class WeaponHit : MonoBehaviour
             mediator.Publish(cmd);
 
         }else if(other.CompareTag("brakeable")) {
-            HitObjectCommand cmd = new HitObjectCommand();
+            HitBreakeableCommand cmd = new HitBreakeableCommand();
             cmd.What = other;
             mediator.Publish(cmd);
         }

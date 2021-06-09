@@ -3,7 +3,7 @@ using Assets.Scripts.Hit;
 using System.Collections;
 using UnityEngine;
 
-public class Player : Character, IFighter
+public class Player : Character, ICharacter
 {
     
 

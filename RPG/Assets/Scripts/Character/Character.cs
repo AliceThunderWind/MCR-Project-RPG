@@ -13,7 +13,7 @@ public enum CharacterState
 
 namespace Assets.Scripts.Characters
 {
-    abstract public class Character : MonoBehaviour, IFighter
+    abstract public class Character : MonoBehaviour, ICharacter
     {
         protected Mediator mediator = Mediator.Instance;
 

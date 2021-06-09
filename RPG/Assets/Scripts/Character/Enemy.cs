@@ -10,7 +10,7 @@ public enum EnemyState
     Chase,
     SpearAttack
 }
-public class Enemy : Character, IFighter
+public class Enemy : Character, ICharacter
 {
 
     private float chaseSpeed;

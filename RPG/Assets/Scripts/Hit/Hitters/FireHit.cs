@@ -37,7 +37,7 @@ public class FireHit : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        IFighter fighter = other.GetComponent<IFighter>();
+        ICharacter fighter = other.GetComponent<ICharacter>();
         if (fighter != null)
         {
             playersInRange.Add(new MutableTuple<Collider2D, int>(other, 1));
