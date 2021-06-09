@@ -181,7 +181,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c47fb7c40bf8041845db1be53303a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  health: 0
-  attackDuration: 0
-  hitCoolDown: 0
+  speed: 5
+  health: 100
+  attackDuration: 5
+  hitCoolDown: 1
+  visibility: 20
+  fightDistance: 10
+  attackCooldown: 3

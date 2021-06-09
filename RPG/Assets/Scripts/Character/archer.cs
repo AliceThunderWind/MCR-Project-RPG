@@ -52,6 +52,7 @@ public class archer : Enemy
         if (distanceToPlayer < fightDistance)
         {
             currentState = ArcherState.BowAttack;
+            animator.SetBool("moving", false);
             if (!attackOnCooldown)
             {
                 attackOnCooldown = true;
