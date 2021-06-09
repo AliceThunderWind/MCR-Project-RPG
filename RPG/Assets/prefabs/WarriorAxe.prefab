@@ -200,6 +200,7 @@ GameObject:
   - component: {fileID: 964137252707960991}
   - component: {fileID: 964137252707960984}
   - component: {fileID: 964137252707960985}
+  - component: {fileID: 1484077166}
   m_Layer: 0
   m_Name: LeftHit
   m_TagString: Untagged
@@ -234,7 +235,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 50
-  thrust: 30
 --- !u!60 &964137252707960985
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -268,6 +268,19 @@ PolygonCollider2D:
       - {x: -0.3669441, y: -0.48388994}
       - {x: -0.013393164, y: -0.4164105}
       - {x: -0.15314913, y: -0.15106857}
+--- !u!114 &1484077166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964137252707960990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c85a9eb2d0af764f83075375ed9abb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 100
 --- !u!1 &964137253274013758
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,6 +292,7 @@ GameObject:
   - component: {fileID: 964137253274013759}
   - component: {fileID: 964137253274013753}
   - component: {fileID: 964137253274013752}
+  - component: {fileID: 1864511394}
   m_Layer: 0
   m_Name: DownHit
   m_TagString: Untagged
@@ -346,7 +360,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 50
-  thrust: 30
+--- !u!114 &1864511394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964137253274013758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c85a9eb2d0af764f83075375ed9abb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 100
 --- !u!1 &964137253924677110
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,6 +384,7 @@ GameObject:
   - component: {fileID: 964137253924677111}
   - component: {fileID: 964137253924677105}
   - component: {fileID: 964137253924677104}
+  - component: {fileID: 1955160984}
   m_Layer: 0
   m_Name: RightHit
   m_TagString: Untagged
@@ -425,7 +452,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 50
-  thrust: 30
+--- !u!114 &1955160984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964137253924677110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c85a9eb2d0af764f83075375ed9abb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 100
 --- !u!1 &964137254076330557
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,6 +476,7 @@ GameObject:
   - component: {fileID: 964137254076330558}
   - component: {fileID: 964137254076330552}
   - component: {fileID: 964137254076330559}
+  - component: {fileID: 601085003}
   m_Layer: 0
   m_Name: UpHit
   m_TagString: Untagged
@@ -504,4 +544,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 50
-  thrust: 30
+--- !u!114 &601085003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964137254076330557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c85a9eb2d0af764f83075375ed9abb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 100

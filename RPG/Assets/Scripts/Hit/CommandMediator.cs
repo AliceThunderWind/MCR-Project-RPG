@@ -13,6 +13,7 @@ namespace Assets.Scripts.Hit
             mediator.Subscribe<HitBreakeableCommand>(OnHitBreakable);
             mediator.Subscribe<HpIncreaseCommand>(OnHpIncrease);
             mediator.Subscribe<HpDecreaseCommand>(OnHpDecrease);
+            mediator.Subscribe<KnockbackCommand>(OnKnockback);
         }
 
         private void OnHitBreakable(HitBreakeableCommand cmd)
@@ -34,6 +35,11 @@ namespace Assets.Scripts.Hit
         private void OnHpDecrease(HpDecreaseCommand cmd)
         {
             cmd.What.GetComponent<ICharacter>().damage(cmd.Hp);
+        }
+
+        private void OnKnockback(KnockbackCommand cmd)
+        {
+            cmd.body.AddForce(cmd.force, ForceMode2D.Impulse);
         }
 
     }

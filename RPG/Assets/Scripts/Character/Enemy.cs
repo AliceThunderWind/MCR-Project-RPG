@@ -7,8 +7,6 @@ using UnityEngine;
 abstract public class Enemy : Character, ICharacter
 {
 
-
-
     [SerializeField] protected const float visibility = 5f;
     [SerializeField] protected const float fightDistance = 1.45f;
 
