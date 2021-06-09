@@ -1,0 +1,221 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.11f1 (99c7afb366b3) revision 10078127'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.985; Version 2009; 64bit' Language: 'fr' Physical Memory: 32639 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/noahf/MCR/MCR-Project-RPG/RPG
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+24086
+Successfully changed project path to: C:/Users/noahf/MCR/MCR-Project-RPG/RPG
+C:/Users/noahf/MCR/MCR-Project-RPG/RPG
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 59.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.11f1 (99c7afb366b3)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/noahf/MCR/MCR-Project-RPG/RPG/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2080 Ti (ID=0x1e07)
+    Vendor:   
+    VRAM:     10952 MB
+    Driver:   27.21.14.6627
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56064
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001974 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 51.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.254 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004142 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 53.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.207 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2105 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.6 MB.
+System memory in use after: 93.5 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2540.
+Total: 2.110900 ms (FindLiveObjects: 0.197800 ms CreateObjectMapping: 0.048500 ms MarkObjects: 1.731300 ms  DeleteObjects: 0.131800 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Animations/WarriorSword/WarriorSword.controller
+  artifactKey: Guid(5e65d7512b3536f46a86ef65379946b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/WarriorSword/WarriorSword.controller using Guid(5e65d7512b3536f46a86ef65379946b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce4ffeace55b481e5ea2448ef0cb0a73') in 0.044748 seconds
+  Import took 0.047675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.677877 seconds.
+  path: Assets/Animations/WarriorSword/walkRight.anim
+  artifactKey: Guid(cccc4f238bf523042964d4b07a61813e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/WarriorSword/walkRight.anim using Guid(cccc4f238bf523042964d4b07a61813e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f17474437536867f69699fe411410d3d') in 0.009458 seconds
+  Import took 0.012407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007277 seconds.
+  path: Assets/Animations/WarriorSword/walkRight.anim
+  artifactKey: Guid(cccc4f238bf523042964d4b07a61813e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/WarriorSword/walkRight.anim using Guid(cccc4f238bf523042964d4b07a61813e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f17474437536867f69699fe411410d3d') in 0.003491 seconds
+  Import took 0.006366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.509049 seconds.
+  path: Assets/Animations/WarriorSword/walkBottom.anim
+  artifactKey: Guid(f17a5058e76849142bbeed4c13506f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/WarriorSword/walkBottom.anim using Guid(f17a5058e76849142bbeed4c13506f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adc5b7dfe29d611dcb17bef4f6062170') in 0.008763 seconds
+  Import took 0.012106 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010420 seconds.
+  path: Assets/Animations/WarriorSword/walkBottom.anim
+  artifactKey: Guid(f17a5058e76849142bbeed4c13506f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/WarriorSword/walkBottom.anim using Guid(f17a5058e76849142bbeed4c13506f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adc5b7dfe29d611dcb17bef4f6062170') in 0.003237 seconds
+  Import took 0.006121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.607916 seconds.
+  path: Assets/Animations/WarriorSword
+  artifactKey: Guid(f991bdf65f976e5439bc2e6c9c06f3fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/WarriorSword using Guid(f991bdf65f976e5439bc2e6c9c06f3fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbc8f3b39820113aa2bc0f48162a5a55') in 0.002433 seconds
+  Import took 0.005267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.067763 seconds.
+  path: Assets/Animations/WarriorSword/attackLeft.anim
+  artifactKey: Guid(ccc87800b5268eb4197d57ac08ac974a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/WarriorSword/attackLeft.anim using Guid(ccc87800b5268eb4197d57ac08ac974a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90b4eaf006dda9b591377b9e17f8416a') in 0.007251 seconds
+  Import took 0.010142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.729891 seconds.
+  path: Assets/Animations/WarriorSword/attackTop.anim
+  artifactKey: Guid(f045c0f791ad94144b387edd3cb7a24c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/WarriorSword/attackTop.anim using Guid(f045c0f791ad94144b387edd3cb7a24c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f5b93eaabe3ad0bb6bd7910542504c8') in 0.007515 seconds
+  Import took 0.010349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.556937 seconds.
+  path: Assets/Animations/WarriorSword/idleBottom.anim
+  artifactKey: Guid(fcd72de5b58bea8499fc34c344292a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/WarriorSword/idleBottom.anim using Guid(fcd72de5b58bea8499fc34c344292a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1efe4833fc586f5479639f52bf9691e5') in 0.007916 seconds
+  Import took 0.010900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.395250 seconds.
+  path: Assets/Animations/WarriorSword/idleRight.anim
+  artifactKey: Guid(2c0c408123bc5ef48a700e91cdca2054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/WarriorSword/idleRight.anim using Guid(2c0c408123bc5ef48a700e91cdca2054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e06b0489bd6cef525daccd2a3d51a258') in 0.007585 seconds
+  Import took 0.010670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.437619 seconds.
+  path: Assets/Animations/WarriorSword/walkLeft.anim
+  artifactKey: Guid(436845edf27a5d7428f8868a9a55077c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/WarriorSword/walkLeft.anim using Guid(436845edf27a5d7428f8868a9a55077c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b3ab95a383e3d926dee622862be3850') in 0.007258 seconds
+  Import took 0.010131 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.351031 seconds.
+  path: Assets/Animations/WarriorSword/idleTop.anim
+  artifactKey: Guid(891261208752e374fba9fe2b5a09541d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/WarriorSword/idleTop.anim using Guid(891261208752e374fba9fe2b5a09541d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44283271fdf7c8d98bbf3435e959e63b') in 0.008425 seconds
+  Import took 0.011334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.408891 seconds.
+  path: Assets/Animations/WarriorSword/idleLeft.anim
+  artifactKey: Guid(663ae1e5267e41548a4c9b9c5dd3f2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/WarriorSword/idleLeft.anim using Guid(663ae1e5267e41548a4c9b9c5dd3f2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe867491e6eccf850ef7889465196a9c') in 0.007147 seconds
+  Import took 0.009958 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 101.242878 seconds.
+  path: Assets/prefabs/EnemySword.prefab
+  artifactKey: Guid(ea4a7e4a77fdf7b418f0a9a49edc4633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemySword.prefab using Guid(ea4a7e4a77fdf7b418f0a9a49edc4633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c0ea32c01c64a6c295ad2040b8fdfce') in 0.129911 seconds
+  Import took 0.133165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.732436 seconds.
+  path: Assets/Art/generated/Warrior_sword.png
+  artifactKey: Guid(7d7239c9a29c1574494b621aab57333e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/generated/Warrior_sword.png using Guid(7d7239c9a29c1574494b621aab57333e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c82e3fdc72b99593a2c5b1c5d4e84dab') in 0.675998 seconds
+  Import took 0.679664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.018088 seconds.
+  path: Assets/prefabs/EnemySword.prefab
+  artifactKey: Guid(ea4a7e4a77fdf7b418f0a9a49edc4633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemySword.prefab using Guid(ea4a7e4a77fdf7b418f0a9a49edc4633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5267f9dd847eb504bc2180626d1685c5') in 0.148074 seconds
+  Import took 0.151398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 639.898729 seconds.
+  path: Assets/Art/generated/Warrior_sword.png
+  artifactKey: Guid(7d7239c9a29c1574494b621aab57333e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/generated/Warrior_sword.png using Guid(7d7239c9a29c1574494b621aab57333e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc68e90ae43261b3da07fd31a39e6c35') in 0.383882 seconds
+  Import took 0.388336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.838187 seconds.
+  path: Assets/Art/generated/Warrior_sword.png
+  artifactKey: Guid(7d7239c9a29c1574494b621aab57333e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/generated/Warrior_sword.png using Guid(7d7239c9a29c1574494b621aab57333e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61fcbca79194909356592a936a924217') in 0.373581 seconds
+  Import took 0.377287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.572078 seconds.
+  path: Assets/Art/generated/Warrior_sword.png
+  artifactKey: Guid(7d7239c9a29c1574494b621aab57333e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/generated/Warrior_sword.png using Guid(7d7239c9a29c1574494b621aab57333e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0ce3dce31ca469b36a877d63123634f') in 0.374782 seconds
+  Import took 0.378503 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
