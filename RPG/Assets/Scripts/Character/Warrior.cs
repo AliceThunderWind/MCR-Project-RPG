@@ -25,7 +25,7 @@ public class Warrior : Enemy
 
     // for random walk in 5 second periode with 5s pause
     [SerializeField] private const float period = 5f;
-    [SerializeField] private float nextStartTime = 5.0f;
+    private float nextStartTime = 5.0f;
     private float nextStopTime;
 
 
