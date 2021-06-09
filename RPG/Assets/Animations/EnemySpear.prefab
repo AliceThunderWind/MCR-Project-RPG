@@ -77,6 +77,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
+  thrust: 0
 --- !u!1 &6363220488980430077
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,6 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
+  thrust: 0
 --- !u!1 &6363220489409883475
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,13 +311,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 6363220489409883475}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e167d0cd67ba9e34ea540a8ec36cc539, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d86406131626d64ebad14d636d361fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 3
   health: 100
-  attackDuration: 0.3
-  hitCoolDown: 1
+  attackDuration: 1
+  hitCoolDown: 0
+  chaseSpeed: 9
+  behaviourRefreshRate: 10
+  nextStartTime: 5
 --- !u!61 &6363220489409883482
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -424,6 +429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
+  thrust: 0
 --- !u!1 &6363220489910661969
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,3 +512,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
+  thrust: 0
