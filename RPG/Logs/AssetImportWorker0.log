@@ -1,0 +1,907 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.11f1 (99c7afb366b3) revision 10078127'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.985; Version 2009; 64bit' Language: 'fr' Physical Memory: 32639 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/noahf/MCR/MCR-Project-RPG/RPG
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+33301
+Successfully changed project path to: C:/Users/noahf/MCR/MCR-Project-RPG/RPG
+C:/Users/noahf/MCR/MCR-Project-RPG/RPG
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 52.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.11f1 (99c7afb366b3)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/noahf/MCR/MCR-Project-RPG/RPG/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2080 Ti (ID=0x1e07)
+    Vendor:   
+    VRAM:     10952 MB
+    Driver:   27.21.14.6627
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56392
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001899 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 51.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.289 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004135 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 49.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.229 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.5 MB.
+System memory in use after: 93.5 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2538.
+Total: 2.528500 ms (FindLiveObjects: 0.199000 ms CreateObjectMapping: 0.057400 ms MarkObjects: 2.119300 ms  DeleteObjects: 0.151400 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Art/generated/Warrior_hammer.png
+  artifactKey: Guid(8be6858b5a606f0418441ed150c70d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/generated/Warrior_hammer.png using Guid(8be6858b5a606f0418441ed150c70d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e528018fd2b0a060077c5c0c3582572') in 0.188453 seconds
+  Import took 0.192425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Art/generated/ennemy_spear.png
+  artifactKey: Guid(8b94a3cc83e35824192233f0d65a0cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/generated/ennemy_spear.png using Guid(8b94a3cc83e35824192233f0d65a0cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b840055834580060af5db7db7936d812') in 0.322302 seconds
+  Import took 0.325720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/Art/generated/Archer_bow.png
+  artifactKey: Guid(283bd532c32a0344fb53418452ed88b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/generated/Archer_bow.png using Guid(283bd532c32a0344fb53418452ed88b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cfccf8c75c81fb43ba4430698080c4f') in 0.013299 seconds
+  Import took 0.016166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Art/generated/Warrior_axe.png
+  artifactKey: Guid(129e02178d4b13c49b9d201d8cad520f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/generated/Warrior_axe.png using Guid(129e02178d4b13c49b9d201d8cad520f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77c37b5d6fc1924e063791a75ff68bce') in 0.633377 seconds
+  Import took 0.636905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Art/generated/Warrior_sword.png
+  artifactKey: Guid(7d7239c9a29c1574494b621aab57333e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/generated/Warrior_sword.png using Guid(7d7239c9a29c1574494b621aab57333e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e365bfedcae863c1ffa71f3238adc271') in 0.134703 seconds
+  Import took 0.138094 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.103003 seconds.
+  path: Assets/Art/generated/Archer_crossbow.png
+  artifactKey: Guid(d7a785976deef4446ba2a7d612c0667f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/generated/Archer_crossbow.png using Guid(d7a785976deef4446ba2a7d612c0667f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c1661d43d592b4a1193ce469a5da116') in 0.013803 seconds
+  Import took 0.016766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.295679 seconds.
+  path: Assets/Art/generated/Archer_dagger.png
+  artifactKey: Guid(aba74e6af72a9d540acb4fe146b51eb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/generated/Archer_dagger.png using Guid(aba74e6af72a9d540acb4fe146b51eb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cccb13bced8801a894eaea443f863ede') in 0.014332 seconds
+  Import took 0.017655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.356060 seconds.
+  path: Assets/Art/gfx/Overworld.png
+  artifactKey: Guid(15c6eff228e9a73409792fa6523599e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/gfx/Overworld.png using Guid(15c6eff228e9a73409792fa6523599e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd7fd4cfa7db182a1fca66373345f5b0') in 1.465802 seconds
+  Import took 1.472382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.768964 seconds.
+  path: Assets/Art/generated/Archer_bow.png
+  artifactKey: Guid(283bd532c32a0344fb53418452ed88b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/generated/Archer_bow.png using Guid(283bd532c32a0344fb53418452ed88b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f72ffd3770e4e7a8b5df88c49d73fe33') in 0.009340 seconds
+  Import took 0.012215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.694605 seconds.
+  path: Assets/Art/generated/Archer_bow.png
+  artifactKey: Guid(283bd532c32a0344fb53418452ed88b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/generated/Archer_bow.png using Guid(283bd532c32a0344fb53418452ed88b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1585d4daafe5f3e84652f5d0e1c5eb27') in 0.282891 seconds
+  Import took 0.286571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.402686 seconds.
+  path: Assets/Animations/Enemy/EnemySpear.prefab
+  artifactKey: Guid(a7fddad22aa7ca24a9b13f6eadec8580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy/EnemySpear.prefab using Guid(a7fddad22aa7ca24a9b13f6eadec8580) Importer(815301076,1909f56bfc062723c751e8b465ee728b) GameObject (named 'EnemySpear') references runtime script in scene file. Fixing!
+
+ -> (artifact id: 'd8c5ace3351d9cdc294c04866501d2aa') in 0.041881 seconds
+  Import took 0.044872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Animations/EnemySpear.prefab
+  artifactKey: Guid(50d88aadf301dd241aedf63bd9667b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/EnemySpear.prefab using Guid(50d88aadf301dd241aedf63bd9667b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04eb9b6be86a527480cdade8dd2dde5b') in 0.025025 seconds
+  Import took 0.028732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000389 seconds.
+  path: Assets/TilePalettes/Ground.prefab
+  artifactKey: Guid(c9b64fe92b2b93644811896742f84a7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TilePalettes/Ground.prefab using Guid(c9b64fe92b2b93644811896742f84a7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '610849233307d836fba736aca82b1468') in 0.012328 seconds
+  Import took 0.016380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/prefabs/Pot.prefab
+  artifactKey: Guid(21dfc251782d7234c92f48b432569ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Pot.prefab using Guid(21dfc251782d7234c92f48b432569ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfb60a1b3d293134ebd0e7b974521212') in 0.013825 seconds
+  Import took 0.017259 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/prefabs/WarriorAxe.prefab
+  artifactKey: Guid(766aeb08d92dd8b47b5fa245213742a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/WarriorAxe.prefab using Guid(766aeb08d92dd8b47b5fa245213742a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e84cbff3e81756fccc03ddd7fe250b2') in 0.023280 seconds
+  Import took 0.026558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/prefabs/EnemySpear.prefab
+  artifactKey: Guid(1f5cdc845b9f2ae42835a4e48b8d998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemySpear.prefab using Guid(1f5cdc845b9f2ae42835a4e48b8d998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec6641875cc641eedd84943346b5e531') in 0.018211 seconds
+  Import took 0.021629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/prefabs/Fountain.prefab
+  artifactKey: Guid(e074ba83342fa9d4a88fc87f343a9c17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Fountain.prefab using Guid(e074ba83342fa9d4a88fc87f343a9c17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec769963183b2cf603f0e28ffd95588d') in 0.014075 seconds
+  Import took 0.017065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/prefabs/Fire.prefab
+  artifactKey: Guid(4702e20553287b24997ef33b7dab4723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Fire.prefab using Guid(4702e20553287b24997ef33b7dab4723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7406955dcdc27fc51c6dce67caf09615') in 0.012129 seconds
+  Import took 0.015539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.208529 seconds.
+  path: Assets/prefabs
+  artifactKey: Guid(b4cdd1dd07c55fb4c8056f33e04b5131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs using Guid(b4cdd1dd07c55fb4c8056f33e04b5131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c17d3a5a9352da8ae3fecfcbcd555834') in 0.006540 seconds
+  Import took 0.009518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.244251 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d42106a2465338d7164aa9844b9266e') in 0.007624 seconds
+  Import took 0.010945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.317552 seconds.
+  path: Assets/prefabs/EnemySpear.prefab
+  artifactKey: Guid(1f5cdc845b9f2ae42835a4e48b8d998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemySpear.prefab using Guid(1f5cdc845b9f2ae42835a4e48b8d998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3693cd1f0522d37aeb60cfb67b0260cc') in 0.015389 seconds
+  Import took 0.018877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.793868 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba9bf1903b65b8b72d7072ff0e3708a8') in 0.004207 seconds
+  Import took 0.007137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.197353 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68b99ace9812eae266856f85429f362d') in 0.003635 seconds
+  Import took 0.006855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.483709 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e4bd2da2632993b77c644c01c1eb081') in 0.003600 seconds
+  Import took 0.006852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.391468 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea4224b5277819e6b0759992d0f0b069') in 0.003504 seconds
+  Import took 0.006480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 98.491346 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '711bcafc692f710db9ddabbbd211ab8b') in 0.012169 seconds
+  Import took 0.015747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.905168 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b92336161c00b91caeee2e511a74847c') in 0.008239 seconds
+  Import took 0.011407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031946 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b92336161c00b91caeee2e511a74847c') in 0.009715 seconds
+  Import took 0.012793 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.649977 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '480bbd5cb074ea667b4213fb80bd45ec') in 0.009517 seconds
+  Import took 0.013048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.064877 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fff8fab24e844e44d6d6df4fe118e7da') in 0.009091 seconds
+  Import took 0.012443 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.829071 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7cf1899d511475cec4eed768ed18d89') in 0.008523 seconds
+  Import took 0.011526 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 76.430786 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '453692116f3e9f08ea30d7d2ca1a2423') in 0.011537 seconds
+  Import took 0.014967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.800773 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd92a0f54fdfbb4a5062959f74b04d8fd') in 0.010858 seconds
+  Import took 0.014115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.663952 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71148e5a46d0bc328e22bf5456e6e873') in 0.008018 seconds
+  Import took 0.011367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.045856 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71148e5a46d0bc328e22bf5456e6e873') in 0.008121 seconds
+  Import took 0.011311 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 186.120950 seconds.
+  path: Assets/Art/generated
+  artifactKey: Guid(7fadee1be51d7f14eaf6d6800fe01294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/generated using Guid(7fadee1be51d7f14eaf6d6800fe01294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '892bddb42bf22f65bb2dde0cfa17bc1b') in 0.006413 seconds
+  Import took 0.009336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.256480 seconds.
+  path: Assets/Art/generated/ennemy_spear.png
+  artifactKey: Guid(8b94a3cc83e35824192233f0d65a0cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/generated/ennemy_spear.png using Guid(8b94a3cc83e35824192233f0d65a0cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67d11f9845a0841e667d2b53a1805c82') in 0.303932 seconds
+  Import took 0.307517 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003807 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.087 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.1 MB.
+System memory in use after: 98.1 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2567.
+Total: 2.116300 ms (FindLiveObjects: 0.181800 ms CreateObjectMapping: 0.053500 ms MarkObjects: 1.758600 ms  DeleteObjects: 0.121200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 126.916393 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4106bce8607eb43b4532946d07af214') in 0.057759 seconds
+  Import took 0.061358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.437261 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c53d7dd10017a1038b61462ce034b33') in 0.009038 seconds
+  Import took 0.012455 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.777598 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'babf85116a99275ce8423010c8dfc9bf') in 0.008063 seconds
+  Import took 0.011161 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 86.941004 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2320107c21d3a3ae6297aa8ec65498e5') in 0.011118 seconds
+  Import took 0.014096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008636 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2320107c21d3a3ae6297aa8ec65498e5') in 0.007950 seconds
+  Import took 0.010953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.590787 seconds.
+  path: Assets/Art/generated/Warrior_hammer.png
+  artifactKey: Guid(8be6858b5a606f0418441ed150c70d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/generated/Warrior_hammer.png using Guid(8be6858b5a606f0418441ed150c70d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e693f883cf85be0592c94c23c419b4e4') in 0.026778 seconds
+  Import took 0.029995 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003818 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.080 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.2 MB.
+System memory in use after: 98.2 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2572.
+Total: 2.072000 ms (FindLiveObjects: 0.180100 ms CreateObjectMapping: 0.051900 ms MarkObjects: 1.735800 ms  DeleteObjects: 0.103000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.041622 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0feb0393b5a3ec6f69e43a58a60897e1') in 0.051355 seconds
+  Import took 0.054237 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003831 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.085 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.2 MB.
+System memory in use after: 98.2 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2577.
+Total: 2.527900 ms (FindLiveObjects: 0.195600 ms CreateObjectMapping: 0.056200 ms MarkObjects: 2.155500 ms  DeleteObjects: 0.119400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003841 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.078 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.2 MB.
+System memory in use after: 98.2 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2581.
+Total: 2.098400 ms (FindLiveObjects: 0.185000 ms CreateObjectMapping: 0.053500 ms MarkObjects: 1.756300 ms  DeleteObjects: 0.102600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 106.577339 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8fbd76152de119727b574fcb0c049db') in 0.058239 seconds
+  Import took 0.061209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 95.171202 seconds.
+  path: Assets/prefabs/New Prefab.prefab
+  artifactKey: Guid(1e6cbf43b3cce4c40abcb2abf2d23a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/New Prefab.prefab using Guid(1e6cbf43b3cce4c40abcb2abf2d23a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a79345d7529d903341ece63003453a6f') in 0.007386 seconds
+  Import took 0.010402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.530803 seconds.
+  path: Assets/prefabs/Hit.prefab
+  artifactKey: Guid(1e6cbf43b3cce4c40abcb2abf2d23a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Hit.prefab using Guid(1e6cbf43b3cce4c40abcb2abf2d23a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33b854382ee5029a482d9ea64b05b1df') in 0.007046 seconds
+  Import took 0.010023 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.970976 seconds.
+  path: Assets/prefabs/Hitbox.prefab
+  artifactKey: Guid(1e6cbf43b3cce4c40abcb2abf2d23a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Hitbox.prefab using Guid(1e6cbf43b3cce4c40abcb2abf2d23a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9122aea457ab36ad9559bf63f62398e1') in 0.006840 seconds
+  Import took 0.009855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.203212 seconds.
+  path: Assets/prefabs/WeaponHitBox.prefab
+  artifactKey: Guid(1e6cbf43b3cce4c40abcb2abf2d23a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/WeaponHitBox.prefab using Guid(1e6cbf43b3cce4c40abcb2abf2d23a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9401533d5a780f56d8fae23f974bb3d') in 0.007439 seconds
+  Import took 0.010615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.743113 seconds.
+  path: Assets/prefabs/WeaponHitBox.prefab
+  artifactKey: Guid(1e6cbf43b3cce4c40abcb2abf2d23a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/WeaponHitBox.prefab using Guid(1e6cbf43b3cce4c40abcb2abf2d23a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c868232b5ec9f92337e756f1c266a0c') in 0.003561 seconds
+  Import took 0.006442 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 107.114419 seconds.
+  path: Assets/Animations/Enemy
+  artifactKey: Guid(c0c8b70f91026cd4dbb108932b34f946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy using Guid(c0c8b70f91026cd4dbb108932b34f946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95a416f21cfad22ca25095f823026f9d') in 0.006468 seconds
+  Import took 0.009366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.133748 seconds.
+  path: Assets/Animations/Enemy/SpearEnemy
+  artifactKey: Guid(bb3f3fb853bdb7645a10a448777f791f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy/SpearEnemy using Guid(bb3f3fb853bdb7645a10a448777f791f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc6794dc492f11011d1565762ae9e4ee') in 0.006369 seconds
+  Import took 0.009298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.172398 seconds.
+  path: Assets/Animations/Enemy/SpearEnemy/attackUp.anim
+  artifactKey: Guid(79ce0bd445311934f9cfd7225fa97d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy/SpearEnemy/attackUp.anim using Guid(79ce0bd445311934f9cfd7225fa97d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a61f681e76fa3b4726dd49a985837bcc') in 0.008125 seconds
+  Import took 0.010977 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004541 seconds.
+  path: Assets/Animations/Enemy/SpearEnemy/attackUp.anim
+  artifactKey: Guid(79ce0bd445311934f9cfd7225fa97d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy/SpearEnemy/attackUp.anim using Guid(79ce0bd445311934f9cfd7225fa97d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a61f681e76fa3b4726dd49a985837bcc') in 0.002729 seconds
+  Import took 0.005647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.395686 seconds.
+  path: Assets/Animations/Enemy/SpearEnemy/attackRight.anim
+  artifactKey: Guid(a1639047c4f619c428fd56306b987a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy/SpearEnemy/attackRight.anim using Guid(a1639047c4f619c428fd56306b987a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '628381a9b9ac7fd214f74bd4da6bac1c') in 0.007244 seconds
+  Import took 0.011463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.255208 seconds.
+  path: Assets/Animations/Enemy/SpearEnemy/attackDown.anim
+  artifactKey: Guid(b7c2daedb1b9cef44a4899a532c0c1ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy/SpearEnemy/attackDown.anim using Guid(b7c2daedb1b9cef44a4899a532c0c1ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4275c150b8bf1525d980b92570010ced') in 0.006665 seconds
+  Import took 0.009557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.527167 seconds.
+  path: Assets/Animations/Enemy/SpearEnemy/Ennemy.controller
+  artifactKey: Guid(4ff0561b1c36f2940a69608332f04775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy/SpearEnemy/Ennemy.controller using Guid(4ff0561b1c36f2940a69608332f04775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6fdb80db7c81d3005784acdadb4af18') in 0.012652 seconds
+  Import took 0.015769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001534 seconds.
+  path: Assets/Animations/Enemy/SpearEnemy/Ennemy.controller
+  artifactKey: Guid(4ff0561b1c36f2940a69608332f04775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy/SpearEnemy/Ennemy.controller using Guid(4ff0561b1c36f2940a69608332f04775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6fdb80db7c81d3005784acdadb4af18') in 0.006649 seconds
+  Import took 0.009625 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.996243 seconds.
+  path: Assets/Animations/Enemy/ArcherEnemy
+  artifactKey: Guid(1cce5029ebd084d4da5ea61d701bca06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy/ArcherEnemy using Guid(1cce5029ebd084d4da5ea61d701bca06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '700ee488e0537ad40f317c3d92623cd8') in 0.006006 seconds
+  Import took 0.008901 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.481314 seconds.
+  path: Assets/Animations/Enemy/ArcherEnemy/Animator.controller
+  artifactKey: Guid(562a64956f9b3c14aaee15040295e23c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy/ArcherEnemy/Animator.controller using Guid(562a64956f9b3c14aaee15040295e23c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb512ed4a9002f737ee2b9af9b7e95e3') in 0.006547 seconds
+  Import took 0.009473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.606085 seconds.
+  path: Assets/Animations/Enemy/ArcherEnemy/UpWalk.anim
+  artifactKey: Guid(b59061904c58d3645a4e200560c16692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy/ArcherEnemy/UpWalk.anim using Guid(b59061904c58d3645a4e200560c16692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5940a09ab02d83a0d82bbf17e465836c') in 0.006975 seconds
+  Import took 0.010424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.786716 seconds.
+  path: Assets/Art/generated/Archer_bow.png
+  artifactKey: Guid(283bd532c32a0344fb53418452ed88b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/generated/Archer_bow.png using Guid(283bd532c32a0344fb53418452ed88b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b12a89d624ad063cbe15f6830def7061') in 0.335671 seconds
+  Import took 0.339509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 124.107564 seconds.
+  path: Assets/Animations/Enemy/ArcherEnemy/IdleUp.anim
+  artifactKey: Guid(7e49e6793fc77b1488813dbf3f82e5cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy/ArcherEnemy/IdleUp.anim using Guid(7e49e6793fc77b1488813dbf3f82e5cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13f699cfa06ed320af3aba54cdf5296e') in 0.007240 seconds
+  Import took 0.010857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.358244 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa1bdb81c6f3faeaf2d7b07deca29fbc') in 0.012773 seconds
+  Import took 0.015845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001572 seconds.
+  path: Assets/prefabs/EnemyArcher.prefab
+  artifactKey: Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/EnemyArcher.prefab using Guid(e18be28e7d9ba8c468ec68a59bf9aac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa1bdb81c6f3faeaf2d7b07deca29fbc') in 0.008039 seconds
+  Import took 0.011080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.635213 seconds.
+  path: Assets/prefabs/New Animator Controller.controller
+  artifactKey: Guid(5a6fcadbe73328f42aaa1a69685f1d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/New Animator Controller.controller using Guid(5a6fcadbe73328f42aaa1a69685f1d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca428b4c242e6fa7d708269e8c967fc4') in 0.008046 seconds
+  Import took 0.011867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 106.831994 seconds.
+  path: Assets/Animations/Enemy/ArcherEnemy/idleDown.anim
+  artifactKey: Guid(37affa38f4f8dcd48acb669c4316af42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy/ArcherEnemy/idleDown.anim using Guid(37affa38f4f8dcd48acb669c4316af42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45b6e66db72cf44d017772ae15b5ae99') in 0.006627 seconds
+  Import took 0.009939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2526.980282 seconds.
+  path: Assets/Animations/Enemy/ArcherEnemy/EnemyArcher.controller
+  artifactKey: Guid(da63ad440f193ff47aadc64968dc9054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy/ArcherEnemy/EnemyArcher.controller using Guid(da63ad440f193ff47aadc64968dc9054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c984245667e827674dcbc6e242dfca2c') in 0.004774 seconds
+  Import took 0.009204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 100.971173 seconds.
+  path: Assets/Scripts/Character/Enemy.cs
+  artifactKey: Guid(e167d0cd67ba9e34ea540a8ec36cc539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Character/Enemy.cs using Guid(e167d0cd67ba9e34ea540a8ec36cc539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52433fa1d5b783eff7a5c0edfe5c7c91') in 0.008566 seconds
+  Import took 0.011602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 91.815988 seconds.
+  path: Assets/Animations/Enemy/ArcherEnemy/idleDown.anim
+  artifactKey: Guid(37affa38f4f8dcd48acb669c4316af42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy/ArcherEnemy/idleDown.anim using Guid(37affa38f4f8dcd48acb669c4316af42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '575c21e01673112999487151045fba65') in 0.006261 seconds
+  Import took 0.009333 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.716845 seconds.
+  path: Assets/Animations/Enemy/ArcherEnemy/walkDown.anim
+  artifactKey: Guid(7c50e4122a5d2964b99bbb17125dcd7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy/ArcherEnemy/walkDown.anim using Guid(7c50e4122a5d2964b99bbb17125dcd7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a645e3d348d2f4936041b1f0915cfd8') in 0.006778 seconds
+  Import took 0.009943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.912442 seconds.
+  path: Assets/Animations/Enemy/ArcherEnemy/idleRight.anim
+  artifactKey: Guid(3bde1194414a93241b1a587ff80d1431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy/ArcherEnemy/idleRight.anim using Guid(3bde1194414a93241b1a587ff80d1431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28f6aef4e408f9c22354f8c38331680f') in 0.006737 seconds
+  Import took 0.009604 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004399 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.117 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.3 MB.
+System memory in use after: 98.3 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2586.
+Total: 2.354400 ms (FindLiveObjects: 0.193900 ms CreateObjectMapping: 0.053900 ms MarkObjects: 1.986200 ms  DeleteObjects: 0.119000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 160.458398 seconds.
+  path: Assets/prefabs/WarriorAxe.prefab
+  artifactKey: Guid(766aeb08d92dd8b47b5fa245213742a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/WarriorAxe.prefab using Guid(766aeb08d92dd8b47b5fa245213742a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82348bd012292940e9aff9de29332f9c') in 0.122929 seconds
+  Import took 0.126334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.885885 seconds.
+  path: Assets/prefabs/WarriorAxe.prefab
+  artifactKey: Guid(766aeb08d92dd8b47b5fa245213742a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/WarriorAxe.prefab using Guid(766aeb08d92dd8b47b5fa245213742a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40c95d460ba5cc87957d1c1e820350fb') in 0.022241 seconds
+  Import took 0.025502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010786 seconds.
+  path: Assets/prefabs/WarriorAxe.prefab
+  artifactKey: Guid(766aeb08d92dd8b47b5fa245213742a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/WarriorAxe.prefab using Guid(766aeb08d92dd8b47b5fa245213742a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40c95d460ba5cc87957d1c1e820350fb') in 0.020294 seconds
+  Import took 0.023874 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003857 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.042 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.3 MB.
+System memory in use after: 98.3 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2591.
+Total: 2.179600 ms (FindLiveObjects: 0.199900 ms CreateObjectMapping: 0.056100 ms MarkObjects: 1.811200 ms  DeleteObjects: 0.111500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003930 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.061 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.3 MB.
+System memory in use after: 98.3 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2595.
+Total: 2.124700 ms (FindLiveObjects: 0.201700 ms CreateObjectMapping: 0.052700 ms MarkObjects: 1.757300 ms  DeleteObjects: 0.111900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004300 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.067 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.3 MB.
+System memory in use after: 98.3 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2599.
+Total: 2.176600 ms (FindLiveObjects: 0.195400 ms CreateObjectMapping: 0.055300 ms MarkObjects: 1.811500 ms  DeleteObjects: 0.113400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004234 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.091 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.3 MB.
+System memory in use after: 98.3 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2603.
+Total: 2.119900 ms (FindLiveObjects: 0.187800 ms CreateObjectMapping: 0.052200 ms MarkObjects: 1.774400 ms  DeleteObjects: 0.104100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 383.736846 seconds.
+  path: Assets/Animations/Enemy/ArcherEnemy/walkLeft.anim
+  artifactKey: Guid(805c2fdcaf39b5140916fa1046d1c73d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy/ArcherEnemy/walkLeft.anim using Guid(805c2fdcaf39b5140916fa1046d1c73d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '233b373d47a6634d121057c129ef30b9') in 0.017923 seconds
+  Import took 0.021130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 67.996699 seconds.
+  path: Assets/Art/generated/Archer_bow.png
+  artifactKey: Guid(283bd532c32a0344fb53418452ed88b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/generated/Archer_bow.png using Guid(283bd532c32a0344fb53418452ed88b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e2af96386fee6161cf88657c0f930a6') in 0.378655 seconds
+  Import took 0.382330 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003934 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.070 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.4 MB.
+System memory in use after: 98.3 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2608.
+Total: 2.269700 ms (FindLiveObjects: 0.233200 ms CreateObjectMapping: 0.055700 ms MarkObjects: 1.850700 ms  DeleteObjects: 0.128800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003980 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.073 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2098 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.4 MB.
+System memory in use after: 98.3 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2612.
+Total: 2.254700 ms (FindLiveObjects: 0.199600 ms CreateObjectMapping: 0.053400 ms MarkObjects: 1.886000 ms  DeleteObjects: 0.113900 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
