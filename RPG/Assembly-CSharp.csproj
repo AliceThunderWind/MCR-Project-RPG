@@ -61,12 +61,14 @@
     <Compile Include="Assets\Scripts\Command\HitCharacterCommand.cs" />
     <Compile Include="Assets\Scripts\Character\Warrior.cs" />
     <Compile Include="Assets\Scripts\Command\HpDecreaseCommand.cs" />
+    <Compile Include="Assets\Scripts\Command\KnockbackCommand.cs" />
     <Compile Include="Assets\Scripts\Command\PlayerChangePositionCommand.cs" />
     <Compile Include="Assets\Scripts\Hit\ICharacter.cs" />
     <Compile Include="Assets\Scripts\Character\Player.cs" />
     <Compile Include="Assets\Scripts\Command\HpSetCommand.cs" />
     <Compile Include="Assets\Scripts\Pot.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIHPHandler.cs" />
+    <Compile Include="Assets\Scripts\Utils\Knockback.cs" />
     <Compile Include="Assets\Scripts\Character\Character.cs" />
     <Compile Include="Assets\Scripts\Utils\MutableTuple.cs" />
     <Compile Include="Assets\Scripts\Hit\Hitters\WeaponHit.cs" />
@@ -79,8 +81,8 @@
     <Compile Include="Assets\Scripts\Command\HpDisplayCommand.cs" />
     <Compile Include="Assets\Scripts\Command\HpIncreaseCommand.cs" />
     <Compile Include="Assets\Scripts\Hit\Hitters\FountainHit.cs" />
-    <Compile Include="Assets\Scripts\Utils\Knockback.cs" />
-    <Compile Include="Assets\Scripts\Command\KnockbackCommand.cs" />
+    <Compile Include="Assets\Scripts\Character\archer.cs" />
+    <Compile Include="Assets\Scripts\StateMachineBehaviour\archerAttack.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
