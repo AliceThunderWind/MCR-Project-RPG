@@ -17,24 +17,21 @@ public class Warrior : Enemy
     private WarriorState currentState;
 
 
+
     private bool launchedAttack = false;
     private float distanceToPlayer;
     private float directionToPlayer;
-    private Vector3 playerPosition;
 
 
     // for random walk in 5 second periode with 5s pause
-    [SerializeField] private const float period = 5f;
-    private float nextStartTime = 5.0f;
-    private float nextStopTime;
 
 
     private static readonly System.Random getrandom = new System.Random(DateTime.Now.Millisecond);
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
-
+        base.Start();
         animator = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
         currentState = WarriorState.WalkRandom;
@@ -78,27 +75,6 @@ public class Warrior : Enemy
 
     }
 
-    private void randomWalk()
-    {
-        // Debug.Log("Time : " + Time.time + " start : " + nextStartTime + " stop : " + nextStopTime);
-        animator.SetBool("moving", false);
-        if (Time.time > nextStartTime && Time.time < nextStopTime)
-        {
-            if (nextStep != Vector3.zero)
-            {
-                MoveCharacter(speed);
-            }
-        }
-
-
-        if (Time.time > nextStopTime)
-        {
-
-            nextStep = RandomVector();
-            nextStartTime = Time.time + period;
-            nextStopTime = Time.time + 2 * period;
-        }
-    }
 
     protected override IEnumerator AttackCo()
     {
@@ -111,27 +87,5 @@ public class Warrior : Enemy
         launchedAttack = false;
     }
 
-    private void OnPlayerChangePosition(PlayerChangePositionCommand c)
-    {
-        playerPosition = c.Position;
-    }
-
-    private Vector3 RandomVector()
-    {
-        float random = UnityEngine.Random.Range(0f, 360f);
-        return vectorFromAngle(random);
-    }
-
-    private float direction(Vector3 from, Vector3 to)
-    {
-        float dir = Vector3.Angle(to - from, Vector3.right);
-        if (to.y < from.y) dir *= -1;
-        return dir;
-    }
-
-    private Vector3 vectorFromAngle(float angle)
-    {
-        return new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad), 0);
-    }
 
 }

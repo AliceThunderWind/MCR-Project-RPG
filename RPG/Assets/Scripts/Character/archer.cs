@@ -19,15 +19,13 @@ public class archer : Enemy
     private float distanceToPlayer;
     private float directionToPlayer;
 
-    [SerializeField] private const float period = 5f;
     [SerializeField] private float attackCooldown;
-    private float nextStartTime = 5.0f;
-    private float nextStopTime;
-    private Vector3 playerPosition;
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
+        base.Start();
+
         animator = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
         currentState = ArcherState.WalkRandom;
@@ -38,7 +36,6 @@ public class archer : Enemy
         animator.SetBool("moving", false);
 
         nextStep = RandomVector();
-        mediator.Subscribe<PlayerChangePositionCommand>(OnPlayerChangePosition);
     }
 
     // Update is called once per frame
@@ -100,48 +97,5 @@ public class archer : Enemy
     }
 
     //Move these in Enemy
-    private void OnPlayerChangePosition(PlayerChangePositionCommand c)
-    {
-        playerPosition = c.Position;
-    }
 
-    private Vector3 RandomVector()
-    {
-        float random = UnityEngine.Random.Range(0f, 360f);
-        return vectorFromAngle(random);
-    }
-
-    private float direction(Vector3 from, Vector3 to)
-    {
-        float dir = Vector3.Angle(to - from, Vector3.right);
-        if (to.y < from.y) dir *= -1;
-        return dir;
-    }
-
-    private Vector3 vectorFromAngle(float angle)
-    {
-        return new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad), 0);
-    }
-
-    private void randomWalk()
-    {
-        // Debug.Log("Time : " + Time.time + " start : " + nextStartTime + " stop : " + nextStopTime);
-        animator.SetBool("moving", false);
-        if (Time.time > nextStartTime && Time.time < nextStopTime)
-        {
-            if (nextStep != Vector3.zero)
-            {
-                MoveCharacter(speed);
-            }
-        }
-
-
-        if (Time.time > nextStopTime)
-        {
-
-            nextStep = RandomVector();
-            nextStartTime = Time.time + period;
-            nextStopTime = Time.time + 2 * period;
-        }
-    }
 }
