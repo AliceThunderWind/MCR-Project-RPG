@@ -14,14 +14,15 @@ public enum WarriorState
 public class Warrior : Enemy
 {
     [SerializeField] private float chaseSpeed;
+    [SerializeField] private bool confuse;
 
     private WarriorState currentState;
 
 
 
     private bool launchedAttack = false;
-    private float distanceToPlayer;
-    private float directionToPlayer;
+    private float distanceToTarget;
+    private float directionToTarget;
 
 
     // for random walk in 5 second periode with 5s pause
@@ -53,18 +54,33 @@ public class Warrior : Enemy
         //Debug.Log(Time.time + " | act time : " + nextActionTime + " stop time : " + nextStopTime);
         if (isHit || characterState == CharacterState.Dead) return;
 
-        distanceToPlayer = Vector3.Distance(playerPosition, transform.position);
-        directionToPlayer = direction(transform.position, playerPosition);
 
-        if (distanceToPlayer < fightDistance)
+        if(confuse)
+        {
+            AskClosestEnemyCommand cmd = new AskClosestEnemyCommand();
+            cmd.source = this;
+            mediator.Publish(cmd);
+            if (closestEnemy == null) return;
+            distanceToTarget = Vector3.Distance(closestEnemy.transform.position, transform.position);
+            directionToTarget = direction(transform.position, closestEnemy.transform.position);
+
+        }
+        else
+        {
+            distanceToTarget = Vector3.Distance(playerPosition, transform.position);
+            directionToTarget = direction(transform.position, playerPosition);
+        }
+
+
+        if (distanceToTarget < fightDistance)
         {
             currentState = WarriorState.SpearAttack;
             if (!launchedAttack) StartCoroutine(AttackCo());
         }
-        else if (distanceToPlayer < visibility)
+        else if (distanceToTarget < visibility)
         {
             currentState = WarriorState.Chase;
-            nextStep = vectorFromAngle(directionToPlayer);
+            nextStep = vectorFromAngle(directionToTarget);
             MoveCharacter(chaseSpeed);
         }
         else

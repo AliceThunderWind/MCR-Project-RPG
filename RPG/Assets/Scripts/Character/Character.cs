@@ -25,6 +25,8 @@ namespace Assets.Scripts.Characters
         protected Animator animator;
         protected Vector3 nextStep;
 
+        public Character closestEnemy;
+
         protected CharacterState characterState;
 
         protected bool isHit = false; // prevent multiple hits triggered by a single hit -> multiple collider objects
@@ -68,6 +70,9 @@ namespace Assets.Scripts.Characters
             animator.SetBool("attacking", false);
             animator.SetBool("moving", false);
             animator.SetTrigger("die");
+            UnregisterEnemyCommand cmd = new UnregisterEnemyCommand();
+            cmd.who = this;
+            mediator.Publish(cmd);
             yield return new WaitForSeconds(2f);
             gameObject.SetActive(false);
         }

@@ -20,8 +20,11 @@ public class Player : Character, ICharacter
         animator.SetFloat("moveY", -1);
         animator.SetBool("moving", false);
         health = 100f;
-        
-      
+
+        PlayerChangePositionCommand cmd = new PlayerChangePositionCommand();
+        cmd.Position = transform.position;
+        mediator.Publish(cmd);
+
         StartCoroutine(DisplayHp());
     }
 

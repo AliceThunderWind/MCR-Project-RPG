@@ -20,6 +20,9 @@ abstract public class Enemy : Character, ICharacter
     {
         mediator.Subscribe<PlayerChangePositionCommand>(OnPlayerChangePosition);
         initialPosition = transform.position;
+        RegisterEnemyCommand cmd = new RegisterEnemyCommand();
+        cmd.who = this;
+        mediator.Publish(cmd);
     }
 
     void Update()
