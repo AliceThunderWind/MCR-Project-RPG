@@ -67,7 +67,7 @@ namespace Assets.Scripts.Characters
             characterState = CharacterState.Dead;
             animator.SetBool("attacking", false);
             animator.SetBool("moving", false);
-            animator.SetBool("die", true);
+            animator.SetTrigger("die");
             yield return new WaitForSeconds(2f);
             gameObject.SetActive(false);
         }
