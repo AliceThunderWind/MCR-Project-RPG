@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: -77379867470968547}
   - component: {fileID: -984862201990211194}
   - component: {fileID: -2494523748755117441}
-  - component: {fileID: 7030840412343955433}
   - component: {fileID: 5782220581769241235}
+  - component: {fileID: -1252141262223446224}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -120,18 +120,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7030840412343955433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4626860075274892172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92510815ed3a5724aa7b960280b9ae97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &5782220581769241235
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -158,3 +146,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.09118376, y: 0.08427837}
   m_EdgeRadius: 0
+--- !u!114 &-1252141262223446224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4626860075274892172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec6a14750dea6654f91215c4aec110b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
