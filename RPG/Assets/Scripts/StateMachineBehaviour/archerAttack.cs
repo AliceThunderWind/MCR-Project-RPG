@@ -14,7 +14,7 @@ public class archerAttack : StateMachineBehaviour
         Vector3 playerDirection = source.getPlayerPosition() - source.transform.position;
         Vector2 temp = new Vector2(playerDirection.x, playerDirection.y);
 
-        GameObject arrow = Instantiate(arrowPrefab, source.transform.position + playerDirection.normalized, Quaternion.identity);
+        GameObject arrow = Instantiate(arrowPrefab, source.transform.position + playerDirection.normalized * 2, Quaternion.identity);
 
         float rotation = Mathf.Atan2(playerDirection.y, playerDirection.x) * Mathf.Rad2Deg;
         playerDirection = playerDirection.normalized;
