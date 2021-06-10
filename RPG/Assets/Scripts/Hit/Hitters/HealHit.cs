@@ -25,7 +25,7 @@ public class HealHit : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        ICharacter who = collision.GetComponent<ICharacter>();
+        Player who = collision.GetComponent<Player>();
         if(who != null)
         {
             HpIncreaseCommand cmd = new HpIncreaseCommand();
