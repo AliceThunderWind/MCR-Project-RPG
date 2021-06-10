@@ -11,12 +11,15 @@ abstract public class Enemy : Character, ICharacter
     protected float nextStartTime = 5.0f;
     protected float nextStopTime;
     [SerializeField] protected float period = 5f;
+    [SerializeField] protected bool isSentry;
     protected Vector3 playerPosition;
+    protected Vector3 initialPosition;
 
 
     protected virtual void Start()
     {
         mediator.Subscribe<PlayerChangePositionCommand>(OnPlayerChangePosition);
+        initialPosition = transform.position;
     }
 
     void Update()

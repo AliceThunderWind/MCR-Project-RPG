@@ -28,7 +28,11 @@ namespace Assets.Scripts.Hit
 
         private void OnHitCharacter(HitCharacterCommand cmd)
         {
-            cmd.What.GetComponent<ICharacter>().damage(cmd.Damage);
+            ICharacter character = cmd.What.GetComponent<ICharacter>();
+            if(character != null)
+            {
+                character.damage(cmd.Damage);
+            }
         }
 
 

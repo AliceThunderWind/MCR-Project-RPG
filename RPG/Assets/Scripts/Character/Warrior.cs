@@ -8,7 +8,8 @@ public enum WarriorState
 {
     WalkRandom,
     Chase,
-    SpearAttack
+    SpearAttack,
+    backToPos
 }
 public class Warrior : Enemy
 {
@@ -68,8 +69,18 @@ public class Warrior : Enemy
         }
         else
         {
-            currentState = WarriorState.WalkRandom;
-            randomWalk();
+            if(isSentry)
+            {
+                currentState = WarriorState.backToPos;
+                float directionToInitalPos = direction(transform.position, initialPosition);
+                nextStep = vectorFromAngle(directionToInitalPos);
+                MoveCharacter(speed);
+            }
+            else
+            {
+                currentState = WarriorState.WalkRandom;
+                randomWalk();
+            }
         }
 
 

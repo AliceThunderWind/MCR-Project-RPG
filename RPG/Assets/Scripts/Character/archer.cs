@@ -6,7 +6,8 @@ public enum ArcherState
 {
     WalkRandom,
     Chase,
-    BowAttack
+    BowAttack,
+    backToPos
 }
 
 public class archer : Enemy
@@ -64,8 +65,25 @@ public class archer : Enemy
         }
         else
         {
-            currentState = ArcherState.WalkRandom;
-            randomWalk();
+            if (isSentry)
+            {
+                Vector3 currentPosition = transform.position;
+                float distance = Vector3.Distance(currentPosition, initialPosition);
+                if(distance <= 0.5f)
+                {
+                    animator.SetBool("moving", false);
+                    return;
+                }
+                currentState = ArcherState.backToPos;
+                float directionToInitalPos = direction(transform.position, initialPosition);
+                nextStep = vectorFromAngle(directionToInitalPos);
+                MoveCharacter(speed);
+            }
+            else
+            {
+                currentState = ArcherState.WalkRandom;
+                randomWalk();
+            }
         }
 
     }
