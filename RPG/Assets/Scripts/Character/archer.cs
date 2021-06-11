@@ -42,8 +42,10 @@ public class archer : Enemy
     // Update is called once per frame
     void Update()
     {
-        if (isHit || characterState == CharacterState.Dead) return;
+        if (IsHit || CharacterState == CharacterState.Dead) return;
 
+       
+        /*
         distanceToPlayer = Vector3.Distance(playerPosition, transform.position);
         directionToPlayer = direction(transform.position, playerPosition);
 
@@ -65,7 +67,7 @@ public class archer : Enemy
         }
         else
         {
-            if (isSentry)
+            if (IsSentry)
             {
                 Vector3 currentPosition = transform.position;
                 float distance = Vector3.Distance(currentPosition, initialPosition);
@@ -85,7 +87,7 @@ public class archer : Enemy
                 randomWalk();
             }
         }
-
+        */
     }
 
     private void testAttack()

@@ -1,5 +1,4 @@
-using Assets.Scripts.Characters;
-using Assets.Scripts.Hit;
+using Assets.Scripts.Mediator;
 using System;
 using System.Collections;
 using UnityEngine;
@@ -8,25 +7,23 @@ public enum WarriorState
 {
     WalkRandom,
     Chase,
-    SpearAttack,
-    backToPos
+    MeleeAttack,
+    BackToPos,
+    NoAction
 }
 public class Warrior : Enemy
 {
+    
     [SerializeField] private float chaseSpeed;
-    [SerializeField] private bool confuse;
+    
+    [SerializeField] private Mediator mediator;
 
     private WarriorState currentState;
 
-
-
-    private bool launchedAttack = false;
-    private float distanceToTarget;
     private float directionToTarget;
-
-
+    private bool launchedAttack = false;
+    
     // for random walk in 5 second periode with 5s pause
-
 
     private static readonly System.Random getrandom = new System.Random(DateTime.Now.Millisecond);
 
@@ -45,60 +42,37 @@ public class Warrior : Enemy
         animator.SetBool("moving", false);
 
         nextStep = RandomVector();
-        mediator.Subscribe<PlayerChangePositionCommand>(OnPlayerChangePosition);
+        //command.Subscribe<PlayerChangePositionCommand>(OnPlayerChangePosition);
+        
+    }
+
+    public void setState(WarriorState state, float directionToTarget)
+    {
+        this.currentState = state;
+        this.directionToTarget = directionToTarget;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(Time.time + " | act time : " + nextActionTime + " stop time : " + nextStopTime);
-        if (isHit || characterState == CharacterState.Dead) return;
-
-
-        if(confuse)
+        mediator.WarriorBehaviour(this);
+        switch (currentState)
         {
-            AskClosestEnemyCommand cmd = new AskClosestEnemyCommand();
-            cmd.source = this;
-            mediator.Publish(cmd);
-            if (closestEnemy == null) return;
-            distanceToTarget = Vector3.Distance(closestEnemy.transform.position, transform.position);
-            directionToTarget = direction(transform.position, closestEnemy.transform.position);
-
-        }
-        else
-        {
-            distanceToTarget = Vector3.Distance(playerPosition, transform.position);
-            directionToTarget = direction(transform.position, playerPosition);
-        }
-
-
-        if (distanceToTarget < fightDistance)
-        {
-            currentState = WarriorState.SpearAttack;
-            if (!launchedAttack) StartCoroutine(AttackCo());
-        }
-        else if (distanceToTarget < visibility)
-        {
-            currentState = WarriorState.Chase;
-            nextStep = vectorFromAngle(directionToTarget);
-            MoveCharacter(chaseSpeed);
-        }
-        else
-        {
-            if(isSentry)
-            {
-                currentState = WarriorState.backToPos;
-                float directionToInitalPos = direction(transform.position, initialPosition);
-                nextStep = vectorFromAngle(directionToInitalPos);
+            case WarriorState.Chase:
+                nextStep = vectorFromAngle(directionToTarget);
+                MoveCharacter(chaseSpeed);
+                break;
+            case WarriorState.BackToPos:
+                nextStep = vectorFromAngle(directionToTarget);
                 MoveCharacter(speed);
-            }
-            else
-            {
-                currentState = WarriorState.WalkRandom;
+                break;
+            case WarriorState.MeleeAttack:
+                if (!launchedAttack) StartCoroutine(AttackCo());
+                break;
+            case WarriorState.WalkRandom:
                 randomWalk();
-            }
+                break;
         }
-
 
     }
 
@@ -107,7 +81,7 @@ public class Warrior : Enemy
     {
         launchedAttack = true;
         animator.SetBool("moving", false);
-        while (currentState == WarriorState.SpearAttack)
+        while (currentState == WarriorState.MeleeAttack)
         {
             yield return base.AttackCo();
         }

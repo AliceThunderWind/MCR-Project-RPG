@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class GUIHPHandler : MonoBehaviour
 {
-    private Mediator mediator = Mediator.Instance;
+    private CommandDispatcher mediator = CommandDispatcher.Instance;
 
     private float health;
 

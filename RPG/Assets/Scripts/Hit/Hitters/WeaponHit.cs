@@ -3,7 +3,7 @@ using UnityEngine;
 public class WeaponHit : MonoBehaviour
 {
     [SerializeField] private float damage;
-    private Mediator mediator = Mediator.Instance;
+    private CommandDispatcher mediator = CommandDispatcher.Instance;
 
     // Start is called before the first frame update
     void Start()

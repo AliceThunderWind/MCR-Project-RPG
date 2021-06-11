@@ -7,7 +7,7 @@ public class HealHit : MonoBehaviour
 {
 
     [SerializeField] private float healAmount;
-    private Mediator mediator = Mediator.Instance;
+    private CommandDispatcher mediator = CommandDispatcher.Instance;
     // Start is called before the first frame update
     void Start()
     {

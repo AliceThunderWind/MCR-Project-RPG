@@ -6,23 +6,25 @@ using UnityEngine;
 
 abstract public class Enemy : Character, ICharacter
 {
-    [SerializeField] protected float visibility;
-    [SerializeField] protected float fightDistance;
+    [SerializeField] protected float Visibility;
+    [SerializeField] protected float FightDistance;
+
     protected float nextStartTime = 5.0f;
     protected float nextStopTime;
     [SerializeField] protected float period = 5f;
-    [SerializeField] protected bool isSentry;
+    [SerializeField] public bool IsSentry { get; }
+    [SerializeField] public bool Confuse { get; }
     protected Vector3 playerPosition;
-    protected Vector3 initialPosition;
+    public Vector3 InitialPosition { get; internal set; }
 
 
     protected virtual void Start()
     {
-        mediator.Subscribe<PlayerChangePositionCommand>(OnPlayerChangePosition);
-        initialPosition = transform.position;
+        command.Subscribe<PlayerChangePositionCommand>(OnPlayerChangePosition);
+        InitialPosition = transform.position;
         RegisterEnemyCommand cmd = new RegisterEnemyCommand();
         cmd.who = this;
-        mediator.Publish(cmd);
+        command.Publish(cmd);
     }
 
     void Update()
@@ -63,12 +65,7 @@ abstract public class Enemy : Character, ICharacter
         return vectorFromAngle(random);
     }
 
-    protected float direction(Vector3 from, Vector3 to)
-    {
-        float dir = Vector3.Angle(to - from, Vector3.right);
-        if (to.y < from.y) dir *= -1;
-        return dir;
-    }
+    
 
     protected Vector3 vectorFromAngle(float angle)
     {
@@ -86,5 +83,28 @@ abstract public class Enemy : Character, ICharacter
 
 
     // Update is called once per frame
+
+    public float GetVisibility
+    {
+        get
+        {
+            return Visibility;
+        }
+        set
+        {
+            Visibility = value;
+        }
+    }
+    public float GetFightDistance
+    {
+        get
+        {
+            return FightDistance;
+        }
+        set
+        {
+            FightDistance = value;
+        }
+    }
 
 }

@@ -15,7 +15,7 @@ public class Player : Character, ICharacter
     {
         animator = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
-        characterState = CharacterState.Idle;
+        CharacterState = CharacterState.Idle;
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
         animator.SetBool("moving", false);
@@ -23,7 +23,7 @@ public class Player : Character, ICharacter
 
         PlayerChangePositionCommand cmd = new PlayerChangePositionCommand();
         cmd.Position = transform.position;
-        mediator.Publish(cmd);
+        command.Publish(cmd);
 
         StartCoroutine(DisplayHp());
     }
@@ -33,7 +33,7 @@ public class Player : Character, ICharacter
         yield return new WaitForSeconds(.1f);
         HpDisplayCommand cmd = new HpDisplayCommand();
         cmd.Hp = this.health;
-        mediator.Publish(cmd);
+        command.Publish(cmd);
     }
 
 
@@ -46,7 +46,7 @@ public class Player : Character, ICharacter
         nextStep.x = Input.GetAxisRaw("Horizontal");
         nextStep.y = Input.GetAxisRaw("Vertical");
         
-        if (Input.GetButtonDown("SwordAttack") && characterState != CharacterState.Attack)
+        if (Input.GetButtonDown("SwordAttack") && CharacterState != CharacterState.Attack)
         {
             StartCoroutine(AttackCo());
         }
@@ -62,7 +62,7 @@ public class Player : Character, ICharacter
         base.damage(damage);
         HpDisplayCommand cmd = new HpDisplayCommand();
         cmd.Hp = health;
-        mediator.Publish(cmd);
+        command.Publish(cmd);
     }
 
     public override void heal(float damage)
@@ -85,7 +85,7 @@ public class Player : Character, ICharacter
 
             PlayerChangePositionCommand cmd = new PlayerChangePositionCommand();
             cmd.Position = newPosition;
-            mediator.Publish(cmd);
+            command.Publish(cmd);
         }
         return newPosition;
     }

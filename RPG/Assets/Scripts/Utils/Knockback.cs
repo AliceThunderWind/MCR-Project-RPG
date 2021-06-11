@@ -6,7 +6,7 @@ using UnityEngine;
 public class Knockback : MonoBehaviour
 {
     [SerializeField] private float thrust;
-    private Mediator mediator = Mediator.Instance;
+    private CommandDispatcher mediator = CommandDispatcher.Instance;
 
     // Start is called before the first frame update
     void Start()

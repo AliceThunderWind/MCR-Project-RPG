@@ -1,62 +1,77 @@
+﻿using System;
 using System.Collections.Generic;
-using Assets.Scripts.Command;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using UnityEngine;
 
-public delegate void MediatorCallback<T>(T c) where T : ICommand;
-
-public sealed class Mediator
+namespace Assets.Scripts.Mediator
 {
+    class Mediator : MonoBehaviour
+    {
+        protected CommandDispatcher command = CommandDispatcher.Instance;
 
-    private static Mediator instance;
+        [SerializeField] private Player player;
 
-    public static Mediator Instance { get {
-            if (instance == null) {
-                instance = new Mediator();
+        public void WarriorBehaviour(Warrior enemy)
+        {
+            if (enemy.IsHit || enemy.CharacterState == CharacterState.Dead)
+            {
+                enemy.setState(WarriorState.NoAction, 0);
+                return;
             }
-            return instance;
-        } 
-    }
 
-    private Dictionary<System.Type, System.Delegate> subscribers = new Dictionary<System.Type, System.Delegate>();
-
-    public void Subscribe<T>(MediatorCallback<T> callback) where T : ICommand
-    {
-        if (callback == null) throw new System.ArgumentNullException("Mediator->Subscribe : Callback");
-        var commandType = typeof(T);
-        if (subscribers.ContainsKey(commandType))
-        {
-            subscribers[commandType] = System.Delegate.Combine(subscribers[commandType], callback);
-        }
-        else
-        {
-            subscribers.Add(commandType, callback);
-        }
-    }
-
-    public void DeleteSubscriber<T>(MediatorCallback<T> callback) where T : ICommand
-    {
-        if (callback == null) throw new System.ArgumentNullException("Mediator->DeleteSubscriber : Callback");
-        var commandType = typeof(T);
-        if (subscribers.ContainsKey(commandType))
-        {
-            var sub = subscribers[commandType];
-            sub = System.Delegate.Remove(sub, callback);
-            if (sub == null) { 
-                subscribers.Remove(commandType);
+            float distanceToTarget, directionToTarget;
+            WarriorState nextState;
+            if (enemy.Confuse)
+            {
+                AskClosestEnemyCommand cmd = new AskClosestEnemyCommand();
+                cmd.source = enemy;
+                command.Publish(cmd);
+                if (enemy.ClosestEnemy == null) return;
+                distanceToTarget = Vector3.Distance(enemy.ClosestEnemy.Position, enemy.Position);
+                directionToTarget = direction(enemy.Position, enemy.ClosestEnemy.Position);
             }
             else
             {
-                subscribers[commandType] = sub;
+                distanceToTarget = Vector3.Distance(player.Position, enemy.Position);
+                directionToTarget = direction(enemy.Position, player.Position);
             }
+            nextState = DecideWarriorState(enemy, distanceToTarget);
+            if (nextState == WarriorState.BackToPos) {
+                directionToTarget = direction(enemy.Position, enemy.InitialPosition);
+            }
+            enemy.setState(nextState, directionToTarget);
+            
         }
-    }
 
-    public void Publish<T>(T command) where T : ICommand
-    {
-        var commandType = typeof(T);
-        if (subscribers.ContainsKey(commandType))
+        private WarriorState DecideWarriorState(Warrior enemy, float distanceToTarget)
         {
-            subscribers[commandType].DynamicInvoke(command);
+            if (distanceToTarget < enemy.GetFightDistance)
+            {
+                return WarriorState.MeleeAttack;
+            }
+            else if (distanceToTarget < enemy.GetVisibility)
+            {
+                return WarriorState.Chase;
+            }
+            else
+            {
+                if (enemy.IsSentry)
+                {
+                    return WarriorState.BackToPos;
+                }
+            }
+            return WarriorState.WalkRandom;
+        }
+
+
+
+        private float direction(Vector3 from, Vector3 to)
+        {
+            float dir = Vector3.Angle(to - from, Vector3.right);
+            if (to.y < from.y) dir *= -1;
+            return dir;
         }
     }
-
 }

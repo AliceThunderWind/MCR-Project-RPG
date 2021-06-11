@@ -5,10 +5,10 @@ using UnityEngine;
 
 namespace Assets.Scripts.Hit
 {
-    class CommandMediator : MonoBehaviour
+    class HitHandler : MonoBehaviour
     {
 
-        private global::Mediator mediator = global::Mediator.Instance;
+        private global::CommandDispatcher mediator = global::CommandDispatcher.Instance;
 
         private List<Character> enemies = new List<Character>();
 
@@ -81,7 +81,7 @@ namespace Assets.Scripts.Hit
                     }
                 }
             }
-            cmd.source.closestEnemy = closestEnemy;
+            cmd.source.ClosestEnemy = closestEnemy;
         }
 
     }

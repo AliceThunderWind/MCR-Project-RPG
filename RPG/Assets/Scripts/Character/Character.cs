@@ -15,7 +15,15 @@ namespace Assets.Scripts.Characters
 {
     abstract public class Character : MonoBehaviour, ICharacter
     {
-        protected Mediator mediator = Mediator.Instance;
+        protected CommandDispatcher command = CommandDispatcher.Instance;
+
+        public Vector3 Position {
+            get {
+                return transform.position; 
+            } 
+        }
+
+        public bool IsHit { get; set; } = false; // prevent multiple hits triggered by a single hit -> multiple collider objects
 
         [SerializeField] protected float speed;
         [SerializeField] protected float health;
@@ -25,17 +33,17 @@ namespace Assets.Scripts.Characters
         protected Animator animator;
         protected Vector3 nextStep;
 
-        public Character closestEnemy;
+        public Character ClosestEnemy { get; set; }
 
-        protected CharacterState characterState;
+        public CharacterState CharacterState { get; internal set; }
 
-        protected bool isHit = false; // prevent multiple hits triggered by a single hit -> multiple collider objects
+        
 
         virtual public void damage(float damage)
         {
-            if (!isHit)
+            if (!IsHit)
             {
-                isHit = true;
+                IsHit = true;
                 health -= damage;
                 if (health <= 0)
                 {
@@ -61,43 +69,43 @@ namespace Assets.Scripts.Characters
         {
             // prevent multiple hits triggered by a single hit -> multiple collider objects
             yield return new WaitForSeconds(0.1f);
-            isHit = false;
+            IsHit = false;
         }
 
         IEnumerator DieCo()
         {
-            characterState = CharacterState.Dead;
+            CharacterState = CharacterState.Dead;
             animator.SetBool("attacking", false);
             animator.SetBool("moving", false);
             animator.SetTrigger("die");
             UnregisterEnemyCommand cmd = new UnregisterEnemyCommand();
             cmd.who = this;
-            mediator.Publish(cmd);
+            command.Publish(cmd);
             yield return new WaitForSeconds(2f);
             gameObject.SetActive(false);
         }
 
         virtual protected IEnumerator AttackCo()
         {
-            if (characterState != CharacterState.Dead)
+            if (CharacterState != CharacterState.Dead)
             {
                 
                 animator.SetBool("attacking", true);
-                characterState = CharacterState.Attack;
+                CharacterState = CharacterState.Attack;
                 yield return new WaitForSeconds(attackDuration); // attack duration wait
                 animator.SetBool("attacking", false);
                 yield return new WaitForSeconds(hitCoolDown);    // attack cool down wait
 
                 // the character could have be killed during his attack cooldown (very likely)
                 // we must not change his state to walk if he is dead, thus the codition must be rechecked
-                if (characterState != CharacterState.Dead) characterState = CharacterState.Walk;
+                if (CharacterState != CharacterState.Dead) CharacterState = CharacterState.Walk;
             }
         }
 
         virtual protected Vector3 MoveCharacter(float speed)
         {
             Vector3 newPosition = transform.position;
-            if(characterState != CharacterState.Dead) { 
+            if(CharacterState != CharacterState.Dead) { 
                 nextStep.Normalize();
                 animator.SetFloat("moveX", nextStep.x);
                 animator.SetFloat("moveY", nextStep.y);

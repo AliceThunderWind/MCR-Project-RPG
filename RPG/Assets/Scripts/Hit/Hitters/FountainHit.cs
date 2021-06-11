@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class FountainHit : MonoBehaviour
 {
-    private Mediator mediator = Mediator.Instance;
+    private CommandDispatcher mediator = CommandDispatcher.Instance;
     private List<MutableTuple<Collider2D, int>> playersInRange = new List<MutableTuple<Collider2D, int>>();
 
     // Start is called before the first frame update
