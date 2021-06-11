@@ -1,13 +1,12 @@
 using Assets.Scripts.Characters;
 using Assets.Scripts.Hit;
-using System;
-using System.Collections;
 using UnityEngine;
 
 abstract public class Enemy : Character, ICharacter
 {
     [SerializeField] protected float Visibility;
     [SerializeField] protected float FightDistance;
+   
 
     protected float nextStartTime = 5.0f;
     protected float nextStopTime;
@@ -17,6 +16,14 @@ abstract public class Enemy : Character, ICharacter
     protected Vector3 playerPosition;
     public Vector3 InitialPosition { get; internal set; }
 
+    public float GetVisibility
+    {
+        get { return Visibility; }
+    }
+    public float GetFightDistance
+    {
+        get { return FightDistance; }
+    }
 
     protected virtual void Start()
     {
@@ -84,27 +91,6 @@ abstract public class Enemy : Character, ICharacter
 
     // Update is called once per frame
 
-    public float GetVisibility
-    {
-        get
-        {
-            return Visibility;
-        }
-        set
-        {
-            Visibility = value;
-        }
-    }
-    public float GetFightDistance
-    {
-        get
-        {
-            return FightDistance;
-        }
-        set
-        {
-            FightDistance = value;
-        }
-    }
+   
 
 }
