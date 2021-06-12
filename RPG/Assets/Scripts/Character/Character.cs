@@ -33,7 +33,6 @@ namespace Assets.Scripts.Characters
         protected Animator animator;
         protected Vector3 nextStep;
 
-        public Character ClosestEnemy { get; set; }
 
         public CharacterState CharacterState { get; internal set; }
 

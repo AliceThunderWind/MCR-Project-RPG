@@ -7,18 +7,19 @@ public enum ArcherState
     WalkRandom,
     Chase,
     BowAttack,
-    backToPos
+    BackToPos,
+    NoAction
 }
 
-public class archer : Enemy
+public class Archer : Enemy
 {
 
 
     private ArcherState currentState;
 
     private bool attackOnCooldown = false;
-    private float distanceToPlayer;
-    private float directionToPlayer;
+    private Vector2 targetPosition;
+    private float targetDirection;
 
     [SerializeField] private float attackCooldown;
 
@@ -35,68 +36,51 @@ public class archer : Enemy
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
         animator.SetBool("moving", false);
-
-        nextStep = RandomVector();
     }
 
     // Update is called once per frame
     void Update()
     {
         if (IsHit || CharacterState == CharacterState.Dead) return;
-
-       
-        /*
-        distanceToPlayer = Vector3.Distance(playerPosition, transform.position);
-        directionToPlayer = direction(transform.position, playerPosition);
-
-        if (distanceToPlayer < fightDistance)
+        mediator.ArcherBehaviour(this);
+        switch (currentState)
         {
-            currentState = ArcherState.BowAttack;
-            animator.SetBool("moving", false);
-            if (!attackOnCooldown)
-            {
-                attackOnCooldown = true;
-                testAttack();
-            }
-        }
-        else if (distanceToPlayer < visibility)
-        {
-            currentState = ArcherState.Chase;
-            nextStep = vectorFromAngle(directionToPlayer);
-            MoveCharacter(speed);
-        }
-        else
-        {
-            if (IsSentry)
-            {
-                Vector3 currentPosition = transform.position;
-                float distance = Vector3.Distance(currentPosition, initialPosition);
-                if(distance <= 0.5f)
+            case ArcherState.Chase:
+                nextStep = vectorFromAngle(targetDirection);
+                MoveCharacter(speed);
+                break;
+            case ArcherState.BackToPos:
+                nextStep = vectorFromAngle(targetDirection);
+                MoveCharacter(speed);
+                break;
+            case ArcherState.BowAttack:
+                if(!attackOnCooldown)
+                {
+                    attackOnCooldown = true;
+                    Attack();
+                }
+                else
                 {
                     animator.SetBool("moving", false);
-                    return;
                 }
-                currentState = ArcherState.backToPos;
-                float directionToInitalPos = direction(transform.position, initialPosition);
-                nextStep = vectorFromAngle(directionToInitalPos);
-                MoveCharacter(speed);
-            }
-            else
-            {
-                currentState = ArcherState.WalkRandom;
+                break;
+            case ArcherState.WalkRandom:
                 randomWalk();
-            }
+                break;
+            case ArcherState.NoAction:
+                animator.SetBool("moving", false);
+                break;
         }
-        */
+
     }
 
-    private void testAttack()
+    private void Attack()
     {
-        animator.SetBool("attackAvailable", true);
-        animator.SetFloat("targetX", playerPosition.x - this.transform.position.x);
-        animator.SetFloat("targetY", playerPosition.y - this.transform.position.y);
-        animator.GetBehaviour<archerAttack>().target = playerPosition;
+        animator.SetFloat("targetX", targetPosition.x - transform.position.x);
+        animator.SetFloat("targetY", targetPosition.y - transform.position.y);
+        animator.GetBehaviour<archerAttack>().target = targetPosition;
         animator.GetBehaviour<archerAttack>().source = this;
+        animator.SetTrigger("attackAvailable");
     }
 
 
@@ -116,6 +100,19 @@ public class archer : Enemy
         attackOnCooldown = false;
     }
 
+    public void setState(ArcherState state, float direction)
+    {
+        currentState = state;
+        targetDirection = direction;
+    }
+
+    public void setTargetPosition(Vector2 position)
+    {
+        targetPosition = position;
+    }
+
     //Move these in Enemy
 
 }
+
+

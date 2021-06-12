@@ -180,11 +180,13 @@ MonoBehaviour:
   health: 100
   attackDuration: 1
   hitCoolDown: 0
-  Visibility: 0
-  FightDistance: 0
+  Visibility: 5
+  FightDistance: 1.4
   period: 5
-  chaseSpeed: 0
+  IsSentry: 1
+  Confuse: 0
   mediator: {fileID: 1843983587}
+  chaseSpeed: 8
 --- !u!50 &31814732
 Rigidbody2D:
   serializedVersion: 4
@@ -307,7 +309,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31814729}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.86, y: -5.32, z: 0}
+  m_LocalPosition: {x: 2.33, y: -4.56, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 701228759}
@@ -646,7 +648,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103413793}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7, y: -5.54, z: 0}
+  m_LocalPosition: {x: 2.01, y: 9.12, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -671,8 +673,10 @@ MonoBehaviour:
   Visibility: 0
   FightDistance: 0
   period: 5
-  chaseSpeed: 0
+  IsSentry: 0
+  Confuse: 0
   mediator: {fileID: 1843983587}
+  chaseSpeed: 0
 --- !u!1 &309593115
 GameObject:
   m_ObjectHideFlags: 0
@@ -15906,11 +15910,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8232882749494131194, guid: e18be28e7d9ba8c468ec68a59bf9aac1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.035679
+      value: 7.21
       objectReference: {fileID: 0}
     - target: {fileID: 8232882749494131194, guid: e18be28e7d9ba8c468ec68a59bf9aac1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.8841879
+      value: 4.02
       objectReference: {fileID: 0}
     - target: {fileID: 8232882749494131194, guid: e18be28e7d9ba8c468ec68a59bf9aac1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21405,22 +21409,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6289896429463860056, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
-      propertyPath: mediator
-      value: 
-      objectReference: {fileID: 1843983587}
-    - target: {fileID: 6289896429463860056, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
-      propertyPath: Visibility
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6289896429463860056, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
-      propertyPath: FightDistance
-      value: 1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6289896429463860060, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5136487694961847777, guid: ea4a7e4a77fdf7b418f0a9a49edc4633, type: 3}
       propertyPath: m_Name
       value: EnemySword
@@ -21468,6 +21456,30 @@ PrefabInstance:
     - target: {fileID: 5136487694961847791, guid: ea4a7e4a77fdf7b418f0a9a49edc4633, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289896429463860056, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: mediator
+      value: 
+      objectReference: {fileID: 1843983587}
+    - target: {fileID: 6289896429463860056, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: Visibility
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289896429463860056, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: FightDistance
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289896429463860060, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289896429463860060, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289896429463860060, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.59
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}

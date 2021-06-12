@@ -21,7 +21,6 @@ namespace Assets.Scripts.Hit
             mediator.Subscribe<KnockbackCommand>(OnKnockback);
             mediator.Subscribe<RegisterEnemyCommand>(OnRegisterEnemy);
             mediator.Subscribe<UnregisterEnemyCommand>(OnUnregisterEnemy);
-            mediator.Subscribe<AskClosestEnemyCommand>(OnAskClosestEnemy);
         }
 
         void Start()
@@ -68,21 +67,6 @@ namespace Assets.Scripts.Hit
             enemies.Remove(cmd.who);
         }
 
-        private void OnAskClosestEnemy(AskClosestEnemyCommand cmd)
-        {
-            Character closestEnemy = null;
-            foreach(Character c in enemies)
-            {
-                if(c != cmd.source)
-                {
-                    if ((closestEnemy == null || Vector3.Distance(cmd.source.transform.position, c.transform.position) < Vector3.Distance(cmd.source.transform.position, closestEnemy.transform.position)) && closestEnemy != cmd.source)
-                    {
-                        closestEnemy = c;
-                    }
-                }
-            }
-            cmd.source.ClosestEnemy = closestEnemy;
-        }
 
     }
 }

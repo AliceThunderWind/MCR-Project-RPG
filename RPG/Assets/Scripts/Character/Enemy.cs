@@ -1,5 +1,6 @@
 using Assets.Scripts.Characters;
 using Assets.Scripts.Hit;
+using Assets.Scripts.Mediator;
 using UnityEngine;
 
 abstract public class Enemy : Character, ICharacter
@@ -11,9 +12,11 @@ abstract public class Enemy : Character, ICharacter
     protected float nextStartTime = 5.0f;
     protected float nextStopTime;
     [SerializeField] protected float period = 5f;
-    [SerializeField] public bool IsSentry { get; }
-    [SerializeField] public bool Confuse { get; }
+    [SerializeField] protected bool IsSentry;
+    [SerializeField] protected bool Confuse;
     protected Vector3 playerPosition;
+
+    [SerializeField] protected Mediator mediator;
     public Vector3 InitialPosition { get; internal set; }
 
     public float GetVisibility
@@ -24,6 +27,21 @@ abstract public class Enemy : Character, ICharacter
     {
         get { return FightDistance; }
     }
+    public bool GetIsSentry()
+    {
+        return IsSentry;
+    }
+
+    public bool GetConfuse()
+    {
+        return Confuse;
+    }
+
+    public void SetConfuse(bool NewConfuse)
+    {
+        Confuse = NewConfuse;
+    }
+
 
     protected virtual void Start()
     {

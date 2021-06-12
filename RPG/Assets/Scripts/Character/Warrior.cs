@@ -16,7 +16,6 @@ public class Warrior : Enemy
     
     [SerializeField] private float chaseSpeed;
     
-    [SerializeField] private Mediator mediator;
 
     private WarriorState currentState;
 
@@ -71,6 +70,9 @@ public class Warrior : Enemy
                 break;
             case WarriorState.WalkRandom:
                 randomWalk();
+                break;
+            case WarriorState.NoAction:
+                animator.SetBool("moving", false);
                 break;
         }
 
