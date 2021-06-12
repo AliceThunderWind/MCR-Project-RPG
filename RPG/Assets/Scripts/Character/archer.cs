@@ -14,11 +14,6 @@ public enum ArcherState
 public class Archer : Enemy
 {
 
-
-    private bool attackOnCooldown = false;
-
-    [SerializeField] private float attackCooldown;
-
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -38,9 +33,7 @@ public class Archer : Enemy
 
     protected override IEnumerator AttackCo()
     {
-       
-        
-       
+             
         launchedAttack = true;
         while (currentState == EnemyState.Attack)
         {
@@ -61,22 +54,6 @@ public class Archer : Enemy
        
     }
 
-
-    public void startAttackCooldown()
-    {
-        StartCoroutine(attackCooldownCo());
-    }
-
-    private IEnumerator attackCooldownCo()
-    {
-        yield return new WaitForSeconds(attackCooldown);
-        endCooldown();
-    }
-
-    private void endCooldown()
-    {
-        attackOnCooldown = false;
-    }
 
 
     //Move these in Enemy

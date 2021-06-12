@@ -21,6 +21,5 @@ public class AcherAttack : StateMachineBehaviour
         Rigidbody2D arrowBody = arrow.GetComponent<Rigidbody2D>();
         arrowBody.velocity = temp.normalized * arrowSpeed;
         arrow.transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotation));
-        source.startAttackCooldown();
     }
 }

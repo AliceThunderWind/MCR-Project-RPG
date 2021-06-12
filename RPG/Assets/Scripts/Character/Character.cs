@@ -28,7 +28,7 @@ namespace Assets.Scripts.Characters
         [SerializeField] protected float speed;
         [SerializeField] protected float health;
         [SerializeField] private float attackDuration;
-        [SerializeField] private float hitCoolDown;
+        [SerializeField] private float attackCoolDown;
         protected Rigidbody2D myRigidbody;
         protected Animator animator;
         protected Vector3 vectorToTarget;
@@ -93,7 +93,7 @@ namespace Assets.Scripts.Characters
                 CharacterState = CharacterState.Attack;
                 yield return new WaitForSeconds(attackDuration); // attack duration wait
                 animator.SetBool("attacking", false);
-                yield return new WaitForSeconds(hitCoolDown);    // attack cool down wait
+                yield return new WaitForSeconds(attackCoolDown);    // attack cool down wait
 
                 // the character could have be killed during his attack cooldown (very likely)
                 // we must not change his state to walk if he is dead, thus the codition must be rechecked

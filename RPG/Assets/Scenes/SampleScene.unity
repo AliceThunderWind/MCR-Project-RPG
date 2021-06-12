@@ -180,7 +180,7 @@ MonoBehaviour:
   speed: 5
   health: 100
   attackDuration: 1
-  hitCoolDown: 0
+  attackCoolDown: 0
   Visibility: 5
   FightDistance: 1.4
   chaseSpeed: 8
@@ -659,19 +659,19 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103413793}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d86406131626d64ebad14d636d361fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 28c47fb7c40bf8041845db1be53303a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mediator: {fileID: 1843983587}
-  speed: 10
+  speed: 5
   health: 100
-  attackDuration: 0
-  hitCoolDown: 0
-  Visibility: 0
-  FightDistance: 0
-  chaseSpeed: 0
+  attackDuration: 0.75
+  attackCoolDown: 3
+  Visibility: 15
+  FightDistance: 12
+  chaseSpeed: 7
   period: 5
 --- !u!1 &309593115
 GameObject:
@@ -15714,6 +15714,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4441063988550371019, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: thrust
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460917767528532101, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: thrust
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6289896429463860050, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
       propertyPath: m_Name
       value: EnemySpear
@@ -15729,6 +15737,10 @@ PrefabInstance:
     - target: {fileID: 6289896429463860056, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
       propertyPath: FightDistance
       value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289896429463860056, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: attackCoolDown
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6289896429463860060, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
       propertyPath: m_RootOrder
@@ -15781,6 +15793,14 @@ PrefabInstance:
     - target: {fileID: 6289896429463860060, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244773540794827425, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: thrust
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8876048531029568492, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: thrust
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
@@ -15913,8 +15933,16 @@ PrefabInstance:
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3498134219278531923, guid: e18be28e7d9ba8c468ec68a59bf9aac1, type: 3}
+      propertyPath: attackCoolDown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3498134219278531923, guid: e18be28e7d9ba8c468ec68a59bf9aac1, type: 3}
+      propertyPath: attackCooldown
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3498134219278531923, guid: e18be28e7d9ba8c468ec68a59bf9aac1, type: 3}
       propertyPath: attackDuration
-      value: 0.75
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8232882749494131194, guid: e18be28e7d9ba8c468ec68a59bf9aac1, type: 3}
       propertyPath: m_RootOrder
@@ -21421,6 +21449,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4441063988550371019, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: thrust
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460917767528532101, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: thrust
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6289896429463860056, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
       propertyPath: mediator
       value: 
@@ -21433,6 +21469,10 @@ PrefabInstance:
       propertyPath: FightDistance
       value: 1.4
       objectReference: {fileID: 0}
+    - target: {fileID: 6289896429463860056, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: attackCoolDown
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6289896429463860060, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -21444,6 +21484,14 @@ PrefabInstance:
     - target: {fileID: 6289896429463860060, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
       propertyPath: m_LocalPosition.y
       value: 9.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244773540794827425, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: thrust
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8876048531029568492, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: thrust
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5136487694961847777, guid: ea4a7e4a77fdf7b418f0a9a49edc4633, type: 3}
       propertyPath: m_Name
@@ -21655,6 +21703,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4441063988550371019, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: thrust
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460917767528532101, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: thrust
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6289896429463860050, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
       propertyPath: m_Name
       value: EnemySpear
@@ -21681,6 +21737,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6289896429463860056, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
       propertyPath: fightDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289896429463860056, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: attackCoolDown
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6289896429463860060, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
@@ -21726,6 +21786,14 @@ PrefabInstance:
     - target: {fileID: 6289896429463860060, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244773540794827425, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: thrust
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8876048531029568492, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: thrust
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
