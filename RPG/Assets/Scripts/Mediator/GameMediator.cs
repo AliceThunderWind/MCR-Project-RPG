@@ -76,8 +76,6 @@ namespace Assets.Scripts.Mediator
             return EnemyState.WalkRandom;
         }
 
-
-
         private static float Direction(Vector3 from, Vector3 to)
         {
             float dir = Vector3.Angle(to - from, Vector3.right);

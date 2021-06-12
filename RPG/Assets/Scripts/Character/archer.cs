@@ -38,12 +38,27 @@ public class Archer : Enemy
 
     protected override IEnumerator AttackCo()
     {
-        animator.SetFloat("targetX", mediator.PlayerPosition.x - transform.position.x);
-        animator.SetFloat("targetY", mediator.PlayerPosition.x - transform.position.y);
-        animator.GetBehaviour<archerAttack>().target = mediator.PlayerPosition;
-        animator.GetBehaviour<archerAttack>().source = this;
-        animator.SetTrigger("attackAvailable");
-        return base.AttackCo();
+       
+        
+       
+        launchedAttack = true;
+        while (currentState == EnemyState.Attack)
+        {
+            Vector3 target = mediator.PlayerPosition - transform.position;
+            target.Normalize();
+            animator.SetBool("moving", false);
+            animator.SetFloat("targetX", target.x);
+            animator.SetFloat("targetY", target.y);
+            animator.GetBehaviour<archerAttack>().target = mediator.PlayerPosition;
+            animator.GetBehaviour<archerAttack>().source = this;
+            animator.SetTrigger("attackAvailable");
+            animator.SetFloat("moveX", target.x);
+            animator.SetFloat("moveY", target.y);
+            yield return base.AttackCo();
+            animator.SetBool("moving", true);
+        }
+        launchedAttack = false;
+       
     }
 
 
