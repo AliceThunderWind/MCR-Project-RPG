@@ -1,9 +1,4 @@
 ﻿using Assets.Scripts.Characters;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Assets.Scripts.Mediator
@@ -13,8 +8,16 @@ namespace Assets.Scripts.Mediator
         protected CommandDispatcher command = CommandDispatcher.Instance;
 
         [SerializeField] private Player player;
+        [SerializeField] private GUIHPHandler GUIhp;
+
 
         public Vector3 PlayerPosition { get { return player.Position; } }
+
+
+        public void PlayerChangeHp(float newHp)
+        {
+            GUIhp.setHp(newHp);
+        }
 
         public void EnemyBehaviour(Enemy enemy)
         {

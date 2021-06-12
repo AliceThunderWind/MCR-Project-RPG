@@ -21827,6 +21827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1106865350}
+  GUIhp: {fileID: 1281920973}
 --- !u!4 &1843983588
 Transform:
   m_ObjectHideFlags: 0
@@ -26763,6 +26764,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2838456934683357233, guid: 465707b15d6fd8d4c85a65c63f96b4a9, type: 3}
+      propertyPath: mediator
+      value: 
+      objectReference: {fileID: 1843983587}
     - target: {fileID: 2838456934683357233, guid: 465707b15d6fd8d4c85a65c63f96b4a9, type: 3}
       propertyPath: m_Enabled
       value: 1

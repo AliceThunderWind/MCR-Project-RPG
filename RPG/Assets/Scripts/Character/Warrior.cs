@@ -14,11 +14,6 @@ public enum WarriorState
 public class Warrior : Enemy
 {
 
-
-    // for random walk in 5 second periode with 5s pause
-
-    private static readonly System.Random getrandom = new System.Random(DateTime.Now.Millisecond);
-
     // Start is called before the first frame update
     protected override void Start()
     {

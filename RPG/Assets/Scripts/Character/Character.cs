@@ -36,9 +36,11 @@ namespace Assets.Scripts.Characters
         public Character ClosestEnemy { get; set; }
 
         public CharacterState CharacterState { get; internal set; }
+
+        public float HP { get { return health; } }
         
 
-        virtual public void damage(float damage)
+        virtual public float damage(float damage)
         {
             if (!IsHit)
             {
@@ -54,14 +56,16 @@ namespace Assets.Scripts.Characters
                     StartCoroutine(HitCooldownCo());
                 }
             }
+            return health;
         }
 
 
-        virtual public void heal(float hp)
+        virtual public float heal(float hp)
         {
             this.health += hp;
             if (this.health > 100) this.health = 100;
-           
+            return health;
+
         }
 
         private IEnumerator HitCooldownCo()

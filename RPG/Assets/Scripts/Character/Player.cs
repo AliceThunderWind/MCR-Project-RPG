@@ -7,9 +7,6 @@ public class Player : Character, ICharacter
 {
 
 
-    private float positionUpdateInterval = 0.3f; // delay update in seconds
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -21,21 +18,14 @@ public class Player : Character, ICharacter
         animator.SetBool("moving", false);
         health = 100f;
 
-        PlayerChangePositionCommand cmd = new PlayerChangePositionCommand();
-        cmd.Position = transform.position;
-        command.Publish(cmd);
-
         StartCoroutine(DisplayHp());
     }
 
     private IEnumerator DisplayHp()
     {
         yield return new WaitForSeconds(.1f);
-        HpDisplayCommand cmd = new HpDisplayCommand();
-        cmd.Hp = this.health;
-        command.Publish(cmd);
+        mediator.PlayerChangeHp(health);
     }
-
 
 
     // Update is called once per frame
@@ -58,37 +48,21 @@ public class Player : Character, ICharacter
 
     }
 
-    public override void damage(float damage)
+    public override float damage(float damage)
     {
-        base.damage(damage);
-        HpDisplayCommand cmd = new HpDisplayCommand();
-        cmd.Hp = health;
-        command.Publish(cmd);
+        float hp = base.damage(damage);
+        StartCoroutine(DisplayHp());
+        return hp;
     }
 
-    public override void heal(float damage)
+    public override float heal(float damage)
     {
-        base.heal(damage);
+        float hp = base.heal(damage);
         StartCoroutine(DisplayHp());
+        return hp;
     }
 
     // static int count = 0;
 
-    protected override Vector3 MoveCharacter(float speed)
-    {
-        Vector3 newPosition = base.MoveCharacter(speed);
-
-        // Pubish new Position (every 300ms) while moving
-        if (Time.time >= positionUpdateInterval)
-        {
-            // Debug.Log("Move Publish : " + ++count + " TIME : " + Time.time);
-            positionUpdateInterval = Time.time + 0.3f;
-
-            PlayerChangePositionCommand cmd = new PlayerChangePositionCommand();
-            cmd.Position = newPosition;
-            command.Publish(cmd);
-        }
-        return newPosition;
-    }
 
 }

@@ -17,12 +17,9 @@ public class GUIHPHandler : MonoBehaviour
     [SerializeField] private Sprite femptyHeart;
 
 
-
-
     // Start is called before the first frame update
     void Start()
     {
-        mediator.Subscribe<HpDisplayCommand>(OnHpDisplay);
         InitHealth();
     }
 
@@ -46,9 +43,9 @@ public class GUIHPHandler : MonoBehaviour
         }
     }
 
-    void OnHpDisplay(HpDisplayCommand command)
+    public void setHp(float hp)
     {
-        this.health = command.Hp;
+        this.health = hp;
         displayHealth();
     }
 
