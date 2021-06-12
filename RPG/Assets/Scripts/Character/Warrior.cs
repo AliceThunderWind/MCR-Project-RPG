@@ -13,15 +13,8 @@ public enum WarriorState
 }
 public class Warrior : Enemy
 {
-    
-    [SerializeField] private float chaseSpeed;
-    
 
-    private WarriorState currentState;
 
-    private float directionToTarget;
-    private bool launchedAttack = false;
-    
     // for random walk in 5 second periode with 5s pause
 
     private static readonly System.Random getrandom = new System.Random(DateTime.Now.Millisecond);
@@ -32,7 +25,7 @@ public class Warrior : Enemy
         base.Start();
         animator = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
-        currentState = WarriorState.WalkRandom;
+        currentState = EnemyState.WalkRandom;
 
         nextStopTime = nextStartTime + period;
 
@@ -40,42 +33,7 @@ public class Warrior : Enemy
         animator.SetFloat("moveY", -1);
         animator.SetBool("moving", false);
 
-        nextStep = RandomVector();
-        //command.Subscribe<PlayerChangePositionCommand>(OnPlayerChangePosition);
-        
-    }
-
-    public void setState(WarriorState state, float directionToTarget)
-    {
-        this.currentState = state;
-        this.directionToTarget = directionToTarget;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        mediator.WarriorBehaviour(this);
-        switch (currentState)
-        {
-            case WarriorState.Chase:
-                nextStep = vectorFromAngle(directionToTarget);
-                MoveCharacter(chaseSpeed);
-                break;
-            case WarriorState.BackToPos:
-                nextStep = vectorFromAngle(directionToTarget);
-                MoveCharacter(speed);
-                break;
-            case WarriorState.MeleeAttack:
-                if (!launchedAttack) StartCoroutine(AttackCo());
-                break;
-            case WarriorState.WalkRandom:
-                randomWalk();
-                break;
-            case WarriorState.NoAction:
-                animator.SetBool("moving", false);
-                break;
-        }
-
+        vectorToTarget = GameMediator.RandomVector();
     }
 
 
@@ -83,7 +41,7 @@ public class Warrior : Enemy
     {
         launchedAttack = true;
         animator.SetBool("moving", false);
-        while (currentState == WarriorState.MeleeAttack)
+        while (currentState == EnemyState.Attack)
         {
             yield return base.AttackCo();
         }

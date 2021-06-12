@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class Player : Character, ICharacter
 {
-    
+
 
     private float positionUpdateInterval = 0.3f; // delay update in seconds
-   
+
 
     // Start is called before the first frame update
     void Start()
@@ -42,18 +42,19 @@ public class Player : Character, ICharacter
     void Update()
     {
         animator.SetBool("moving", false);
-        nextStep = Vector3.zero;
-        nextStep.x = Input.GetAxisRaw("Horizontal");
-        nextStep.y = Input.GetAxisRaw("Vertical");
-        
+        vectorToTarget = Vector3.zero;
+        vectorToTarget.x = Input.GetAxisRaw("Horizontal");
+        vectorToTarget.y = Input.GetAxisRaw("Vertical");
+
         if (Input.GetButtonDown("SwordAttack") && CharacterState != CharacterState.Attack)
         {
             StartCoroutine(AttackCo());
         }
-        
-        if (nextStep != Vector3.zero) { 
+
+        if (vectorToTarget != Vector3.zero)
+        {
             MoveCharacter(speed);
-        }    
+        }
 
     }
 
@@ -70,13 +71,13 @@ public class Player : Character, ICharacter
         base.heal(damage);
         StartCoroutine(DisplayHp());
     }
-    
+
     // static int count = 0;
 
     protected override Vector3 MoveCharacter(float speed)
     {
         Vector3 newPosition = base.MoveCharacter(speed);
-        
+
         // Pubish new Position (every 300ms) while moving
         if (Time.time >= positionUpdateInterval)
         {
@@ -89,5 +90,5 @@ public class Player : Character, ICharacter
         }
         return newPosition;
     }
-    
+
 }

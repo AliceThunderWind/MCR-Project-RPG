@@ -176,17 +176,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d86406131626d64ebad14d636d361fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mediator: {fileID: 1843983587}
   speed: 5
   health: 100
   attackDuration: 1
   hitCoolDown: 0
   Visibility: 5
   FightDistance: 1.4
-  period: 5
-  IsSentry: 1
-  Confuse: 0
-  mediator: {fileID: 1843983587}
   chaseSpeed: 8
+  period: 5
 --- !u!50 &31814732
 Rigidbody2D:
   serializedVersion: 4
@@ -666,17 +664,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d86406131626d64ebad14d636d361fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mediator: {fileID: 1843983587}
   speed: 10
   health: 100
   attackDuration: 0
   hitCoolDown: 0
   Visibility: 0
   FightDistance: 0
-  period: 5
-  IsSentry: 0
-  Confuse: 0
-  mediator: {fileID: 1843983587}
   chaseSpeed: 0
+  period: 5
 --- !u!1 &309593115
 GameObject:
   m_ObjectHideFlags: 0
@@ -15897,8 +15893,24 @@ PrefabInstance:
       value: EnemyArcher
       objectReference: {fileID: 0}
     - target: {fileID: 3498134219278531923, guid: e18be28e7d9ba8c468ec68a59bf9aac1, type: 3}
+      propertyPath: mediator
+      value: 
+      objectReference: {fileID: 1843983587}
+    - target: {fileID: 3498134219278531923, guid: e18be28e7d9ba8c468ec68a59bf9aac1, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3498134219278531923, guid: e18be28e7d9ba8c468ec68a59bf9aac1, type: 3}
+      propertyPath: Visibility
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3498134219278531923, guid: e18be28e7d9ba8c468ec68a59bf9aac1, type: 3}
+      propertyPath: chaseSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3498134219278531923, guid: e18be28e7d9ba8c468ec68a59bf9aac1, type: 3}
+      propertyPath: FightDistance
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3498134219278531923, guid: e18be28e7d9ba8c468ec68a59bf9aac1, type: 3}
       propertyPath: attackDuration
@@ -21409,6 +21421,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6289896429463860056, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: mediator
+      value: 
+      objectReference: {fileID: 1843983587}
+    - target: {fileID: 6289896429463860056, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: Visibility
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289896429463860056, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: FightDistance
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289896429463860060, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289896429463860060, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6289896429463860060, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.59
+      objectReference: {fileID: 0}
     - target: {fileID: 5136487694961847777, guid: ea4a7e4a77fdf7b418f0a9a49edc4633, type: 3}
       propertyPath: m_Name
       value: EnemySword
@@ -21456,30 +21492,6 @@ PrefabInstance:
     - target: {fileID: 5136487694961847791, guid: ea4a7e4a77fdf7b418f0a9a49edc4633, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6289896429463860056, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
-      propertyPath: mediator
-      value: 
-      objectReference: {fileID: 1843983587}
-    - target: {fileID: 6289896429463860056, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
-      propertyPath: Visibility
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6289896429463860056, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
-      propertyPath: FightDistance
-      value: 1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6289896429463860060, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6289896429463860060, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 12.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 6289896429463860060, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9.59
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f5cdc845b9f2ae42835a4e48b8d998d, type: 3}
@@ -21728,7 +21740,7 @@ GameObject:
   - component: {fileID: 1843983588}
   - component: {fileID: 1843983587}
   m_Layer: 0
-  m_Name: Mediator
+  m_Name: GameMediator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

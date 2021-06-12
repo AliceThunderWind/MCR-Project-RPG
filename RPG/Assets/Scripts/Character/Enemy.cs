@@ -2,22 +2,31 @@ using Assets.Scripts.Characters;
 using Assets.Scripts.Hit;
 using Assets.Scripts.Mediator;
 using UnityEngine;
-
+public enum EnemyState
+{
+    WalkRandom,
+    Chase,
+    Attack,
+    BackToPos,
+    NoAction
+}
 abstract public class Enemy : Character, ICharacter
 {
     [SerializeField] protected float Visibility;
     [SerializeField] protected float FightDistance;
-   
+    [SerializeField] private float chaseSpeed;
 
     protected float nextStartTime = 5.0f;
     protected float nextStopTime;
     [SerializeField] protected float period = 5f;
-    [SerializeField] protected bool IsSentry;
-    [SerializeField] protected bool Confuse;
-    protected Vector3 playerPosition;
+    [SerializeField] public bool IsSentry { get; }
+    [SerializeField] public bool GetConfuse { get; }
 
-    [SerializeField] protected Mediator mediator;
+    
     public Vector3 InitialPosition { get; internal set; }
+    protected EnemyState currentState;
+
+    protected bool launchedAttack = false;
 
     public float GetVisibility
     {
@@ -27,25 +36,14 @@ abstract public class Enemy : Character, ICharacter
     {
         get { return FightDistance; }
     }
-    public bool GetIsSentry()
-    {
-        return IsSentry;
-    }
 
-    public bool GetConfuse()
+    public Vector3 GetPlayerPosition
     {
-        return Confuse;
+        get { return mediator.PlayerPosition; }
     }
-
-    public void SetConfuse(bool NewConfuse)
-    {
-        Confuse = NewConfuse;
-    }
-
 
     protected virtual void Start()
     {
-        command.Subscribe<PlayerChangePositionCommand>(OnPlayerChangePosition);
         InitialPosition = transform.position;
         RegisterEnemyCommand cmd = new RegisterEnemyCommand();
         cmd.who = this;
@@ -54,7 +52,29 @@ abstract public class Enemy : Character, ICharacter
 
     void Update()
     {
-        
+        mediator.EnemyBehaviour(this);
+        switch (currentState)
+        {
+            case EnemyState.Chase:
+                MoveCharacter(chaseSpeed);
+                break;
+            case EnemyState.BackToPos:
+                MoveCharacter(speed);
+                break;
+            case EnemyState.Attack:
+                if (!launchedAttack) StartCoroutine(AttackCo());
+                break;
+            case EnemyState.WalkRandom:
+                randomWalk();
+                break;
+        }
+
+    }
+
+    public void setState(EnemyState state, Vector3 vectorToTarget)
+    {
+        this.currentState = state;
+        if (state != EnemyState.WalkRandom) this.vectorToTarget = vectorToTarget;
     }
 
     protected void randomWalk()
@@ -63,7 +83,7 @@ abstract public class Enemy : Character, ICharacter
         animator.SetBool("moving", false);
         if (Time.time > nextStartTime && Time.time < nextStopTime)
         {
-            if (nextStep != Vector3.zero)
+            if (vectorToTarget != Vector3.zero)
             {
                 MoveCharacter(speed);
             }
@@ -73,34 +93,12 @@ abstract public class Enemy : Character, ICharacter
         if (Time.time > nextStopTime)
         {
 
-            nextStep = RandomVector();
+            vectorToTarget = GameMediator.RandomVector();
             nextStartTime = Time.time + period;
             nextStopTime = Time.time + 2 * period;
         }
     }
 
-    protected void OnPlayerChangePosition(PlayerChangePositionCommand c)
-    {
-        playerPosition = c.Position;
-    }
-
-    protected Vector3 RandomVector()
-    {
-        float random = UnityEngine.Random.Range(0f, 360f);
-        return vectorFromAngle(random);
-    }
-
-    
-
-    protected Vector3 vectorFromAngle(float angle)
-    {
-        return new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad), 0);
-    }
-
-    public Vector3 getPlayerPosition()
-    {
-        return playerPosition;
-    }
     // for random walk in 5 second periode with 5s pause
 
 
@@ -109,6 +107,6 @@ abstract public class Enemy : Character, ICharacter
 
     // Update is called once per frame
 
-   
+
 
 }

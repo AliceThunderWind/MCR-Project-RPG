@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Hit;
+using Assets.Scripts.Mediator;
 using System.Collections;
 using UnityEngine;
 
@@ -10,13 +11,12 @@ public enum CharacterState
     Dead
 }
 
-
 namespace Assets.Scripts.Characters
 {
     abstract public class Character : MonoBehaviour, ICharacter
     {
         protected CommandDispatcher command = CommandDispatcher.Instance;
-
+        [SerializeField] protected GameMediator mediator;
         public Vector3 Position {
             get {
                 return transform.position; 
@@ -31,11 +31,11 @@ namespace Assets.Scripts.Characters
         [SerializeField] private float hitCoolDown;
         protected Rigidbody2D myRigidbody;
         protected Animator animator;
-        protected Vector3 nextStep;
+        protected Vector3 vectorToTarget;
 
+        public Character ClosestEnemy { get; set; }
 
         public CharacterState CharacterState { get; internal set; }
-
         
 
         virtual public void damage(float damage)
@@ -104,12 +104,12 @@ namespace Assets.Scripts.Characters
         virtual protected Vector3 MoveCharacter(float speed)
         {
             Vector3 newPosition = transform.position;
-            if(CharacterState != CharacterState.Dead) { 
-                nextStep.Normalize();
-                animator.SetFloat("moveX", nextStep.x);
-                animator.SetFloat("moveY", nextStep.y);
+            if(CharacterState != CharacterState.Dead) {
+                vectorToTarget.Normalize();
+                animator.SetFloat("moveX", vectorToTarget.x);
+                animator.SetFloat("moveY", vectorToTarget.y);
                 animator.SetBool("moving", true);
-                newPosition += nextStep * speed * Time.deltaTime;
+                newPosition += vectorToTarget * speed * Time.deltaTime;
                 if(newPosition != transform.position) animator.SetBool("moving", true);
                 myRigidbody.MovePosition(newPosition);
             }
