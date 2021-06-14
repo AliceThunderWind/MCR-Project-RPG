@@ -81,6 +81,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 80
+  mediator: {fileID: 0}
 --- !u!114 &2838456934633458993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,10 +198,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6739f285d2c912c47a95778f2027b7a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mediator: {fileID: 8126727556995594325, guid: 2904c696dd47d4a4785a5e1d79751869, type: 3}
   speed: 12
   health: 100
   attackDuration: 0.5
-  hitCoolDown: 0
+  attackCoolDown: 0
 --- !u!50 &2838456934683357232
 Rigidbody2D:
   serializedVersion: 4
@@ -362,6 +364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 80
+  mediator: {fileID: 0}
 --- !u!114 &2838456935627020027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -453,6 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 80
+  mediator: {fileID: 0}
 --- !u!114 &2838456935794948562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -546,6 +550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 80
+  mediator: {fileID: 0}
 --- !u!114 &2838456935924879525
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -40,7 +40,7 @@ namespace Assets.Scripts.Characters
         public float HP { get { return health; } }
         
 
-        virtual public float damage(float damage)
+        virtual public float Damage(float damage)
         {
             if (!IsHit)
             {
@@ -75,15 +75,12 @@ namespace Assets.Scripts.Characters
             IsHit = false;
         }
 
-        IEnumerator DieCo()
+        virtual protected IEnumerator DieCo()
         {
             CharacterState = CharacterState.Dead;
             animator.SetBool("attacking", false);
             animator.SetBool("moving", false);
             animator.SetTrigger("die");
-            UnregisterEnemyCommand cmd = new UnregisterEnemyCommand();
-            cmd.who = this;
-            command.Publish(cmd);
             yield return new WaitForSeconds(2f);
             gameObject.SetActive(false);
         }

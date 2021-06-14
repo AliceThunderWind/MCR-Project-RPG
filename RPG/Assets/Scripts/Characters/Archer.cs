@@ -1,15 +1,6 @@
 using System.Collections;
 using UnityEngine;
 
-public enum ArcherState
-{
-    WalkRandom,
-    Chase,
-    BowAttack,
-    BackToPos,
-    NoAction
-}
-
 public class Archer : Enemy
 {
 
@@ -39,10 +30,10 @@ public class Archer : Enemy
             Vector3 target = mediator.PlayerPosition - transform.position;
             target.Normalize();
             animator.SetBool("moving", false);
-            animator.SetFloat("targetX", target.x);
-            animator.SetFloat("targetY", target.y);
-            animator.GetBehaviour<archerAttack>().target = mediator.PlayerPosition;
-            animator.GetBehaviour<archerAttack>().source = this;
+            //animator.SetFloat("targetX", target.x);
+            //animator.SetFloat("targetY", target.y);
+            animator.GetBehaviour<ArcherAttack>().target = mediator.PlayerPosition;
+            animator.GetBehaviour<ArcherAttack>().source = this;
             animator.SetTrigger("attackAvailable");
             animator.SetFloat("moveX", target.x);
             animator.SetFloat("moveY", target.y);

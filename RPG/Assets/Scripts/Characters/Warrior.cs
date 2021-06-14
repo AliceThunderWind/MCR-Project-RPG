@@ -1,16 +1,7 @@
 using Assets.Scripts.Mediator;
-using System;
 using System.Collections;
 using UnityEngine;
 
-public enum WarriorState
-{
-    WalkRandom,
-    Chase,
-    MeleeAttack,
-    BackToPos,
-    NoAction
-}
 public class Warrior : Enemy
 {
 

@@ -31,7 +31,7 @@ public class Pot : MonoBehaviour, IBrakeable
         gameObject.SetActive(false);
     }
 
-    public void brake()
+    public void Brake()
     {
         Smash();
     }

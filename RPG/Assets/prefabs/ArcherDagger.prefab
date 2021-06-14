@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
+  mediator: {fileID: 0}
 --- !u!114 &2378571739560654771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,11 +232,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6739f285d2c912c47a95778f2027b7a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mediator: {fileID: 8126727556995594325, guid: 2904c696dd47d4a4785a5e1d79751869, type: 3}
   speed: 12
   health: 100
   attackDuration: 0.5
-  hitCoolDown: 0
-  closestEnemy: {fileID: 0}
+  attackCoolDown: 0
 --- !u!61 &2378571740344155934
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -359,6 +360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
+  mediator: {fileID: 0}
 --- !u!114 &2378571740873670304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -448,6 +450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
+  mediator: {fileID: 0}
 --- !u!114 &2378571740916787970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,6 +544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
+  mediator: {fileID: 0}
 --- !u!114 &2378571741245147615
 MonoBehaviour:
   m_ObjectHideFlags: 0

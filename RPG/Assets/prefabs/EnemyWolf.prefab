@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
+  mediator: {fileID: 0}
 --- !u!114 &2541594612448086822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,6 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
+  mediator: {fileID: 0}
 --- !u!114 &2541594612786156457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,6 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
+  mediator: {fileID: 0}
 --- !u!114 &2541594613061261951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,6 +322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
+  mediator: {fileID: 0}
 --- !u!114 &2541594613633335528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -548,11 +552,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d86406131626d64ebad14d636d361fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mediator: {fileID: 8126727556995594325, guid: 2904c696dd47d4a4785a5e1d79751869, type: 3}
   speed: 5
   health: 100
   attackDuration: 0.5
-  hitCoolDown: 2
-  visibility: 5
-  fightDistance: 1
-  period: 5
+  attackCoolDown: 0
+  Visibility: 0
+  FightDistance: 0
   chaseSpeed: 10
+  period: 5

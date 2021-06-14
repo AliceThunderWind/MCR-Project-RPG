@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class archerAttack : StateMachineBehaviour
+public class ArcherAttack : StateMachineBehaviour
 {
     public Vector3 target;
     public Archer source;

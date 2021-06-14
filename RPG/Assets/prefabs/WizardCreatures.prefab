@@ -537,11 +537,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6739f285d2c912c47a95778f2027b7a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mediator: {fileID: 0}
   speed: 12
   health: 100
   attackDuration: 0.5
-  hitCoolDown: 0
-  closestEnemy: {fileID: 0}
+  attackCoolDown: 0
 --- !u!95 &1009486666902389288
 Animator:
   serializedVersion: 3

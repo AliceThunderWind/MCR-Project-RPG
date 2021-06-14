@@ -2,7 +2,7 @@
 {
     interface IBrakeable
     {
-        void brake();
+        void Brake();
     }
 
   

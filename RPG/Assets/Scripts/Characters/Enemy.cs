@@ -1,6 +1,7 @@
 using Assets.Scripts.Characters;
 using Assets.Scripts.Hit;
 using Assets.Scripts.Mediator;
+using System.Collections;
 using UnityEngine;
 public enum EnemyState
 {
@@ -19,8 +20,8 @@ abstract public class Enemy : Character, ICharacter
     protected float nextStartTime = 5.0f;
     protected float nextStopTime;
     [SerializeField] protected float period = 5f;
-    [SerializeField] public bool IsSentry { get; }
-    [SerializeField] public bool GetConfuse { get; }
+    public bool IsSentry { get; }
+    [SerializeField] public bool GetConfuse;
 
     
     public Vector3 InitialPosition { get; internal set; }
@@ -45,9 +46,7 @@ abstract public class Enemy : Character, ICharacter
     protected virtual void Start()
     {
         InitialPosition = transform.position;
-        RegisterEnemyCommand cmd = new RegisterEnemyCommand();
-        cmd.who = this;
-        command.Publish(cmd);
+        mediator.registerEnemy(this);
     }
 
     void Update()
@@ -97,6 +96,12 @@ abstract public class Enemy : Character, ICharacter
             nextStartTime = Time.time + period;
             nextStopTime = Time.time + 2 * period;
         }
+    }
+
+    protected override IEnumerator DieCo()
+    {
+        mediator.unregisterEnemy(this);
+        return base.DieCo();
     }
 
     // for random walk in 5 second periode with 5s pause

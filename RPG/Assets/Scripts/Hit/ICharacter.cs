@@ -2,7 +2,7 @@
 {
     public interface ICharacter
     {
-        float damage(float damage);
+        float Damage(float damage);
         float heal(float hp);
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    public Transform target;
+    private Transform target;
     public float smoothing;
     public Vector2 maxPosition;
     public Vector2 minPosition;
@@ -27,5 +27,10 @@ public class CameraMovement : MonoBehaviour
 
             transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing);
         }
+    }
+
+    public void SetTarget(Transform target)
+    {
+        this.target = target;
     }
 }

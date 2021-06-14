@@ -48,9 +48,9 @@ public class Player : Character, ICharacter
 
     }
 
-    public override float damage(float damage)
+    public override float Damage(float damage)
     {
-        float hp = base.damage(damage);
+        float hp = base.Damage(damage);
         StartCoroutine(DisplayHp());
         return hp;
     }
