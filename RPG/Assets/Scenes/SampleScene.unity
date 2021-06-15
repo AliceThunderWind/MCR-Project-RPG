@@ -15519,8 +15519,8 @@ Tilemap:
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -25, y: -15, z: 0}
-  m_Size: {x: 48, y: 30, z: 1}
+  m_Origin: {x: -25, y: -77, z: 0}
+  m_Size: {x: 49, y: 92, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -22157,13 +22157,14 @@ MonoBehaviour:
   nextButton: {fileID: 1587021993}
   choseButton: {fileID: 1149440234}
   players:
-  - {fileID: 723552675}
   - {fileID: 193826063}
   - {fileID: 1106865350}
+  - {fileID: 723552675}
   - {fileID: 1113738399}
   - {fileID: 2071908059}
   - {fileID: 346951438}
   - {fileID: 1004997439}
+  player: {fileID: 0}
   selected: 0
 --- !u!4 &1420252159 stripped
 Transform:

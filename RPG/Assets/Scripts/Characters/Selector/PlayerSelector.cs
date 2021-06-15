@@ -19,12 +19,19 @@ namespace Assets.Scripts.Character.Selector
         [SerializeField] private Player[] players;
         [SerializeField] private int selected = 0;
 
+        private string selectedCharacterDataName = "SelectedCharacter";
+
         public void Start()
         {
+            selected = PlayerPrefs.GetInt(selectedCharacterDataName, 0);
+            players[selected].gameObject.SetActive(true);
+            ChoseClick();
+            /*
             previousButton.onClick.AddListener(PreviousClick);
             nextButton.onClick.AddListener(NextClick);
             choseButton.onClick.AddListener(ChoseClick);
             players[0].gameObject.SetActive(true);
+            */
         }
 
         private void ChoseClick()
@@ -53,12 +60,13 @@ namespace Assets.Scripts.Character.Selector
            
         }
 
+        
         public void StartGame()
         {
-            PlayerPrefs.SetInt("selectedPlayer", selected);
+            PlayerPrefs.SetInt(selectedCharacterDataName, selected);
             SceneManager.LoadScene(1, LoadSceneMode.Single);
         }
-
+        
 
     }
 }
