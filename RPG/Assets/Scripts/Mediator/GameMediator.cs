@@ -45,6 +45,7 @@ namespace Assets.Scripts.Mediator
                 GUIhp.gameObject.SetActive(false);
                 PlayerSelector.gameObject.SetActive(true);
             }else{
+                player.Selected = true;
                 MainCamera.SetTarget(player.transform);
                 GUIhp.gameObject.SetActive(true);
                 PlayerSelector.gameObject.SetActive(false);
