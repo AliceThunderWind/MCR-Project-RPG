@@ -67,6 +67,11 @@ abstract public class Enemy : Character, ICharacter
             case EnemyState.WalkRandom:
                 randomWalk();
                 break;
+            case EnemyState.NoAction:
+                animator.SetFloat("moveX", 0);
+                animator.SetFloat("moveY", -1);
+                animator.SetBool("moving", false);
+                break;
         }
 
     }

@@ -41,7 +41,19 @@ namespace Assets.Scripts.Characters
         public CharacterState CharacterState { get; internal set; }
 
         public float HP { get { return health; } }
-        
+
+        virtual public void Start()
+        {
+            animator = GetComponent<Animator>();
+            myRigidbody = GetComponent<Rigidbody2D>();
+            CharacterState = CharacterState.Idle;
+            animator.SetFloat("moveX", 0);
+            animator.SetFloat("moveY", -1);
+            animator.SetBool("moving", false);
+            health = 100f;
+
+           
+        }
 
         virtual public float Damage(float damage)
         {

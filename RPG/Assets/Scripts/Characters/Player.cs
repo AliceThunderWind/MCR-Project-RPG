@@ -8,18 +8,7 @@ public class Player : Character, ICharacter
 
     public bool Selected { get; set; } = false;
     // Start is called before the first frame update
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-        myRigidbody = GetComponent<Rigidbody2D>();
-        CharacterState = CharacterState.Idle;
-        animator.SetFloat("moveX", 0);
-        animator.SetFloat("moveY", -1);
-        animator.SetBool("moving", false);
-        health = 100f;
-
-        StartCoroutine(DisplayHp());
-    }
+    
 
     private IEnumerator DisplayHp()
     {
@@ -27,6 +16,11 @@ public class Player : Character, ICharacter
         mediator.PlayerChangeHp(health);
     }
 
+    public override void  Start()
+    {
+        base.Start();
+        StartCoroutine(DisplayHp());
+    }
 
     // Update is called once per frame
     void Update()

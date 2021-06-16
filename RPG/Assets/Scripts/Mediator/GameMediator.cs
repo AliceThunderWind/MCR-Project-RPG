@@ -19,8 +19,6 @@ namespace Assets.Scripts.Mediator
         [SerializeField] private CameraMovement MainCamera;
         [SerializeField] private Gate level1Gate;
 
-
-
         internal void PlayerChangeLevel(Collider2D other, GameObject exit)
         {
             Player p = other.GetComponent<Player>();
@@ -140,7 +138,15 @@ namespace Assets.Scripts.Mediator
             
             if(nextState == EnemyState.BackToPos)
             {
-                vectorToTarget = VectorFromAngle(Direction(enemy.Position, enemy.InitialPosition));
+                if(Vector3.Distance(enemy.Position, enemy.InitialPosition) < 1)
+                {
+                    nextState = EnemyState.NoAction;
+                    vectorToTarget = Vector3.zero;
+                }
+                else
+                {
+                    vectorToTarget = VectorFromAngle(Direction(enemy.Position, enemy.InitialPosition));
+                }
             }
             else
             {
