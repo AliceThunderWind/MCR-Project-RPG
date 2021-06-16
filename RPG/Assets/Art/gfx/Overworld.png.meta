@@ -3230,6 +3230,9 @@ TextureImporter:
   - first:
       213: 5460641065583701521
     second: Overworld_1075
+  - first:
+      213: 3825746317110250867
+    second: Overworld_1076
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -22181,9 +22184,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 128
-        width: 16
-        height: 16
+        y: 112
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -24239,9 +24242,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 64
-        width: 16
-        height: 16
+        y: 22
+        width: 64
+        height: 58
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -24806,9 +24809,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 48
-        width: 16
-        height: 16
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -25860,7 +25863,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -25881,7 +25884,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -25902,7 +25905,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -25910,6 +25913,27 @@ TextureImporter:
       bones: []
       spriteID: 11ee6001e1818cb40800000000000000
       internalID: 5460641065583701521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Overworld_1076
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d8d187108c71530800000000000000
+      internalID: 3825746317110250867
       vertices: []
       indices: 
       edges: []

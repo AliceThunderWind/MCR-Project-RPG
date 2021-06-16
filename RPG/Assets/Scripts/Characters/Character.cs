@@ -21,6 +21,9 @@ namespace Assets.Scripts.Characters
             get {
                 return transform.position; 
             } 
+            set { 
+                transform.position = value; 
+            }
         }
 
         public bool IsHit { get; set; } = false; // prevent multiple hits triggered by a single hit -> multiple collider objects

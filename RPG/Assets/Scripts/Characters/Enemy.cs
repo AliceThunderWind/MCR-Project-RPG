@@ -20,7 +20,8 @@ abstract public class Enemy : Character, ICharacter
     protected float nextStartTime = 5.0f;
     protected float nextStopTime;
     [SerializeField] protected float period = 5f;
-    public bool IsSentry { get; }
+    [SerializeField] private bool sentry;
+    public bool IsSentry { get => sentry; }
     [SerializeField] public bool GetConfuse;
 
     

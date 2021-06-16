@@ -11,12 +11,26 @@ namespace Assets.Scripts.Mediator
         private CommandDispatcher command = CommandDispatcher.Instance;
 
         private List<Enemy> enemies = new List<Enemy>();
+        private List<Enemy> sentries = new List<Enemy>();
         [SerializeField] private Player player;
         [SerializeField] private GUIHPHandler GUIhp;
         [SerializeField] private PlayerSelector PlayerSelector;
         [SerializeField] private GameObject PlayersContainer;
         [SerializeField] private CameraMovement MainCamera;
+        [SerializeField] private Gate level1Gate;
 
+
+
+        internal void PlayerChangeLevel(Collider2D other, GameObject exit)
+        {
+            Player p = other.GetComponent<Player>();
+            if (p != null && sentries.Count == 0)
+            {
+                Vector3 newPosition = exit.transform.position;
+                newPosition.y += 1.5f;
+                p.Position = newPosition;
+            }
+        }
 
         public Vector3 PlayerPosition { get { return player.Position; } }
         private void Awake()
@@ -60,11 +74,20 @@ namespace Assets.Scripts.Mediator
         public void registerEnemy(Enemy enemy)
         {
             enemies.Add(enemy);
+            if (enemy.IsSentry)
+                sentries.Add(enemy);
         }
 
         public void unregisterEnemy(Enemy enemy)
         {
             enemies.Remove(enemy);
+            if (enemy.IsSentry) { 
+                sentries.Remove(enemy);
+                if(sentries.Count == 0)
+                {
+                    level1Gate.isOpen = true;
+                }
+            }
         }
 
         private void OnHitBreakable(HitBreakeableCommand cmd)
