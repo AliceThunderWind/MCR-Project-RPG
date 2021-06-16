@@ -1,9 +1,4 @@
 ﻿using Assets.Scripts.Mediator;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -25,13 +20,13 @@ namespace Assets.Scripts.Character.Selector
         {
             selected = PlayerPrefs.GetInt(selectedCharacterDataName, 0);
             players[selected].gameObject.SetActive(true);
-            ChoseClick();
-            /*
+            //ChoseClick();
+            
             previousButton.onClick.AddListener(PreviousClick);
             nextButton.onClick.AddListener(NextClick);
             choseButton.onClick.AddListener(ChoseClick);
             players[0].gameObject.SetActive(true);
-            */
+            
         }
 
         private void ChoseClick()

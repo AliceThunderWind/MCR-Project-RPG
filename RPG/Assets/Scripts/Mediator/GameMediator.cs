@@ -31,6 +31,7 @@ namespace Assets.Scripts.Mediator
         internal void SelectPlayer(Player player)
         {
             this.player = player;
+            player.Selected = true;
             MainCamera.SetTarget(this.player.transform);
             PlayerSelector.gameObject.SetActive(false);
             GUIhp.gameObject.SetActive(true);
