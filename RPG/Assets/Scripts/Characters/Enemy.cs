@@ -44,13 +44,14 @@ abstract public class Enemy : Character, ICharacter
         get { return mediator.PlayerPosition; }
     }
 
-    protected virtual void Start()
+    protected override void Start()
     {
+        base.Start();
         InitialPosition = transform.position;
         mediator.registerEnemy(this);
     }
 
-    void Update()
+    public override void Update()
     {
         mediator.EnemyBehaviour(this);
         switch (currentState)

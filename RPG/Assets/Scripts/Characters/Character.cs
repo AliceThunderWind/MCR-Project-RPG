@@ -30,8 +30,8 @@ namespace Assets.Scripts.Characters
 
         [SerializeField] protected float speed;
         [SerializeField] protected float health;
-        [SerializeField] private float attackDuration;
-        [SerializeField] private float attackCoolDown;
+        [SerializeField] protected float attackDuration;
+        [SerializeField] protected float attackCoolDown;
         protected Rigidbody2D myRigidbody;
         protected Animator animator;
         protected Vector3 vectorToTarget;
@@ -42,7 +42,7 @@ namespace Assets.Scripts.Characters
 
         public float HP { get { return health; } }
 
-        virtual public void Start()
+        virtual protected void Start()
         {
             animator = GetComponent<Animator>();
             myRigidbody = GetComponent<Rigidbody2D>();
@@ -131,6 +131,8 @@ namespace Assets.Scripts.Characters
             }
             return newPosition; 
         }
+
+        public abstract void Update();
 
     }
 }

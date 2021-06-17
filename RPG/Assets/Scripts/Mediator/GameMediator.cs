@@ -31,6 +31,11 @@ namespace Assets.Scripts.Mediator
             }
         }
 
+        public Player getPlayer()
+        {
+            return player;
+        }
+
         public Vector3 PlayerPosition { get { return player.Position; } }
         private void Awake()
         {
@@ -132,7 +137,7 @@ namespace Assets.Scripts.Mediator
             float distanceToTarget;
             
             if (enemy.GetConfuse)
-                toAttack = FindClosestEnemy(enemy.GetPlayerPosition); 
+                toAttack = FindClosestEnemy(enemy); 
 
             distanceToTarget = Vector3.Distance(enemy.Position, toAttack.Position);            
             nextState = DecideEnemyState(enemy, distanceToTarget);
@@ -178,20 +183,18 @@ namespace Assets.Scripts.Mediator
             return EnemyState.WalkRandom;
         }
 
-        private Enemy FindClosestEnemy(Vector3 from)
+        public Enemy FindClosestEnemy(Assets.Scripts.Characters.Character character)
         {
-            Enemy closestEnemy = enemies[0];
-            float minDistance = float.MaxValue;
-            for (int i = 1; i < enemies.Count; i++)
-            {
-                float enemyDistance = Vector3.Distance(from, enemies[i].GetPlayerPosition);
-                if (enemyDistance < minDistance)
-                {
-                    minDistance = enemyDistance;
-                    closestEnemy = enemies[i];
+            Enemy closestEnemy = null;
 
+            foreach(Enemy e in enemies)
+            {
+                if(closestEnemy == null || (Vector2.Distance(character.Position, e.Position) < Vector2.Distance(character.Position, closestEnemy.Position) && e != character))
+                {
+                    closestEnemy = e;
                 }
             }
+            Debug.Log(closestEnemy);
             return closestEnemy;
         }
 

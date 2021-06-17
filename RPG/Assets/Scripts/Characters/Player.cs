@@ -16,14 +16,14 @@ public class Player : Character, ICharacter
         mediator.PlayerChangeHp(health);
     }
 
-    public override void  Start()
+    protected override void Start()
     {
         base.Start();
         StartCoroutine(DisplayHp());
     }
 
     // Update is called once per frame
-    void Update()
+    public override void Update()
     {
         if (!Selected) return;
 
