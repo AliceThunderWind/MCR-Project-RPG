@@ -6,6 +6,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.Mediator
 {
+
     public sealed class GameMediator : MonoBehaviour
     {
         private CommandDispatcher command = CommandDispatcher.Instance;
