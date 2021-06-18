@@ -170,11 +170,13 @@ MonoBehaviour:
   speed: 5
   health: 150
   attackDuration: 0.5
-  attackCoolDown: 0
-  Visibility: 0
-  FightDistance: 0
-  chaseSpeed: 5
+  attackCoolDown: 1
+  Visibility: 7
+  FightDistance: 1.5
+  chaseSpeed: 7
   period: 5
+  sentry: 0
+  GetConfuse: 0
 --- !u!95 &4783049926843411861
 Animator:
   serializedVersion: 3
@@ -240,7 +242,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 30
-  mediator: {fileID: 0}
 --- !u!114 &4783049927244738547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,7 +332,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 30
-  mediator: {fileID: 0}
 --- !u!114 &4783049927437403754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,7 +421,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 30
-  mediator: {fileID: 0}
 --- !u!114 &4783049927466792167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,7 +510,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 30
-  mediator: {fileID: 0}
 --- !u!114 &4783049928385259934
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -3,14 +3,31 @@ using Assets.Scripts.Hit;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.Mediator
 {
 
+   
     public sealed class GameMediator : MonoBehaviour
     {
-        private CommandDispatcher command = CommandDispatcher.Instance;
+        public enum CharacterClass
+        {
+            Warrior,
+            Archer,
+            Wizzard
+        }
 
+        public enum Level
+        {
+            Level1,
+            Level2,
+            Level3
+        }
+
+        private CommandDispatcher command = CommandDispatcher.Instance;
+        public CharacterClass PlayerClass { get; set; }
+        public Level PlayerLevel { get; set; }
         private List<Enemy> enemies = new List<Enemy>();
         private List<Enemy> sentries = new List<Enemy>();
         [SerializeField] private Player player;
@@ -25,9 +42,12 @@ namespace Assets.Scripts.Mediator
             Player p = other.GetComponent<Player>();
             if (p != null && sentries.Count == 0)
             {
-                Vector3 newPosition = exit.transform.position;
-                newPosition.y += 1.5f;
-                p.Position = newPosition;
+                player.Selected = false;
+                PlayerLevel = Level.Level2;
+                player = null;
+                enemies.Clear();
+                PlayerPrefs.SetInt("CharacterLevel", PlayerPrefs.GetInt("CharacterClass") + 1);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
 
@@ -36,14 +56,30 @@ namespace Assets.Scripts.Mediator
             return player;
         }
 
+        
+
         public Vector3 PlayerPosition { get { return player.Position; } }
         private void Awake()
         {
+            PlayerClass = (CharacterClass) PlayerPrefs.GetInt("CharacterClass");
+            PlayerLevel = (Level) PlayerPrefs.GetInt("CharacterLevel");
             command.Subscribe<HitCharacterCommand>(OnHitCharacter);
             command.Subscribe<HitBreakeableCommand>(OnHitBreakable);
             command.Subscribe<HpIncreaseCommand>(OnHpIncrease);
             command.Subscribe<HpDecreaseCommand>(OnHpDecrease);
             command.Subscribe<KnockbackCommand>(OnKnockback);
+            
+            if (player == null)
+            {
+                enablePlayerSelector();
+            }
+            else
+            {
+                player.Selected = true;
+                MainCamera.SetTarget(player.transform);
+                GUIhp.gameObject.SetActive(true);
+                PlayerSelector.gameObject.SetActive(false);
+            }
         }
 
         internal void SelectPlayer(Player player)
@@ -55,21 +91,12 @@ namespace Assets.Scripts.Mediator
             GUIhp.gameObject.SetActive(true);
         }
 
-        public void Start()
+        private void enablePlayerSelector()
         {
-            if(player == null)
-            {
-                MainCamera.SetTarget(PlayersContainer.transform);
-                GUIhp.gameObject.SetActive(false);
-                PlayerSelector.gameObject.SetActive(true);
-            }else{
-                player.Selected = true;
-                MainCamera.SetTarget(player.transform);
-                GUIhp.gameObject.SetActive(true);
-                PlayerSelector.gameObject.SetActive(false);
-            }
+            MainCamera.SetTarget(PlayersContainer.transform);
+            GUIhp.gameObject.SetActive(false);
+            PlayerSelector.gameObject.SetActive(true);
         }
-
         public void PlayerChangeHp(float newHp)
         {
             GUIhp.setHp(newHp);

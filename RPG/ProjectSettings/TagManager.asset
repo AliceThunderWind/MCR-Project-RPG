@@ -46,6 +46,9 @@ TagManager:
   - name: Collision
     uniqueID: 1366339175
     locked: 0
+  - name: OnGround
+    uniqueID: 395523117
+    locked: 0
   - name: Interactive
     uniqueID: 3718222599
     locked: 0
@@ -54,7 +57,4 @@ TagManager:
     locked: 0
   - name: InteractiveOver
     uniqueID: 1208653059
-    locked: 0
-  - name: OnGround
-    uniqueID: 395523117
     locked: 0

@@ -10,58 +10,104 @@ namespace Assets.Scripts.Character.Selector
         [SerializeField] private GameMediator mediator;
         [SerializeField] private Button previousButton;
         [SerializeField] private Button nextButton;
-        [SerializeField] private Button choseButton;
-        [SerializeField] private Player[] players;
+        [SerializeField] private Button chooseButton;
+        [SerializeField] private Player[] warriors;
+        [SerializeField] private Player[] archers;
+        [SerializeField] private Player[] wizzards;
+
         [SerializeField] private int selected = 0;
 
-        private string selectedCharacterDataName = "SelectedCharacter";
-
-        public void Start()
+        public void Awake()
         {
-            selected = PlayerPrefs.GetInt(selectedCharacterDataName, 0);
-            players[selected].gameObject.SetActive(true);
-            //ChoseClick();
             
+            // Must Have EventSystem somewhere in hiearchy
+            // (check prefabs) for buttons to work
             previousButton.onClick.AddListener(PreviousClick);
             nextButton.onClick.AddListener(NextClick);
-            choseButton.onClick.AddListener(ChoseClick);
-            players[0].gameObject.SetActive(true);
+            chooseButton.onClick.AddListener(ChooseClick);
+
+            if (mediator.PlayerLevel == GameMediator.Level.Level1)
+                ChooseClick();
+
+           
+            switch (mediator.PlayerClass)
+            {
+                case GameMediator.CharacterClass.Warrior:
+                    warriors[0].gameObject.SetActive(true);
+                    break;
+                case GameMediator.CharacterClass.Archer:
+                    archers[0].gameObject.SetActive(true);
+                    break;
+                case GameMediator.CharacterClass.Wizzard:
+                    wizzards[0].gameObject.SetActive(true);
+                    break;
+            }
             
+           
         }
 
-        private void ChoseClick()
+        private void ChooseClick()
         {
-            mediator.SelectPlayer(players[selected]);
+            switch (mediator.PlayerClass)
+            {
+                case GameMediator.CharacterClass.Warrior:
+                    mediator.SelectPlayer(warriors[selected]);
+                    break;
+                case GameMediator.CharacterClass.Archer:
+                    mediator.SelectPlayer(archers[selected]);
+                    break;
+                case GameMediator.CharacterClass.Wizzard:
+                    mediator.SelectPlayer(wizzards[selected]);
+                    break;
+            }
+            
         }
 
         private void PreviousClick()
         {
-            players[selected].gameObject.SetActive(false);
-            selected--;
-            if (selected < 0) selected = players.Length - 1;
-            players[selected].gameObject.SetActive(true);
+            int previous = selected--;
+            if (selected < 0) selected = 0;
+
+            switch (mediator.PlayerClass)
+            {
+                case GameMediator.CharacterClass.Warrior:
+                    warriors[previous].gameObject.SetActive(false);
+                    warriors[selected].gameObject.SetActive(true);
+                    break;
+                case GameMediator.CharacterClass.Archer:
+                    archers[previous].gameObject.SetActive(false);
+                    archers[selected].gameObject.SetActive(true);
+                    break;
+                case GameMediator.CharacterClass.Wizzard:
+                    wizzards[previous].gameObject.SetActive(false);
+                    wizzards[selected].gameObject.SetActive(true);
+                    break;
+            }           
+           
         }
 
         public void NextClick()
         {
-            players[selected].gameObject.SetActive(false);
-            selected++;
-            if (selected >= players.Length) selected = 0;
-            players[selected].gameObject.SetActive(true);
-        }
+            int previous = selected++;
+            if (selected > (int) mediator.PlayerLevel) selected = (int) mediator.PlayerLevel;
 
-        public void previous()
-        {
-           
-        }
+            switch (mediator.PlayerClass)
+            {
+                case GameMediator.CharacterClass.Warrior:
+                    warriors[previous].gameObject.SetActive(false);
+                    warriors[selected].gameObject.SetActive(true);
+                    break;
+                case GameMediator.CharacterClass.Archer:
+                    archers[previous].gameObject.SetActive(false);
+                    archers[selected].gameObject.SetActive(true);
+                    break;
+                case GameMediator.CharacterClass.Wizzard:
+                    wizzards[previous].gameObject.SetActive(false);
+                    wizzards[selected].gameObject.SetActive(true);
+                    break;
+            }
 
-        
-        public void StartGame()
-        {
-            PlayerPrefs.SetInt(selectedCharacterDataName, selected);
-            SceneManager.LoadScene(1, LoadSceneMode.Single);
-        }
-        
+        }       
 
     }
 }

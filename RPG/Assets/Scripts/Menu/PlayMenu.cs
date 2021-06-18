@@ -1,3 +1,4 @@
+using Assets.Scripts.Mediator;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,23 +7,32 @@ using UnityEngine.SceneManagement;
 public class PlayMenu : MonoBehaviour
 {
 
-    private string selectedCharacterDataName = "SelectedCharacter";
+    private string selectedCharacterDataName = "CharacterClass";
+    private string selectedCharacterLevel = "CharacterLevel";
+
+    private void selectLevel1()
+    {
+        PlayerPrefs.SetInt(selectedCharacterLevel, (int) GameMediator.Level.Level1);
+    }
 
     public void playAsWarrior()
     {
-        PlayerPrefs.SetInt(selectedCharacterDataName, 0);
+        PlayerPrefs.SetInt(selectedCharacterDataName, (int) GameMediator.CharacterClass.Warrior);
+        selectLevel1();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void playAsRanger()
     {
-        PlayerPrefs.SetInt(selectedCharacterDataName, 3);
+        PlayerPrefs.SetInt(selectedCharacterDataName, (int)GameMediator.CharacterClass.Archer);
+        selectLevel1();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void playAsWizard()
     {
-        PlayerPrefs.SetInt(selectedCharacterDataName, 5);
+        PlayerPrefs.SetInt(selectedCharacterDataName, (int)GameMediator.CharacterClass.Wizzard);
+        selectLevel1();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

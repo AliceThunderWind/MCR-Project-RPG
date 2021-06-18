@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c85a9eb2d0af764f83075375ed9abb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 10
+  thrust: 20
 --- !u!60 &3983923557224086265
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -91,8 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 110771aa5136bcd47baf3adccbab7685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  mediator: {fileID: 0}
+  damage: 40
 --- !u!1 &3983923557582504730
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c85a9eb2d0af764f83075375ed9abb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 10
+  thrust: 20
 --- !u!114 &3983923557582504728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,8 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 110771aa5136bcd47baf3adccbab7685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  mediator: {fileID: 0}
+  damage: 40
 --- !u!1 &3983923557965651250
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,8 +451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 110771aa5136bcd47baf3adccbab7685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  mediator: {fileID: 0}
+  damage: 40
 --- !u!114 &3983923558160547487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -467,7 +464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c85a9eb2d0af764f83075375ed9abb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 10
+  thrust: 20
 --- !u!1 &3983923558642576918
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,8 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 110771aa5136bcd47baf3adccbab7685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  mediator: {fileID: 0}
+  damage: 40
 --- !u!60 &3983923558642576917
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -557,4 +553,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c85a9eb2d0af764f83075375ed9abb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 10
+  thrust: 20
