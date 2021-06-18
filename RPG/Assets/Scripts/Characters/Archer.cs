@@ -32,6 +32,11 @@ public class Archer : Enemy
             animator.SetFloat("targetX", target.x);
             animator.SetFloat("targetY", target.y);
 
+            if(mediator.getPlayer() == null)
+            {
+                Debug.Log("AAAAAAAAAAAAAAAAAAAAA");
+            }
+
             animator.GetBehaviour<ArcherAttack>().target = mediator.getPlayer();
             animator.GetBehaviour<ArcherAttack>().source = this;
             animator.SetTrigger("attackAvailable");
