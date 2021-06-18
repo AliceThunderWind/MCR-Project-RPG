@@ -28,9 +28,9 @@ public class Archer : Enemy
         while (currentState == EnemyState.Attack)
         {
             animator.SetBool("moving", false);
-            //animator.SetFloat("targetX", target.x);
-            //animator.SetFloat("targetY", target.y);
             Vector2 target = mediator.getPlayer().Position;
+            animator.SetFloat("targetX", target.x);
+            animator.SetFloat("targetY", target.y);
 
             animator.GetBehaviour<ArcherAttack>().target = mediator.getPlayer();
             animator.GetBehaviour<ArcherAttack>().source = this;
