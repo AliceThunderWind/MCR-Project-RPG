@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5628223132670773429}
   - component: {fileID: 8861403548207958585}
   - component: {fileID: 3656375207700068571}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlayerArcher
   m_TagString: attackable
   m_Icon: {fileID: 0}

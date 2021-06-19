@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1434402332987842348}
   - component: {fileID: 6074530260595765629}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeaponHitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}

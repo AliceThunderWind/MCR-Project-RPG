@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6780411574669461316}
   - component: {fileID: 6780411574669461315}
   - component: {fileID: 6780411574669461314}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WizardStaff
   m_TagString: attackable
   m_Icon: {fileID: 0}

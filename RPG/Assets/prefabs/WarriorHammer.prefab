@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2838456934633458995}
   - component: {fileID: 2838456934633458994}
   - component: {fileID: 2838456934633458993}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DownHit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 2838456934683357239}
   - component: {fileID: 2838456934683357238}
   - component: {fileID: 2838456934683357228}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WarriorHammer
   m_TagString: attackable
   m_Icon: {fileID: 0}
@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 2838456935627020021}
   - component: {fileID: 2838456935627020020}
   - component: {fileID: 2838456935627020027}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LeftHit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,7 +388,7 @@ GameObject:
   - component: {fileID: 2838456935794948556}
   - component: {fileID: 2838456935794948563}
   - component: {fileID: 2838456935794948562}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: UpHit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -479,7 +479,7 @@ GameObject:
   - component: {fileID: 2838456935924879527}
   - component: {fileID: 2838456935924879526}
   - component: {fileID: 2838456935924879525}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RightHit
   m_TagString: Untagged
   m_Icon: {fileID: 0}

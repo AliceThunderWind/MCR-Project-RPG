@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 600574537619874699}
   - component: {fileID: 600574537619874698}
   - component: {fileID: 600574537619876980}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WizardConfusion
   m_TagString: attackable
   m_Icon: {fileID: 0}

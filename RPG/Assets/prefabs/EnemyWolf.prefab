@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2541594612448086823}
   - component: {fileID: 2541594612448086822}
   - component: {fileID: 2541594612448086817}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HitUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 2541594612786156462}
   - component: {fileID: 2541594612786156457}
   - component: {fileID: 2541594612786156456}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HitRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 2541594613061261948}
   - component: {fileID: 2541594613061261951}
   - component: {fileID: 2541594613061261950}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HitDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 2541594613633335529}
   - component: {fileID: 2541594613633335528}
   - component: {fileID: 2541594613633335531}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HitLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -378,7 +378,7 @@ GameObject:
   - component: {fileID: 2541594614356939288}
   - component: {fileID: 2541594614356939291}
   - component: {fileID: 2541594614356939290}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyWolf
   m_TagString: attackable
   m_Icon: {fileID: 0}

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5543016869542730414}
   - component: {fileID: 5543016869542730413}
   - component: {fileID: 2621777145304149001}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemySkelyFlail
   m_TagString: attackable
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1791103261
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 2097409225080626279, guid: 29d45cd45217bc440909028ac0299d1b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 5543016869619218669}
   - component: {fileID: 5543016869619218668}
   - component: {fileID: 5543016869619218659}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HitDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 5543016869934623763}
   - component: {fileID: 5543016869934623762}
   - component: {fileID: 5543016869934623761}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HitUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -396,7 +396,7 @@ GameObject:
   - component: {fileID: 5543016870383551496}
   - component: {fileID: 5543016870383551503}
   - component: {fileID: 5543016870383551502}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HitLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -488,7 +488,7 @@ GameObject:
   - component: {fileID: 5543016870804588612}
   - component: {fileID: 5543016870804588603}
   - component: {fileID: 5543016870804588602}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HitRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}

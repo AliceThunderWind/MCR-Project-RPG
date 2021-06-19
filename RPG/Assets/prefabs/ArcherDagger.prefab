@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2378571739560654769}
   - component: {fileID: 2378571739560654768}
   - component: {fileID: 2378571739560654771}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HitRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 2378571740344155935}
   - component: {fileID: 2378571740344155934}
   - component: {fileID: 2378571740344155905}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ArcherDagger
   m_TagString: attackable
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 2378571740873670334}
   - component: {fileID: 2378571740873670305}
   - component: {fileID: 2378571740873670304}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HitLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -384,7 +384,7 @@ GameObject:
   - component: {fileID: 2378571740916787968}
   - component: {fileID: 2378571740916787971}
   - component: {fileID: 2378571740916787970}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HitUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -473,7 +473,7 @@ GameObject:
   - component: {fileID: 2378571741245147613}
   - component: {fileID: 2378571741245147612}
   - component: {fileID: 2378571741245147615}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HitDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}

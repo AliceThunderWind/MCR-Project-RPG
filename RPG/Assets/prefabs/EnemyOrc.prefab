@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4783049926843411871}
   - component: {fileID: 4783049926843411858}
   - component: {fileID: 4783049926843411861}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyOrc
   m_TagString: attackable
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 4783049927244738546}
   - component: {fileID: 4783049927244738547}
   - component: {fileID: 4783049927244738544}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HitRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,7 +298,7 @@ GameObject:
   - component: {fileID: 4783049927437403757}
   - component: {fileID: 4783049927437403754}
   - component: {fileID: 4783049927437403755}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HitUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,7 +387,7 @@ GameObject:
   - component: {fileID: 4783049927466792166}
   - component: {fileID: 4783049927466792167}
   - component: {fileID: 4783049927466792164}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HitDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -476,7 +476,7 @@ GameObject:
   - component: {fileID: 4783049928385259921}
   - component: {fileID: 4783049928385259934}
   - component: {fileID: 4783049928385259935}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HitLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}

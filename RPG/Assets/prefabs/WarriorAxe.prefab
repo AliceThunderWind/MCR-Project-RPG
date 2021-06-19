@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 964137252260770230}
   - component: {fileID: 964137252260770229}
   - component: {fileID: 964137252260770228}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WarriorAxe
   m_TagString: attackable
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 964137252707960984}
   - component: {fileID: 964137252707960985}
   - component: {fileID: 1484077166}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LeftHit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 964137253274013753}
   - component: {fileID: 964137253274013752}
   - component: {fileID: 1864511394}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DownHit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 964137253924677105}
   - component: {fileID: 964137253924677104}
   - component: {fileID: 1955160984}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RightHit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,7 +478,7 @@ GameObject:
   - component: {fileID: 964137254076330552}
   - component: {fileID: 964137254076330559}
   - component: {fileID: 601085003}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: UpHit
   m_TagString: Untagged
   m_Icon: {fileID: 0}

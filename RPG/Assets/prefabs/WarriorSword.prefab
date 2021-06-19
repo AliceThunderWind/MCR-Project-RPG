@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3983923557224086262}
   - component: {fileID: 3983923557224086265}
   - component: {fileID: 3983923557224086264}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: UpHit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 3983923557582504726}
   - component: {fileID: 3983923557582504729}
   - component: {fileID: 3983923557582504728}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LeftHit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 3983923557965651249}
   - component: {fileID: 3983923557965651248}
   - component: {fileID: 3983923557965651251}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WarriorSword
   m_TagString: attackable
   m_Icon: {fileID: 0}
@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 3983923558160547485}
   - component: {fileID: 3983923558160547484}
   - component: {fileID: 3983923558160547487}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DownHit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -477,7 +477,7 @@ GameObject:
   - component: {fileID: 3983923558642576914}
   - component: {fileID: 3983923558642576917}
   - component: {fileID: 3983923558642576916}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RightHit
   m_TagString: Untagged
   m_Icon: {fileID: 0}

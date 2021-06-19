@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1051032200210627760}
   - component: {fileID: 1051032200210627761}
   - component: {fileID: 665422165023516602}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WizardCreatures
   m_TagString: attackable
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5558504608985769886}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SpawnSpot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1364470873691950853}
   - component: {fileID: 944662829129154665}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SpawnSlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,7 +281,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2635269523636648889}
   - component: {fileID: 8115017319123895492}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SpawnSlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1154409198799288726}
   - component: {fileID: 3103527084412493193}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SpawnSlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,7 +367,7 @@ GameObject:
   m_Component:
   - component: {fileID: 553258090174690985}
   - component: {fileID: 3099498759422407667}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SpawnSlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
