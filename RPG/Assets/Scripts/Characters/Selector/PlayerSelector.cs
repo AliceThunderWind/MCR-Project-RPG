@@ -49,7 +49,7 @@ namespace Assets.Scripts.Character.Selector
         private void ChooseClick()
         {
             mediator.PlayerClass = GameMediator.CharacterClass.Wizzard;
-            selected = 1;
+            selected = 0;
             wizzards[0].gameObject.SetActive(false);
             wizzards[selected].gameObject.SetActive(true);
             switch (mediator.PlayerClass)

@@ -1,11 +1,9 @@
 using Assets.Scripts.Characters;
-using Assets.Scripts.Mediator;
 using System.Collections;
 using UnityEngine;
 
 public abstract class ProjectileAttack : StateMachineBehaviour
 {
-    [SerializeField] public GameMediator mediator;
     [SerializeField] public Character target;
     [SerializeField] public Character source;
     [SerializeField] private GameObject projectilePrefab;
