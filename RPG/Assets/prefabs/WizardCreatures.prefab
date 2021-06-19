@@ -185,7 +185,7 @@ MonoBehaviour:
   mediator: {fileID: 0}
   speed: 12
   health: 100
-  attackDuration: 0.75
+  attackDuration: 0.7
   attackCoolDown: 0
   spawnSpot: {fileID: 2668263715859154108}
   creaturesSlots:

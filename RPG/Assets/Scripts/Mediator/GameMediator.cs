@@ -286,7 +286,7 @@ namespace Assets.Scripts.Mediator
 
                 if (nextState == AllyState.Gard)
                 {
-                    if (Vector3.Distance(wizzardSummon.Position, player.Position) < 3)
+                    if (Vector3.Distance(wizzardSummon.Position, player.Position) < 3.5f)
                     {
                         nextState = AllyState.NoAction;
                         vectorToTarget = Vector3.zero;

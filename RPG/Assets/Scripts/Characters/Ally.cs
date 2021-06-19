@@ -22,7 +22,7 @@ public class Ally : Character, ICharacter
     [SerializeField] private float Visibility;
     [SerializeField] private float FightDistance;
     [SerializeField] private float chaseSpeed;
-    [SerializeField] private float LifeDuration = 15f;
+    [SerializeField] private float LifeDuration = 10f;
     private bool launchedAttack;
     private float LifeStart;
 
