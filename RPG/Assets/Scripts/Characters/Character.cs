@@ -98,6 +98,7 @@ namespace Assets.Scripts.Characters
             animator.SetTrigger("die");
             yield return new WaitForSeconds(2f);
             gameObject.SetActive(false);
+            
         }
 
         virtual protected IEnumerator AttackCo()

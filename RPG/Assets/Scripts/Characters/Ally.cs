@@ -83,7 +83,8 @@ public class Ally : Character, ICharacter
     {
         Mediator.unregisterAlly(this);
         mySlot.Empty = true;
-        return base.DieCo();
+        yield return base.DieCo();
+        Destroy(gameObject, 2f);
     }
 
 

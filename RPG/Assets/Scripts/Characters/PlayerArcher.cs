@@ -6,23 +6,25 @@ using UnityEngine;
 public class PlayerArcher : Player
 {
 
-    private bool launchedAttack = false;
-
     protected override IEnumerator AttackCo()
     {
+
         if (CharacterState != CharacterState.Dead)
         {
             CharacterState = CharacterState.Attack;
             Character target = mediator.FindClosestEnemy(this);
             Vector3 targetVector = target.Position - Position;
+            targetVector.Normalize();
             animator.SetBool("attacking", true);
             animator.GetBehaviour<ArcherAttack>().target = target;
             animator.GetBehaviour<ArcherAttack>().source = this;
             animator.SetFloat("targetX", targetVector.x);
             animator.SetFloat("targetY", targetVector.y);
             animator.SetTrigger("attackAvailable");
-            animator.SetFloat("moveX", target.Position.x);
-            animator.SetFloat("moveY", target.Position.y);
+            animator.SetFloat("moveX", targetVector.x);
+            animator.SetFloat("moveY", targetVector.y);
+            yield return new WaitForSeconds(attackDuration);
+            animator.SetBool("attacking", false);
             yield return new WaitForSeconds(attackCoolDown);
             animator.SetBool("moving", true);
             CharacterState = CharacterState.Idle;

@@ -48,10 +48,10 @@ namespace Assets.Scripts.Character.Selector
 
         private void ChooseClick()
         {
-            mediator.PlayerClass = GameMediator.CharacterClass.Wizzard;
+            mediator.PlayerClass = GameMediator.CharacterClass.Archer;
             selected = 1;
-            wizzards[0].gameObject.SetActive(false);
-            wizzards[selected].gameObject.SetActive(true);
+            archers[0].gameObject.SetActive(false);
+            archers[selected].gameObject.SetActive(true);
             switch (mediator.PlayerClass)
             {
                 case GameMediator.CharacterClass.Warrior:

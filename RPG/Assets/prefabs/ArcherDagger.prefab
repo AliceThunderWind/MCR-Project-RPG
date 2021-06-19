@@ -78,7 +78,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
-  mediator: {fileID: 0}
 --- !u!114 &2378571739560654771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,7 +121,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2378571740344155904}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.49, y: -5.71, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children:
   - {fileID: 2378571740916787973}
@@ -170,7 +169,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1791103261
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 4410547355506143825, guid: aba74e6af72a9d540acb4fe146b51eb2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -360,7 +359,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
-  mediator: {fileID: 0}
 --- !u!114 &2378571740873670304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,7 +448,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
-  mediator: {fileID: 0}
 --- !u!114 &2378571740916787970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -544,7 +541,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
-  mediator: {fileID: 0}
 --- !u!114 &2378571741245147615
 MonoBehaviour:
   m_ObjectHideFlags: 0

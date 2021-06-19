@@ -185,7 +185,7 @@ MonoBehaviour:
   speed: 5
   health: 100
   attackDuration: 0.75
-  attackCoolDown: 3
+  attackCoolDown: 1
   Visibility: 15
   FightDistance: 12
   chaseSpeed: 7
