@@ -37,7 +37,6 @@ namespace Assets.Scripts.Mediator
         [SerializeField] private GUIHPHandler GUIhp;
         [SerializeField] private PlayerSelector PlayerSelector;
         [SerializeField] private GameObject PlayersContainer;
-        [SerializeField] private GameObject AllyAI;
         [SerializeField] private CameraMovement MainCamera;
         [SerializeField] private Gate level1Gate;
 
