@@ -485,7 +485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   source: {fileID: 0}
-  arrowPrefab: {fileID: 4626860075274892172, guid: b9351b663df27df43ac9da2f5f9afdd3, type: 3}
+  projectilePrefab: {fileID: 4626860075274892172, guid: b9351b663df27df43ac9da2f5f9afdd3, type: 3}
   burst: 1
   velocity: 20
 --- !u!1101 &7463789376678710763

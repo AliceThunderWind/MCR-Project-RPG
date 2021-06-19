@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6780411574669461319}
   - component: {fileID: 6780411574669461318}
   - component: {fileID: 6780411574669461317}
-  - component: {fileID: 6780411574669461316}
   - component: {fileID: 6780411574669461315}
   - component: {fileID: 6780411574669461314}
+  - component: {fileID: 8815101670723373449}
   m_Layer: 6
   m_Name: WizardStaff
   m_TagString: attackable
@@ -129,23 +129,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.3285598}
   serializedVersion: 2
   m_Radius: 0.15335436
---- !u!114 &6780411574669461316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6780411574669461313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6739f285d2c912c47a95778f2027b7a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mediator: {fileID: 8126727556995594325, guid: 2904c696dd47d4a4785a5e1d79751869, type: 3}
-  speed: 12
-  health: 150
-  attackDuration: 0.5
-  attackCoolDown: 0
 --- !u!50 &6780411574669461315
 Rigidbody2D:
   serializedVersion: 4
@@ -186,3 +169,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8815101670723373449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6780411574669461313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8688f7cc347591458b1f000ada5b317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mediator: {fileID: 0}
+  speed: 10
+  health: 100
+  attackDuration: 0.7
+  attackCoolDown: 0

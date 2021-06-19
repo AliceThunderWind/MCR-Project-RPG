@@ -30,8 +30,8 @@ public class Archer : Enemy
             animator.SetBool("moving", false);
             animator.SetFloat("targetX", vectorToTarget.x);
             animator.SetFloat("targetY", vectorToTarget.y);
-            animator.GetBehaviour<ArcherAttack>().target = mediator.getPlayer();
-            animator.GetBehaviour<ArcherAttack>().source = this;
+            animator.GetBehaviour<ProjectileAttack>().target = mediator.getPlayer();
+            animator.GetBehaviour<ProjectileAttack>().source = this;
             animator.SetTrigger("attackAvailable");
             animator.SetFloat("moveX", vectorToTarget.x);
             animator.SetFloat("moveY", vectorToTarget.y);
