@@ -46,7 +46,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
-  mediator: {fileID: 0}
 --- !u!114 &2541594612448086822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,7 +137,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
-  mediator: {fileID: 0}
 --- !u!114 &2541594612786156457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,7 +228,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
-  mediator: {fileID: 0}
 --- !u!114 &2541594613061261951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,7 +319,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
-  mediator: {fileID: 0}
 --- !u!114 &2541594613633335528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,7 +441,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1791103261
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -9066871962239085758, guid: aeb840fbcabd4f34eb87904a0c01f228, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -492,7 +488,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000000007450581, y: -0.023823768}
+  m_Offset: {x: -0.00000009685755, y: -0.04829538}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -503,7 +499,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.39249343, y: 0.5473477}
+  m_Size: {x: 0.4731062, y: 0.59629095}
   m_EdgeRadius: 0
 --- !u!58 &2541594614356939288
 CircleCollider2D:
@@ -561,3 +557,5 @@ MonoBehaviour:
   FightDistance: 0
   chaseSpeed: 10
   period: 5
+  sentry: 0
+  GetConfuse: 0

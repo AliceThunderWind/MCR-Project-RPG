@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.Character.Selector;
 using Assets.Scripts.Hit;
+using Assets.Scripts.Wizzard;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,8 +8,7 @@ using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.Mediator
 {
-
-   
+       
     public sealed class GameMediator : MonoBehaviour
     {
         public enum CharacterClass
@@ -26,11 +26,14 @@ namespace Assets.Scripts.Mediator
         }
 
         private CommandDispatcher command = CommandDispatcher.Instance;
+
+
         public CharacterClass PlayerClass { get; set; }
         public Level PlayerLevel { get; set; }
         private List<Enemy> enemies = new List<Enemy>();
+        private List<Characters.Character> allies = new List<Characters.Character>();
         private List<Enemy> sentries = new List<Enemy>();
-        [SerializeField] private Player player;
+        [SerializeField] public Player player;
         [SerializeField] private GUIHPHandler GUIhp;
         [SerializeField] private PlayerSelector PlayerSelector;
         [SerializeField] private GameObject PlayersContainer;
@@ -51,6 +54,8 @@ namespace Assets.Scripts.Mediator
             }
         }
 
+     
+
         public Player getPlayer()
         {
             return player;
@@ -61,16 +66,17 @@ namespace Assets.Scripts.Mediator
         public Vector3 PlayerPosition { get { return player.Position; } }
         private void Awake()
         {
-            PlayerClass = (CharacterClass) PlayerPrefs.GetInt("CharacterClass");
-            PlayerLevel = (Level) PlayerPrefs.GetInt("CharacterLevel");
+            
             command.Subscribe<HitCharacterCommand>(OnHitCharacter);
             command.Subscribe<HitBreakeableCommand>(OnHitBreakable);
             command.Subscribe<HpIncreaseCommand>(OnHpIncrease);
             command.Subscribe<HpDecreaseCommand>(OnHpDecrease);
             command.Subscribe<KnockbackCommand>(OnKnockback);
-            
+          
+
             if (player == null)
             {
+                
                 enablePlayerSelector();
             }
             else
@@ -100,6 +106,16 @@ namespace Assets.Scripts.Mediator
         public void PlayerChangeHp(float newHp)
         {
             GUIhp.setHp(newHp);
+        }
+
+        internal void registerAlly(Characters.Character ally)
+        {
+            allies.Add(ally);
+        }
+
+        public void unregisterAlly(Characters.Character ally)
+        {
+            allies.Remove(ally);
         }
 
         public void registerEnemy(Enemy enemy)
@@ -163,10 +179,25 @@ namespace Assets.Scripts.Mediator
             Vector3 vectorToTarget;
             float distanceToTarget;
             
-            if (enemy.GetConfuse)
-                toAttack = FindClosestEnemy(enemy); 
-
-            distanceToTarget = Vector3.Distance(enemy.Position, toAttack.Position);            
+            if (enemy.GetConfuse) { 
+                toAttack = FindClosestEnemy(enemy);
+                distanceToTarget = Vector3.Distance(enemy.Position, toAttack.Position);
+            }
+            else
+            {
+                distanceToTarget = Vector3.Distance(enemy.Position, toAttack.Position);
+                if(allies.Count > 0) { 
+                    /* Search for Players Allies to attack them */
+                    Characters.Character closestAlly = FindClosest(enemy, allies);
+                    float distanceToClosestAlly = Vector3.Distance(enemy.Position, closestAlly.Position);
+                    if (distanceToTarget > distanceToClosestAlly)
+                    {
+                        toAttack = closestAlly;
+                        distanceToTarget = distanceToClosestAlly;
+                    }
+                }
+            }
+                   
             nextState = DecideEnemyState(enemy, distanceToTarget);
             
             if(nextState == EnemyState.BackToPos)
@@ -188,6 +219,22 @@ namespace Assets.Scripts.Mediator
 
             enemy.setState(nextState, vectorToTarget);
             
+        }
+
+        private Characters.Character FindClosest(Characters.Character from, List<Characters.Character> within)
+        {
+            float minDistance = float.MaxValue;
+            Characters.Character closest = null;
+            foreach (Characters.Character character in within)
+            {
+                float currentDistance = Vector3.Distance(from.Position, character.Position);
+                if (currentDistance < minDistance)
+                {
+                    minDistance = currentDistance;
+                    closest = character;
+                }
+            }
+            return closest;
         }
 
         private EnemyState DecideEnemyState(Enemy enemy, float distanceToTarget)
@@ -221,8 +268,55 @@ namespace Assets.Scripts.Mediator
                     closestEnemy = e;
                 }
             }
-            Debug.Log(closestEnemy);
             return closestEnemy;
+        }
+
+
+        internal void AllyBehaviour(Ally wizzardSummon)
+        {
+            Enemy enemy = FindClosestEnemy(wizzardSummon);
+            if(enemy != null)
+            {
+                AllyState nextState;
+                Vector3 vectorToTarget;
+                float distanceToTarget;
+
+                distanceToTarget = Vector3.Distance(wizzardSummon.Position, enemy.Position);
+                nextState = DecideAllyState(wizzardSummon, distanceToTarget);
+
+                if (nextState == AllyState.Gard)
+                {
+                    if (Vector3.Distance(wizzardSummon.Position, player.Position) < 3)
+                    {
+                        nextState = AllyState.NoAction;
+                        vectorToTarget = Vector3.zero;
+                    }
+                    else
+                    {
+                        vectorToTarget = VectorFromAngle(Direction(wizzardSummon.Position, player.Position));
+                    }
+                }
+                else
+                {
+                    vectorToTarget = VectorFromAngle(Direction(wizzardSummon.Position, enemy.Position));
+                }
+
+                wizzardSummon.setState(nextState, vectorToTarget);
+            }
+        }
+
+        private AllyState DecideAllyState(Ally ally, float distanceToTarget)
+        {
+            if (distanceToTarget < ally.GetFightDistance)
+            {
+                return AllyState.Attack;
+            }
+            else if (distanceToTarget < ally.GetVisibility)
+            {
+                return AllyState.Chase;
+            }
+           
+            return AllyState.Gard;
         }
 
         private static float Direction(Vector3 from, Vector3 to)
