@@ -28,20 +28,13 @@ public class Archer : Enemy
         while (currentState == EnemyState.Attack)
         {
             animator.SetBool("moving", false);
-            Vector2 target = mediator.getPlayer().Position;
-            animator.SetFloat("targetX", target.x);
-            animator.SetFloat("targetY", target.y);
-
-            if(mediator.getPlayer() == null)
-            {
-                Debug.Log("AAAAAAAAAAAAAAAAAAAAA");
-            }
-
+            animator.SetFloat("targetX", vectorToTarget.x);
+            animator.SetFloat("targetY", vectorToTarget.y);
             animator.GetBehaviour<ArcherAttack>().target = mediator.getPlayer();
             animator.GetBehaviour<ArcherAttack>().source = this;
             animator.SetTrigger("attackAvailable");
-            animator.SetFloat("moveX", target.x);
-            animator.SetFloat("moveY", target.y);
+            animator.SetFloat("moveX", vectorToTarget.x);
+            animator.SetFloat("moveY", vectorToTarget.y);
             yield return base.AttackCo();
             animator.SetBool("moving", true);
         }
