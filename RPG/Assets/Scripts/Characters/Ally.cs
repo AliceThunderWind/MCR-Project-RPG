@@ -22,8 +22,9 @@ public class Ally : Character, ICharacter
     [SerializeField] private float Visibility;
     [SerializeField] private float FightDistance;
     [SerializeField] private float chaseSpeed;
+    [SerializeField] private float LifeDuration = 15f;
     private bool launchedAttack;
-    private bool registered = false;
+    private float LifeStart;
 
     public float GetVisibility
     {
@@ -34,9 +35,19 @@ public class Ally : Character, ICharacter
         get { return FightDistance; }
     }
 
-  
+    public void Awake()
+    {
+        LifeStart = Time.time;
+    }
+
     public override void Update()
     {
+        if(LifeStart + LifeDuration < Time.time)
+        {
+            Damage(100);
+            return;
+        }
+
         Mediator.AllyBehaviour(this);
         switch (allyState)
         {

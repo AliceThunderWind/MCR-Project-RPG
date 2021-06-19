@@ -474,8 +474,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.5959817
-  m_LinearDrag: 25
+  m_Mass: 0.2
+  m_LinearDrag: 40
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: 6b7a6aeef79b99b45b291e831180fed9, type: 2}
@@ -560,7 +560,7 @@ MonoBehaviour:
   speed: 17
   health: 50
   attackDuration: 0.5
-  attackCoolDown: 0.5
+  attackCoolDown: 0
   Visibility: 8
   FightDistance: 1.5
   chaseSpeed: 12
