@@ -557,7 +557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mediator: {fileID: 0}
-  speed: 10
+  speed: 17
   health: 50
   attackDuration: 0.5
   attackCoolDown: 0.5
