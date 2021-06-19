@@ -1,10 +1,5 @@
 ﻿using Assets.Scripts.Wizzard;
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Assets.Scripts.Characters
@@ -15,7 +10,7 @@ namespace Assets.Scripts.Characters
     {
         [SerializeField] private GameObject spawnSpot;
         [SerializeField] private WizzardCreatureSlot[] creaturesSlots;
-        [SerializeField] private Ally summon;
+        [SerializeField] private WizzardSummon summon;
         private int SpawnDistance = 3;
       
         protected override IEnumerator AttackCo()
@@ -35,7 +30,7 @@ namespace Assets.Scripts.Characters
                 {
                     if(slot.Empty)
                     {
-                        Ally ally = Instantiate(summon, slot.transform.position, Quaternion.identity);
+                        WizzardSummon ally = Instantiate(summon, slot.transform.position, Quaternion.identity);
                         ally.mySlot = slot;
                         ally.Mediator = mediator;
                         slot.Empty = false;

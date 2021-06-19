@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 1009486666902389292}
   - component: {fileID: 1009486666902389293}
   - component: {fileID: 1009486666902389288}
-  - component: {fileID: 3833022958199277004}
+  - component: {fileID: 315394657703428848}
   m_Layer: 6
   m_Name: WizardSummon
   m_TagString: attackable
@@ -544,7 +544,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3833022958199277004
+--- !u!114 &315394657703428848
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -553,15 +553,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1009486666902389295}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eff9d47797306914eaa006fb58729b37, type: 3}
+  m_Script: {fileID: 11500000, guid: 853716eec19821f49ba1547c15fc981e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mediator: {fileID: 0}
-  speed: 17
-  health: 50
-  attackDuration: 0.5
+  speed: 7
+  health: 100
+  attackDuration: 0.8
   attackCoolDown: 0
-  Visibility: 8
-  FightDistance: 1.5
-  chaseSpeed: 12
-  LifeDuration: 30
+  visibility: 12
+  fightDistance: 1.4
+  chaseSpeed: 10
+  lifeDuration: 10

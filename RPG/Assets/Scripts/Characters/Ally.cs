@@ -1,8 +1,7 @@
-﻿using Assets.Scripts.Mediator;
-using Assets.Scripts.Characters;
+﻿using Assets.Scripts.Characters;
 using UnityEngine;
 using Assets.Scripts.Hit;
-using Assets.Scripts.Wizzard;
+
 using System.Collections;
 
 public enum AllyState
@@ -16,23 +15,21 @@ public class Ally : Character, ICharacter
 {
         
     private AllyState allyState;
-    public WizzardCreatureSlot mySlot { get; set; }
-    public GameMediator Mediator { get; set; }
-
-    [SerializeField] private float Visibility;
-    [SerializeField] private float FightDistance;
-    [SerializeField] private float chaseSpeed;
-    [SerializeField] private float LifeDuration = 10f;
+    
+    [SerializeField] private float visibility = 10f;
+    [SerializeField] private float fightDistance = 1.4f;
+    [SerializeField] private float chaseSpeed = 8f;
+    [SerializeField] private float lifeDuration = 10f;
     private bool launchedAttack;
     private float LifeStart;
 
-    public float GetVisibility
+    public float Visibility
     {
-        get { return Visibility; }
+        get { return visibility; }
     }
-    public float GetFightDistance
+    public float FightDistance
     {
-        get { return FightDistance; }
+        get { return fightDistance; }
     }
 
     public void Awake()
@@ -42,7 +39,8 @@ public class Ally : Character, ICharacter
 
     public override void Update()
     {
-        if(LifeStart + LifeDuration < Time.time)
+        if(Mediator == null) return;
+        if(LifeStart + lifeDuration < Time.time)
         {
             Damage(100);
             return;
@@ -82,7 +80,6 @@ public class Ally : Character, ICharacter
     protected override IEnumerator DieCo()
     {
         Mediator.unregisterAlly(this);
-        mySlot.Empty = true;
         yield return base.DieCo();
         Destroy(gameObject, 2f);
     }

@@ -17,6 +17,7 @@ namespace Assets.Scripts.Characters
     {
         protected CommandDispatcher command = CommandDispatcher.Instance;
         [SerializeField] protected GameMediator mediator;
+        public GameMediator Mediator { get { return this.mediator; } set { this.mediator = value; } }
         public Vector3 Position {
             get {
                 return transform.position; 
@@ -28,10 +29,10 @@ namespace Assets.Scripts.Characters
 
         public bool IsHit { get; set; } = false; // prevent multiple hits triggered by a single hit -> multiple collider objects
 
-        [SerializeField] protected float speed;
-        [SerializeField] protected float health;
-        [SerializeField] protected float attackDuration;
-        [SerializeField] protected float attackCoolDown;
+        [SerializeField] protected float speed = 7f;
+        [SerializeField] protected float health = 100f;
+        [SerializeField] protected float attackDuration = 0.8f;
+        [SerializeField] protected float attackCoolDown = 0f;
         protected Rigidbody2D myRigidbody;
         protected Animator animator;
         protected Vector3 vectorToTarget;
@@ -135,5 +136,11 @@ namespace Assets.Scripts.Characters
 
         public abstract void Update();
 
+        public GameMediator getMediator()
+        {
+            return mediator;
+        }
+
+     
     }
 }

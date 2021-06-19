@@ -1,7 +1,5 @@
 ﻿using Assets.Scripts.Character.Selector;
 using Assets.Scripts.Hit;
-using Assets.Scripts.Wizzard;
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -25,6 +23,7 @@ namespace Assets.Scripts.Mediator
             Level3
         }
 
+       
         private CommandDispatcher command = CommandDispatcher.Instance;
 
 
@@ -33,10 +32,12 @@ namespace Assets.Scripts.Mediator
         private List<Enemy> enemies = new List<Enemy>();
         private List<Characters.Character> allies = new List<Characters.Character>();
         private List<Enemy> sentries = new List<Enemy>();
+        
         [SerializeField] public Player player;
         [SerializeField] private GUIHPHandler GUIhp;
         [SerializeField] private PlayerSelector PlayerSelector;
         [SerializeField] private GameObject PlayersContainer;
+        [SerializeField] private GameObject AllyAI;
         [SerializeField] private CameraMovement MainCamera;
         [SerializeField] private Gate level1Gate;
 
@@ -54,20 +55,15 @@ namespace Assets.Scripts.Mediator
             }
         }
 
-     
-
         public Player getPlayer()
         {
             return player;
         }
 
         
-
         public Vector3 PlayerPosition { get { return player.Position; } }
         private void Awake()
         {
-            
-            command.Subscribe<HitCharacterCommand>(OnHitCharacter);
             command.Subscribe<HitBreakeableCommand>(OnHitBreakable);
             command.Subscribe<HpIncreaseCommand>(OnHpIncrease);
             command.Subscribe<HpDecreaseCommand>(OnHpDecrease);
@@ -142,12 +138,24 @@ namespace Assets.Scripts.Mediator
             cmd.What.GetComponent<IBrakeable>().Brake();
         }
 
-        private void OnHitCharacter(HitCharacterCommand cmd)
+        public void CharachterHit(ICharacter character, float damage)
         {
-            ICharacter character = cmd.What.GetComponent<ICharacter>();
             if (character != null)
             {
-                character.Damage(cmd.Damage);
+                character.Damage(damage);
+            }
+        }
+
+        public void CharacterConfuse(ICharacter character)
+        {
+            if (character.GetType().IsSubclassOf(typeof(Enemy))) {
+                Enemy enemy = (Enemy) character;
+                unregisterEnemy(enemy);
+                Destroy(enemy.gameObject.GetComponent<Enemy>());
+                this.AllyAI.GetComponent<Characters.Character>().Mediator = this;
+                Ally newAlly = enemy.gameObject.AddComponent<Ally>();
+                newAlly.Mediator = this;
+                registerAlly(newAlly);
             }
         }
 
@@ -307,11 +315,11 @@ namespace Assets.Scripts.Mediator
 
         private AllyState DecideAllyState(Ally ally, float distanceToTarget)
         {
-            if (distanceToTarget < ally.GetFightDistance)
+            if (distanceToTarget < ally.FightDistance)
             {
                 return AllyState.Attack;
             }
-            else if (distanceToTarget < ally.GetVisibility)
+            else if (distanceToTarget < ally.Visibility)
             {
                 return AllyState.Chase;
             }

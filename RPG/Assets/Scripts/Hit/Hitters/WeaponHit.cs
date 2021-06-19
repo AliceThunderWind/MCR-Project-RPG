@@ -1,21 +1,10 @@
+using Assets.Scripts.Hit;
 using UnityEngine;
 
 public class WeaponHit : MonoBehaviour
 {
     [SerializeField] private float damage;
-    private CommandDispatcher mediator = CommandDispatcher.Instance;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private CommandDispatcher commandDispatcher = CommandDispatcher.Instance;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -28,16 +17,14 @@ public class WeaponHit : MonoBehaviour
          */
 
         if (other.CompareTag("attackable")) {
-
-            HitCharacterCommand cmd = new HitCharacterCommand();
-            cmd.What    = other;
-            cmd.Damage  = damage;
-            mediator.Publish(cmd);
+            ICharacter character = other.GetComponent<ICharacter>();
+            if(character != null)
+                character.getMediator().CharachterHit(character, damage);
 
         }else if(other.CompareTag("brakeable")) {
             HitBreakeableCommand cmd = new HitBreakeableCommand();
             cmd.What = other;
-            mediator.Publish(cmd);
+            commandDispatcher.Publish(cmd);
         }
     }
 }

@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 600574537619876982}
   - component: {fileID: 600574537619874697}
   - component: {fileID: 600574537619874696}
-  - component: {fileID: 600574537619874699}
   - component: {fileID: 600574537619874698}
   - component: {fileID: 600574537619876980}
+  - component: {fileID: 7232814677722089639}
   m_Layer: 6
   m_Name: WizardConfusion
   m_TagString: attackable
@@ -129,23 +129,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.584561, y: 0.7322267}
   m_EdgeRadius: 0
---- !u!114 &600574537619874699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600574537619874701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6739f285d2c912c47a95778f2027b7a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mediator: {fileID: 8126727556995594325, guid: 2904c696dd47d4a4785a5e1d79751869, type: 3}
-  speed: 12
-  health: 100
-  attackDuration: 0.5
-  attackCoolDown: 0
 --- !u!95 &600574537619874698
 Animator:
   serializedVersion: 3
@@ -186,3 +169,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &7232814677722089639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600574537619874701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8688f7cc347591458b1f000ada5b317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mediator: {fileID: 0}
+  speed: 10
+  health: 100
+  attackDuration: 0.75
+  attackCoolDown: 0

@@ -1,10 +1,11 @@
 using Assets.Scripts.Characters;
+using Assets.Scripts.Mediator;
 using System.Collections;
 using UnityEngine;
 
 public abstract class ProjectileAttack : StateMachineBehaviour
 {
-
+    [SerializeField] public GameMediator mediator;
     [SerializeField] public Character target;
     [SerializeField] public Character source;
     [SerializeField] private GameObject projectilePrefab;
@@ -15,6 +16,7 @@ public abstract class ProjectileAttack : StateMachineBehaviour
     {
         for (int i = 0; i < burst; ++i)
         {
+            
             GameObject arrow = Instantiate(projectilePrefab, source.Position + targetDirection.normalized * 2, Quaternion.identity);
             float rotation = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
             targetDirection = targetDirection.normalized;
