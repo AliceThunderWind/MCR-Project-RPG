@@ -141,9 +141,7 @@ namespace Assets.Scripts.Mediator
         public void CharachterHit(ICharacter character, float damage)
         {
             if (character != null)
-            {
                 character.Damage(damage);
-            }
         }
 
         public void CharacterConfuse(ICharacter character)
@@ -152,7 +150,6 @@ namespace Assets.Scripts.Mediator
                 Enemy enemy = (Enemy) character;
                 unregisterEnemy(enemy);
                 Destroy(enemy.gameObject.GetComponent<Enemy>());
-                this.AllyAI.GetComponent<Characters.Character>().Mediator = this;
                 Ally newAlly = enemy.gameObject.AddComponent<Ally>();
                 newAlly.Mediator = this;
                 registerAlly(newAlly);
@@ -187,22 +184,15 @@ namespace Assets.Scripts.Mediator
             Vector3 vectorToTarget;
             float distanceToTarget;
             
-            if (enemy.GetConfuse) { 
-                toAttack = FindClosestEnemy(enemy);
-                distanceToTarget = Vector3.Distance(enemy.Position, toAttack.Position);
-            }
-            else
-            {
-                distanceToTarget = Vector3.Distance(enemy.Position, toAttack.Position);
-                if(allies.Count > 0) { 
-                    /* Search for Players Allies to attack them */
-                    Characters.Character closestAlly = FindClosest(enemy, allies);
-                    float distanceToClosestAlly = Vector3.Distance(enemy.Position, closestAlly.Position);
-                    if (distanceToTarget > distanceToClosestAlly)
-                    {
-                        toAttack = closestAlly;
-                        distanceToTarget = distanceToClosestAlly;
-                    }
+            distanceToTarget = Vector3.Distance(enemy.Position, toAttack.Position);
+            if(allies.Count > 0) { 
+                /* Search for Players Allies to attack them */
+                Characters.Character closestAlly = FindClosest(enemy, allies);
+                float distanceToClosestAlly = Vector3.Distance(enemy.Position, closestAlly.Position);
+                if (distanceToTarget > distanceToClosestAlly)
+                {
+                    toAttack = closestAlly;
+                    distanceToTarget = distanceToClosestAlly;
                 }
             }
                    
@@ -247,11 +237,11 @@ namespace Assets.Scripts.Mediator
 
         private EnemyState DecideEnemyState(Enemy enemy, float distanceToTarget)
         {
-            if (distanceToTarget < enemy.GetFightDistance)
+            if (distanceToTarget < enemy.FightDistance)
             {
                 return EnemyState.Attack;
             }
-            else if (distanceToTarget < enemy.GetVisibility)
+            else if (distanceToTarget < enemy.Visibility)
             {
                 return EnemyState.Chase;
             }

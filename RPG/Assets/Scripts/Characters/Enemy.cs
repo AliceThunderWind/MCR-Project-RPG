@@ -13,8 +13,8 @@ public enum EnemyState
 }
 abstract public class Enemy : Character, ICharacter
 {
-    [SerializeField] protected float Visibility;
-    [SerializeField] protected float FightDistance;
+    [SerializeField] protected float visibility;
+    [SerializeField] protected float fightDistance;
     [SerializeField] private float chaseSpeed;
 
     protected float nextStartTime = 5.0f;
@@ -22,21 +22,19 @@ abstract public class Enemy : Character, ICharacter
     [SerializeField] protected float period = 5f;
     [SerializeField] private bool sentry;
     public bool IsSentry { get => sentry; }
-    [SerializeField] public bool GetConfuse;
-
     
     public Vector3 InitialPosition { get; internal set; }
     protected EnemyState currentState;
 
     protected bool launchedAttack = false;
 
-    public float GetVisibility
+    public float Visibility
     {
-        get { return Visibility; }
+        get { return visibility; }
     }
-    public float GetFightDistance
+    public float FightDistance
     {
-        get { return FightDistance; }
+        get { return fightDistance; }
     }
 
     public Vector3 GetPlayerPosition
@@ -95,10 +93,8 @@ abstract public class Enemy : Character, ICharacter
             }
         }
 
-
         if (Time.time > nextStopTime)
         {
-
             vectorToTarget = GameMediator.RandomVector();
             nextStartTime = Time.time + period;
             nextStopTime = Time.time + 2 * period;
@@ -110,15 +106,5 @@ abstract public class Enemy : Character, ICharacter
         mediator.unregisterEnemy(this);
         return base.DieCo();
     }
-
-    // for random walk in 5 second periode with 5s pause
-
-
-    // Start is called before the first frame update
-
-
-    // Update is called once per frame
-
-
 
 }
