@@ -1,28 +1,17 @@
 using Assets.Scripts.Characters;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-
-
-public class ProjectileAttack : StateMachineBehaviour
+public abstract class ProjectileAttack : StateMachineBehaviour
 {
 
     [SerializeField] public Character target;
     [SerializeField] public Character source;
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private int burst;
-    [SerializeField] private float velocity;
+    [SerializeField] private float velocity;  
 
-    public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    {
-        Vector3 targetDirection = target.Position - source.Position;
-        Vector2 temp = new Vector2(targetDirection.x, targetDirection.y);
-        source.StartCoroutine(LaunchArrow(targetDirection, temp));
-
-    }
-
-    private IEnumerator LaunchArrow(Vector3 targetDirection, Vector2 temp)
+    protected IEnumerator LaunchArrow(Vector3 targetDirection, Vector2 temp)
     {
         for (int i = 0; i < burst; ++i)
         {
