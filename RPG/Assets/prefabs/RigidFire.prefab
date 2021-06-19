@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 9219357272618128103}
   - component: {fileID: 6805709294035355454}
   - component: {fileID: 1874820015664994956}
+  - component: {fileID: 4066972663036766149}
   m_Layer: 0
   m_Name: RigidFire
   m_TagString: Untagged
@@ -155,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 110771aa5136bcd47baf3adccbab7685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 60
+  damage: 15
 --- !u!114 &1874820015664994956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,3 +169,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec6a14750dea6654f91215c4aec110b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4066972663036766149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6134111388650851699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c85a9eb2d0af764f83075375ed9abb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 5

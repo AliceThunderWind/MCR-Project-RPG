@@ -184,5 +184,5 @@ MonoBehaviour:
   mediator: {fileID: 0}
   speed: 10
   health: 100
-  attackDuration: 0.7
+  attackDuration: 0.75
   attackCoolDown: 0
