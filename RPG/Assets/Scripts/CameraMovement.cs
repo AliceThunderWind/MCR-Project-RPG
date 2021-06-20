@@ -6,8 +6,6 @@ public class CameraMovement : MonoBehaviour
 {
     private Transform target;
     public float smoothing;
-    public Vector2 maxPosition;
-    public Vector2 minPosition;
 
 
     // Start is called before the first frame update

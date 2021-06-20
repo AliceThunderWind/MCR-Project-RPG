@@ -13,8 +13,6 @@ public class GUIHPHandler : MonoBehaviour
     [SerializeField] private Image[] hearts;
 
     [SerializeField] private Sprite fullHeart;
-    [SerializeField] private Sprite halfHeart;
-    [SerializeField] private Sprite femptyHeart;
 
 
     // Start is called before the first frame update
