@@ -23,7 +23,7 @@ namespace Assets.Scripts.Mediator
         {
             Level1 = 0,
             Level2 = 1,
-            Level3 = 3
+            Level3 = 2
         }
 
        
