@@ -5,7 +5,9 @@ using UnityEngine;
 namespace Assets.Scripts.Characters
 {
    
-
+    /// <summary>
+    /// Classe représentant un monstre spawnable par le joueur
+    /// </summary>
     class PlayerWizzardCreatures : Player
     {
         [SerializeField] private GameObject spawnSpot;

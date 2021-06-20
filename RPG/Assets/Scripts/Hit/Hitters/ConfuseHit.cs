@@ -4,6 +4,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Classe représentant un dommage de type confusion
+/// </summary>
 public class ConfuseHit : MonoBehaviour
 {
     public GameMediator mediator;

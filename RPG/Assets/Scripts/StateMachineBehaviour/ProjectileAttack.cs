@@ -2,6 +2,9 @@ using Assets.Scripts.Characters;
 using System.Collections;
 using UnityEngine;
 
+/// <summary>
+/// Classe qui permet de créer des projectiles
+/// </summary>
 public abstract class ProjectileAttack : StateMachineBehaviour
 {
     [SerializeField] public Character target;
@@ -10,17 +13,23 @@ public abstract class ProjectileAttack : StateMachineBehaviour
     [SerializeField] private int burst;
     [SerializeField] private float velocity;  
 
-    protected IEnumerator LaunchArrow(Vector3 targetDirection, Vector2 temp)
+    /// <summary>
+    /// Méthode permettant d'instancier un projectile
+    /// </summary>
+    /// <param name="targetDirection"></param>
+    /// <param name="temp"></param>
+    /// <returns></returns>
+    protected IEnumerator LaunchProjectile(Vector3 targetDirection, Vector2 temp)
     {
         for (int i = 0; i < burst; ++i)
         {
             
-            GameObject arrow = Instantiate(projectilePrefab, source.Position + targetDirection.normalized * 2, Quaternion.identity);
+            GameObject projectile = Instantiate(projectilePrefab, source.Position + targetDirection.normalized * 2, Quaternion.identity);
             float rotation = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
             targetDirection = targetDirection.normalized;
-            Rigidbody2D arrowBody = arrow.GetComponent<Rigidbody2D>();
-            arrowBody.velocity = temp.normalized * velocity;
-            arrow.transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotation));
+            Rigidbody2D projectileBody = projectile.GetComponent<Rigidbody2D>();
+            projectileBody.velocity = temp.normalized * velocity;
+            projectile.transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotation));
             yield return new WaitForSeconds(0.1f);
         }
     }

@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Classe représentant un dommage de type feu
+/// </summary>
 public class FireHit : MonoBehaviour
 {
     private CommandDispatcher mediator = CommandDispatcher.Instance;

@@ -4,6 +4,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Classe représentant un heal d'une fontaine
+/// </summary>
 public class FountainHit : MonoBehaviour
 {
     private CommandDispatcher mediator = CommandDispatcher.Instance;

@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Classe représentant l'effet de knockback
+/// </summary>
 public class Knockback : MonoBehaviour
 {
     [SerializeField] private float thrust;

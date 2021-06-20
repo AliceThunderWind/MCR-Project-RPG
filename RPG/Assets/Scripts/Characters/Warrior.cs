@@ -2,6 +2,10 @@ using Assets.Scripts.Mediator;
 using System.Collections;
 using UnityEngine;
 
+/// <summary>
+/// Classe représentant un ennemi combattant au corps à corps
+/// </summary>
+/// <inheritdoc/>
 public class Warrior : Enemy
 {
 

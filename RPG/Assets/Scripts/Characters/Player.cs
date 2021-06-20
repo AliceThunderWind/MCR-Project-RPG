@@ -3,6 +3,10 @@ using Assets.Scripts.Hit;
 using System.Collections;
 using UnityEngine;
 
+/// <summary>
+/// Classe représentant un joueur
+/// </summary>
+/// <inheritdoc/>
 public class Player : Character, ICharacter
 {
 
@@ -10,9 +14,11 @@ public class Player : Character, ICharacter
 
     protected KeyCode nextKey = KeyCode.E;
     protected KeyCode previousKey = KeyCode.Q;
-
-    public bool Selected { get; internal set; } = false;
-
+    
+    /// <summary>
+    /// Méthode permettant de demander le refresh de l'affichage des points de vie
+    /// </summary>
+    /// <returns></returns>
     private IEnumerator DisplayHp()
     {
         yield return new WaitForSeconds(.1f);
@@ -48,11 +54,20 @@ public class Player : Character, ICharacter
 
     }
 
+    /// <summary>
+    /// Setter pour la vie
+    /// </summary>
+    /// <param name="newHealth">Nouvelle valeur</param>
     public void setHealth(float newHealth)
     {
         this.health = newHealth;
     }
 
+    /// <summary>
+    /// Méthode permettant d'appliquer des dommages
+    /// </summary>
+    /// <param name="damage">Nombre de points de dommage</param>
+    /// <returns>Nouvelle valeur de la vie</returns>
     public override float Damage(float damage)
     {
         float hp = base.Damage(damage);
@@ -60,9 +75,14 @@ public class Player : Character, ICharacter
         return hp;
     }
 
-    public override float heal(float damage)
+    /// <summary>
+    /// Méthode permettant d'appliquer du soin
+    /// </summary>
+    /// <param name="heal">Nombre de points de soin</param>
+    /// <returns></returns>
+    public override float heal(float heal)
     {
-        float hp = base.heal(damage);
+        float hp = base.heal(heal);
         StartCoroutine(DisplayHp());
         return hp;
     }
