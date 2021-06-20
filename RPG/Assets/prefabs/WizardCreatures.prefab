@@ -193,7 +193,7 @@ MonoBehaviour:
   - {fileID: 3103527084412493193}
   - {fileID: 3099498759422407667}
   - {fileID: 944662829129154665}
-  summon: {fileID: 0}
+  summon: {fileID: 315394657703428848, guid: aa2acec8aa139eb43aab8c8e2df17cee, type: 3}
 --- !u!1 &2668263715859154108
 GameObject:
   m_ObjectHideFlags: 0

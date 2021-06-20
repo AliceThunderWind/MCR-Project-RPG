@@ -349,7 +349,7 @@ PrefabInstance:
     - target: {fileID: 1725943903401245503, guid: 0a03d2257963f98439239cf342b583db, type: 3}
       propertyPath: summon
       value: 
-      objectReference: {fileID: 1992649014}
+      objectReference: {fileID: 315394657703428848, guid: aa2acec8aa139eb43aab8c8e2df17cee, type: 3}
     - target: {fileID: 1725943903401245503, guid: 0a03d2257963f98439239cf342b583db, type: 3}
       propertyPath: mediator
       value: 
@@ -86786,14 +86786,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1992649014 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 356246634522530567, guid: 0a03d2257963f98439239cf342b583db, type: 3}
-  m_PrefabInstance: {fileID: 252012414}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 853716eec19821f49ba1547c15fc981e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
