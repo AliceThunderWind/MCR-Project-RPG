@@ -121,6 +121,11 @@ namespace Assets.Scripts.Mediator
             return player;
         }
         */
+
+        /// <summary>
+        /// Méthode permettant de choisir la classe du joueur
+        /// </summary>
+        /// <param name="player">Joueur courant</param>
         public void SelectPlayer(Player player)
         {
             if (this.player != null) this.player.Selected = false;
@@ -131,6 +136,9 @@ namespace Assets.Scripts.Mediator
             //GUIhp.gameObject.SetActive(true);
         }
 
+        /// <summary>
+        /// Méthode permettant d'activer le playerSelector
+        /// </summary>
         private void enablePlayerSelector()
         {
             MainCamera.SetTarget(PlayersContainer.transform);
@@ -139,21 +147,37 @@ namespace Assets.Scripts.Mediator
             PlayerSelector.StartOnce();
         }
 
+        /// <summary>
+        /// Méthode permettant de dire au GUI de refresh son affichage
+        /// </summary>
+        /// <param name="newHp">Nouvel valeur des points de vie</param>
         public void PlayerChangeHp(float newHp)
         {
             GUIhp.setHp(newHp);
         }
 
+        /// <summary>
+        /// Méthode permettant d'ajouter un allié aux différentes listes
+        /// </summary>
+        /// <param name="enemy">L'allié à rajouter</param>
         internal void registerAlly(Characters.Character ally)
         {
             allies.Add(ally);
         }
 
+        /// <summary>
+        /// Permet de retirer l'allié des différentes listes
+        /// </summary>
+        /// <param name="enemy">L'allié mort</param>
         public void unregisterAlly(Characters.Character ally)
         {
             allies.Remove(ally);
         }
 
+        /// <summary>
+        /// Méthode permettant d'ajouter un ennemi aux différentes listes
+        /// </summary>
+        /// <param name="enemy">L'ennemi à rajouter</param>
         public void registerEnemy(Enemy enemy)
         {
             enemies.Add(enemy);
@@ -161,6 +185,10 @@ namespace Assets.Scripts.Mediator
                 sentries.Add(enemy);
         }
 
+        /// <summary>
+        /// Permet de retirer l'ennemi des différentes listes
+        /// </summary>
+        /// <param name="enemy">L'ennemi mort</param>
         public void unregisterEnemy(Enemy enemy)
         {
             enemies.Remove(enemy);
@@ -173,7 +201,11 @@ namespace Assets.Scripts.Mediator
             }
         }
 
-
+        /// <summary>
+        /// Méthode permettant d'appliquer des dommages à un personnage
+        /// </summary>
+        /// <param name="character">Le personnage conecerné</param>
+        /// <param name="damage">La quantité de dommages</param>
         public void CharachterHit(ICharacter character, float damage)
         {
             if (character != null)
@@ -197,20 +229,34 @@ namespace Assets.Scripts.Mediator
                 }
             }
         }
+        /// <summary>
+        /// Méthode utilisée pour exécuter certaines actions lors de la publication d'une commande du type du paramètre cmd
+        /// </summary>
+        /// <param name="cmd">La commande que l'on écoute</param>
         private void OnHitBreakable(HitBreakeableCommand cmd)
         {
             cmd.What.GetComponent<IBrakeable>().Brake();
         }
+        /// <summary>
+        /// Méthode utilisée pour exécuter certaines actions lors de la publication d'une commande du type du paramètre cmd
+        /// </summary>
+        /// <param name="cmd">La commande que l'on écoute</param>
         private void OnHpIncrease(HpIncreaseCommand cmd)
         {
             cmd.What.GetComponent<ICharacter>().heal(cmd.Hp);
         }
-
+        /// <summary>
+        /// Méthode utilisée pour exécuter certaines actions lors de la publication d'une commande du type du paramètre cmd
+        /// </summary>
+        /// <param name="cmd">La commande que l'on écoute</param>
         private void OnHpDecrease(HpDecreaseCommand cmd)
         {
             cmd.What.GetComponent<ICharacter>().Damage(cmd.Hp);
         }
-
+        /// <summary>
+        /// Méthode utilisée pour exécuter certaines actions lors de la publication d'une commande du type du paramètre cmd
+        /// </summary>
+        /// <param name="cmd">La commande que l'on écoute</param>
         private void OnKnockback(KnockbackCommand cmd)
         {
             cmd.body.AddForce(cmd.force, ForceMode2D.Impulse);
