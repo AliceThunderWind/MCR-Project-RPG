@@ -52,7 +52,7 @@ namespace Assets.Scripts.Mediator
             Player p = other.GetComponent<Player>();
             if (p != null && sentries.Count == 0)
             {
-                //PlayerLevel++;
+                PlayerLevel++;
                 player = null;
                 enemies.Clear();
                 PlayerPrefs.SetInt(selectedCharacterLevel, (int)PlayerLevel);

@@ -18,7 +18,7 @@ public class PlayMenu : MonoBehaviour
     /// </summary>
     private void selectLevel1()
     {
-        PlayerPrefs.SetInt(selectedCharacterLevel, (int) GameMediator.Level.Level3);
+        PlayerPrefs.SetInt(selectedCharacterLevel, (int) GameMediator.Level.Level1);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
