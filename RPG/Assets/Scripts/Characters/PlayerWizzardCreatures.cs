@@ -39,7 +39,6 @@ namespace Assets.Scripts.Characters
                     }
                 }
 
-                //yield return base.AttackCo();
                 animator.SetBool("attacking", false);
                 yield return new WaitForSeconds(attackCoolDown);
                 animator.SetBool("moving", true);
