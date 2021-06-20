@@ -22,7 +22,6 @@ namespace Assets.Scripts.Characters
                 CharacterState = CharacterState.Attack;
                 animator.SetBool("attacking", true);
 
-
                 spawnSpot.transform.position = new Vector3(
                     Position.x + Input.GetAxisRaw("Horizontal") * SpawnDistance,
                     Position.y + Input.GetAxisRaw("Vertical") * SpawnDistance
@@ -40,13 +39,12 @@ namespace Assets.Scripts.Characters
                     }
                 }
 
-                yield return base.AttackCo();
+                //yield return base.AttackCo();
                 animator.SetBool("attacking", false);
                 yield return new WaitForSeconds(attackCoolDown);
                 animator.SetBool("moving", true);
                 CharacterState = CharacterState.Idle;
             }
         }
-
     }
 }

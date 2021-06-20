@@ -10,7 +10,6 @@ using UnityEngine;
 public class Player : Character, ICharacter
 {
 
-    public bool Selected { get; set; } = false;
     // Start is called before the first frame update
 
     protected KeyCode nextKey = KeyCode.E;
@@ -35,8 +34,6 @@ public class Player : Character, ICharacter
     // Update is called once per frame
     public override void Update()
     {
-        if (!Selected) return;
-
         animator.SetBool("moving", false);
         vectorToTarget = Vector3.zero;
         vectorToTarget.x = Input.GetAxisRaw("Horizontal");
@@ -54,12 +51,14 @@ public class Player : Character, ICharacter
 
         if (Input.GetKeyDown(nextKey))
         {
-            mediator.changeWeapon(1, health);
+            if(CharacterState != CharacterState.Attack)
+                mediator.changeWeapon(1, health);
         }
 
         if (Input.GetKeyDown(previousKey))
         {
-            mediator.changeWeapon(-1, health);
+            if (CharacterState != CharacterState.Attack)
+                mediator.changeWeapon(-1, health);
         }        
 
     }
