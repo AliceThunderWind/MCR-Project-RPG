@@ -47,6 +47,10 @@ namespace Assets.Scripts.Mediator
         private string selectedCharacterDataName = "CharacterClass";
         private string selectedCharacterLevel = "CharacterLevel";
 
+        /// <summary>
+        /// Méthode s'occupant du changement de niveau 
+        /// </summary>
+        /// <param name="other">Collider en collision</param>
         internal void PlayerChangeLevel(Collider2D other)
         {
             Player p = other.GetComponent<Player>();
@@ -65,6 +69,9 @@ namespace Assets.Scripts.Mediator
             }
         }
 
+        /// <summary>
+        /// Méthode permettant de gérer la mort du joueur et aller au menu mort 
+        /// </summary>
         public void playerDeath()
         {
             PlayerPrefs.SetInt(selectedCharacterLevel, (int)PlayerLevel);
@@ -73,6 +80,10 @@ namespace Assets.Scripts.Mediator
             
         }
 
+        /// <summary>
+        /// Getter du joueur
+        /// </summary>
+        /// <returns>Le joueur</returns>
         public Player getPlayer()
         {
             return player;
@@ -105,6 +116,11 @@ namespace Assets.Scripts.Mediator
             }
         }
 
+        /// <summary>
+        /// Méthode permettant de changer d'arme
+        /// </summary>
+        /// <param name="direction">Direction du changement</param>
+        /// <param name="health">Points de vie actuels</param>
         public void changeWeapon(int direction, float health)
         {
             Vector3 oldPosition = player.Position;
@@ -113,26 +129,7 @@ namespace Assets.Scripts.Mediator
             player.transform.position = oldPosition;
             player.setHealth(health);
         }
-        /*
-        internal void SelectPlayer(Player player)
-        {
-            Player p = other.GetComponent<Player>();
-            if (p != null && sentries.Count == 0)
-            {
-                player.Selected = false;
-                PlayerLevel = Level.Level2;
-                player = null;
-                enemies.Clear();
-                PlayerPrefs.SetInt("CharacterLevel", PlayerPrefs.GetInt("CharacterClass") + 1);
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            }
-        }
 
-        public Player getPlayer()
-        {
-            return player;
-        }
-        */
 
         /// <summary>
         /// Méthode permettant de choisir la classe du joueur
