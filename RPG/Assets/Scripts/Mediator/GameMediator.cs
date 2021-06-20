@@ -21,9 +21,9 @@ namespace Assets.Scripts.Mediator
 
         public enum Level
         {
-            Level1,
-            Level2,
-            Level3
+            Level1 = 0,
+            Level2 = 1,
+            Level3 = 3
         }
 
        
@@ -52,13 +52,25 @@ namespace Assets.Scripts.Mediator
             Player p = other.GetComponent<Player>();
             if (p != null && sentries.Count == 0)
             {
-                PlayerLevel++;
+                if(PlayerLevel < Level.Level3)
+                {
+                    PlayerLevel++;
+                }
+                
                 player = null;
                 enemies.Clear();
                 PlayerPrefs.SetInt(selectedCharacterLevel, (int)PlayerLevel);
                 PlayerPrefs.SetInt(selectedCharacterDataName, (int)PlayerClass);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
+        }
+
+        public void playerDeath()
+        {
+            PlayerPrefs.SetInt(selectedCharacterLevel, (int)PlayerLevel);
+            PlayerPrefs.SetInt(selectedCharacterDataName, (int)PlayerClass);
+            SceneManager.LoadScene("menuMort");
+            
         }
 
         public Player getPlayer()

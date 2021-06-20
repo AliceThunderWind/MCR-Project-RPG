@@ -89,7 +89,9 @@ public class Player : Character, ICharacter
         return hp;
     }
 
-    // static int count = 0;
-
-
+    protected override IEnumerator DieCo()
+    {
+        mediator.playerDeath();
+        return base.DieCo();
+    }
 }
