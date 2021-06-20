@@ -14,7 +14,9 @@ public class Player : Character, ICharacter
 
     protected KeyCode nextKey = KeyCode.E;
     protected KeyCode previousKey = KeyCode.Q;
-    
+
+    public bool Selected { get; set; } = false;
+
     /// <summary>
     /// Méthode permettant de demander le refresh de l'affichage des points de vie
     /// </summary>
