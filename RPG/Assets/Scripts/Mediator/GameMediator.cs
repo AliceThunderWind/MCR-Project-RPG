@@ -42,7 +42,7 @@ namespace Assets.Scripts.Mediator
         [SerializeField] private PlayerSelector PlayerSelector;
         [SerializeField] private GameObject PlayersContainer;
         [SerializeField] private CameraMovement MainCamera;
-        [SerializeField] private Gate level1Gate;
+        [SerializeField] private Gate levelGate;
 
         private string selectedCharacterDataName = "CharacterClass";
         private string selectedCharacterLevel = "CharacterLevel";
@@ -196,7 +196,7 @@ namespace Assets.Scripts.Mediator
                 sentries.Remove(enemy);
                 if(sentries.Count == 0)
                 {
-                    level1Gate.isOpen = true;
+                    levelGate.isOpen = true;
                 }
             }
         }
