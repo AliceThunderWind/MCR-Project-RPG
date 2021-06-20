@@ -53,7 +53,6 @@ namespace Assets.Scripts.Character.Selector
 
         private string Choose()
         {
-
             switch (mediator.PlayerClass)
             {
                 case GameMediator.CharacterClass.Warrior:

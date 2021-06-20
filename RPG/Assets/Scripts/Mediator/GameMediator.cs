@@ -49,7 +49,6 @@ namespace Assets.Scripts.Mediator
             Player p = other.GetComponent<Player>();
             if (p != null && sentries.Count == 0)
             {
-                player.Selected = false;
                 PlayerLevel++;
                 player = null;
                 enemies.Clear();
@@ -87,7 +86,6 @@ namespace Assets.Scripts.Mediator
             }
             else
             {
-                player.Selected = true;
                 MainCamera.SetTarget(player.transform);
                 GUIhp.gameObject.SetActive(true);
                 PlayerSelector.gameObject.SetActive(false);
@@ -127,16 +125,15 @@ namespace Assets.Scripts.Mediator
         public void SelectPlayer(Player player)
         {
             this.player = player;
-            player.Selected = true;
             MainCamera.SetTarget(this.player.transform);
-            PlayerSelector.gameObject.SetActive(false);
-            GUIhp.gameObject.SetActive(true);
+            //PlayerSelector.gameObject.SetActive(false);
+            //GUIhp.gameObject.SetActive(true);
         }
 
         private void enablePlayerSelector()
         {
             MainCamera.SetTarget(PlayersContainer.transform);
-            GUIhp.gameObject.SetActive(false);
+            GUIhp.gameObject.SetActive(true);
             PlayerSelector.gameObject.SetActive(true);
         }
 
@@ -288,35 +285,37 @@ namespace Assets.Scripts.Mediator
         internal void AllyBehaviour(Ally wizzardSummon)
         {
             Enemy enemy = FindClosestEnemy(wizzardSummon);
-            if(enemy != null)
-            {
-                AllyState nextState;
-                Vector3 vectorToTarget;
-                float distanceToTarget;
+            float distanceToTarget;
+            AllyState nextState = AllyState.Gard;
+            Vector3 vectorToTarget;
 
+            if (enemy != null)
+            {
+                
                 distanceToTarget = Vector3.Distance(wizzardSummon.Position, enemy.Position);
                 nextState = DecideAllyState(wizzardSummon, distanceToTarget);
+            }
 
-                if (nextState == AllyState.Gard)
+            if (nextState == AllyState.Gard)
+            {
+                if (Vector3.Distance(wizzardSummon.Position, player.Position) < 3.5f)
                 {
-                    if (Vector3.Distance(wizzardSummon.Position, player.Position) < 3.5f)
-                    {
-                        nextState = AllyState.NoAction;
-                        vectorToTarget = Vector3.zero;
-                    }
-                    else
-                    {
-                        vectorToTarget = VectorFromAngle(Direction(wizzardSummon.Position, player.Position));
-                    }
+                    nextState = AllyState.NoAction;
+                    vectorToTarget = Vector3.zero;
                 }
                 else
                 {
-                    vectorToTarget = VectorFromAngle(Direction(wizzardSummon.Position, enemy.Position));
+                    vectorToTarget = VectorFromAngle(Direction(wizzardSummon.Position, player.Position));
                 }
-
-                wizzardSummon.setState(nextState, vectorToTarget);
             }
+            else
+            {
+                vectorToTarget = VectorFromAngle(Direction(wizzardSummon.Position, enemy.Position));
+            }
+
+            wizzardSummon.setState(nextState, vectorToTarget);
         }
+        
 
         private AllyState DecideAllyState(Ally ally, float distanceToTarget)
         {

@@ -112,7 +112,6 @@ namespace Assets.Scripts.Characters
                 yield return new WaitForSeconds(attackDuration); // attack duration wait
                 animator.SetBool("attacking", false);
                 yield return new WaitForSeconds(attackCoolDown);    // attack cool down wait
-
                 // the character could have be killed during his attack cooldown (very likely)
                 // we must not change his state to walk if he is dead, thus the codition must be rechecked
                 if (CharacterState != CharacterState.Dead) CharacterState = CharacterState.Walk;
