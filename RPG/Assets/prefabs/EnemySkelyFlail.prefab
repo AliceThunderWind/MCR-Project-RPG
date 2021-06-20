@@ -188,8 +188,8 @@ MonoBehaviour:
   mediator: {fileID: 0}
   speed: 6
   health: 100
-  attackDuration: 1
-  attackCoolDown: 1
+  attackDuration: 0.5
+  attackCoolDown: 2
   visibility: 5
   fightDistance: 1.7
   chaseSpeed: 8
@@ -274,7 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 110771aa5136bcd47baf3adccbab7685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 15
 --- !u!114 &5543016869619218659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,7 +369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 110771aa5136bcd47baf3adccbab7685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 15
 --- !u!114 &5543016869934623761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -461,7 +461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 110771aa5136bcd47baf3adccbab7685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 15
 --- !u!114 &5543016870383551502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -554,7 +554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 110771aa5136bcd47baf3adccbab7685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 15
 --- !u!114 &5543016870804588602
 MonoBehaviour:
   m_ObjectHideFlags: 0

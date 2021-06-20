@@ -17,7 +17,7 @@ namespace Assets.Scripts.Character.Selector
 
         [SerializeField] private int selected;
 
-        string[,] weapons = new string[3, 3] {{"sword","hammer","axe"},
+        string[,] weapons = new string[3, 3] {{"sword","axe","hammer"},
                                          {"bow","dagger","crossbow"},
                                          {"fire","confusion","summon"}};
         /// <summary>
