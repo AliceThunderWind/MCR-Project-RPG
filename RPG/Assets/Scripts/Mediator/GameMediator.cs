@@ -80,16 +80,10 @@ namespace Assets.Scripts.Mediator
             PlayerLevel = (Level)PlayerPrefs.GetInt(selectedCharacterLevel, 0);
             PlayerClass = (CharacterClass)PlayerPrefs.GetInt(selectedCharacterDataName, 0);
 
-            Debug.Log("debut niveau");
-            Debug.Log(PlayerLevel);
-            Debug.Log(PlayerClass);
-
-            weaponEquipped.changeText((int)PlayerClass, (int)PlayerLevel);
-
             if (player == null)
-            {
-                
+            {   
                 enablePlayerSelector();
+                weaponEquipped.changeText(PlayerSelector.PlayerWeaponName());
             }
             else
             {
@@ -104,8 +98,8 @@ namespace Assets.Scripts.Mediator
         {
             Debug.Log("mediator trying to change weapon");
             Vector3 oldPosition = player.Position;
-            PlayerSelector.changeWeapon(direction);
-            weaponEquipped.changeText((int)PlayerClass, (int)PlayerLevel);
+            string weapon = PlayerSelector.ChangeWeapon(direction);
+            weaponEquipped.changeText(weapon);
             player.transform.position = oldPosition;
             player.setHealth(health);
             Debug.Log("mediator finished to change weapon");

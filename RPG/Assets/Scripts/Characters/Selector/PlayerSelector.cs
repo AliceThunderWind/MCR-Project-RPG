@@ -14,14 +14,15 @@ namespace Assets.Scripts.Character.Selector
 
         [SerializeField] private int selected = 0;
 
+        string[,] weapons = new string[3, 3] { {"sword","hammer","axe"},
+                                         {"bow","dagger","crossbow"},
+                                         {"fire","confusion","summon"}};
+
         public void Start()
         {
 
             selected = (int)mediator.PlayerLevel;
-            Debug.Log("PlayerSelector");
-            Debug.Log(mediator.PlayerLevel);
-            Debug.Log(mediator.PlayerClass);
-            ChooseClick();
+            Choose();
 
             switch (mediator.PlayerClass)
             {
@@ -34,20 +35,23 @@ namespace Assets.Scripts.Character.Selector
                 case GameMediator.CharacterClass.Wizzard:
                     wizzards[selected].gameObject.SetActive(true);
                     break;
-            }
-            
+            }           
            
         }
 
-        public void changeWeapon(int direction)
+        public string PlayerWeaponName()
         {
-            Debug.Log("changingWeapon");
-            if (direction < 0) PreviousClick();
-            if (direction > 0) NextClick();
-            ChooseClick();
+            return weapons[(int)mediator.PlayerClass, selected];
         }
 
-        private void ChooseClick()
+        public string ChangeWeapon(int direction)
+        {
+            if (direction < 0) Previous();
+            if (direction > 0) Next();
+            return Choose();
+        }
+
+        private string Choose()
         {
 
             switch (mediator.PlayerClass)
@@ -62,10 +66,13 @@ namespace Assets.Scripts.Character.Selector
                     mediator.SelectPlayer(wizzards[selected]);
                     break;
             }
-            
+
+            return PlayerWeaponName();
+
+
         }
 
-        private void PreviousClick()
+        private void Previous()
         {
             int previous = selected--;
             if (selected < 0) selected = (int) mediator.PlayerLevel;
@@ -87,7 +94,7 @@ namespace Assets.Scripts.Character.Selector
            
         }
 
-        public void NextClick()
+        public void Next()
         {
             int previous = selected++;
             if (selected > (int) mediator.PlayerLevel) selected = 0;

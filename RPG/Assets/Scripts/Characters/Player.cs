@@ -47,13 +47,11 @@ public class Player : Character, ICharacter
 
         if (Input.GetKeyDown(nextKey))
         {
-            Debug.Log("trying to change weapon");
             mediator.changeWeapon(1, health);
         }
 
         if (Input.GetKeyDown(previousKey))
         {
-            Debug.Log("trying to change weapon");
             mediator.changeWeapon(-1, health);
         }        
 
