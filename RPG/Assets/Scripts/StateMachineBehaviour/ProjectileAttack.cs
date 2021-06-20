@@ -23,8 +23,10 @@ public abstract class ProjectileAttack : StateMachineBehaviour
     {
         for (int i = 0; i < burst; ++i)
         {
-            
-            GameObject projectile = Instantiate(projectilePrefab, source.Position + targetDirection.normalized * 2, Quaternion.identity);
+
+            Vector3 projectilePosition = source.Position + targetDirection.normalized * 2;
+            projectilePosition.z = -1;
+            GameObject projectile = Instantiate(projectilePrefab, projectilePosition, Quaternion.identity);
             float rotation = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
             targetDirection = targetDirection.normalized;
             Rigidbody2D projectileBody = projectile.GetComponent<Rigidbody2D>();
