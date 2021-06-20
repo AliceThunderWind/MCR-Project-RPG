@@ -356,10 +356,11 @@ namespace Assets.Scripts.Mediator
         /// <summary>
         /// Permet de décider du comportement d'un Ally
         /// </summary>
-        /// <param name="wizzardSummon">Allié</param>
-        internal void AllyBehaviour(Ally wizzardSummon)
+        /// <param name="ally">Allié</param>
+        internal void AllyBehaviour(Ally ally)
         {
-            Enemy enemy = FindClosestEnemy(wizzardSummon);
+            
+            Enemy enemy = FindClosestEnemy(ally);
             float distanceToTarget;
             AllyState nextState = AllyState.Gard;
             Vector3 vectorToTarget;
@@ -367,28 +368,28 @@ namespace Assets.Scripts.Mediator
             if (enemy != null)
             {
                 
-                distanceToTarget = Vector3.Distance(wizzardSummon.Position, enemy.Position);
-                nextState = DecideAllyState(wizzardSummon, distanceToTarget);
+                distanceToTarget = Vector3.Distance(ally.Position, enemy.Position);
+                nextState = DecideAllyState(ally, distanceToTarget);
             }
 
             if (nextState == AllyState.Gard)
             {
-                if (Vector3.Distance(wizzardSummon.Position, player.Position) < 3.5f)
+                if (Vector3.Distance(ally.Position, player.Position) < 3.5f)
                 {
                     nextState = AllyState.NoAction;
                     vectorToTarget = Vector3.zero;
                 }
                 else
                 {
-                    vectorToTarget = VectorFromAngle(Direction(wizzardSummon.Position, player.Position));
+                    vectorToTarget = VectorFromAngle(Direction(ally.Position, player.Position));
                 }
             }
             else
             {
-                vectorToTarget = VectorFromAngle(Direction(wizzardSummon.Position, enemy.Position));
+                vectorToTarget = VectorFromAngle(Direction(ally.Position, enemy.Position));
             }
 
-            wizzardSummon.setState(nextState, vectorToTarget);
+            ally.setState(nextState, vectorToTarget);
         }
         
         /// <summary>
