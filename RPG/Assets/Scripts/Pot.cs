@@ -2,6 +2,11 @@ using Assets.Scripts.Hit;
 using System.Collections;
 using UnityEngine;
 
+
+/// <summary>
+/// Classe représentant un pot
+/// </summary>
+/// <inheritdoc/>
 public class Pot : MonoBehaviour, IBrakeable
 {
 

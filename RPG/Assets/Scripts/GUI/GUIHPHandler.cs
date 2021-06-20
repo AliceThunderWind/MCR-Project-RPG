@@ -29,6 +29,9 @@ public class GUIHPHandler : MonoBehaviour
         displayHealth();
     }
 
+    /// <summary>
+    /// Méthode permettant d'afficher les points de vie avec le nombre de coeurs correspondants
+    /// </summary>
     private void displayHealth()
     {
         GetComponentInChildren<Text>().text = this.health.ToString("0");
@@ -43,6 +46,10 @@ public class GUIHPHandler : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Méthode permettant de set le nombre de points de vie et d'actualiser l'affichage
+    /// </summary>
+    /// <param name="hp"></param>
     public void setHp(float hp)
     {
         this.health = hp;

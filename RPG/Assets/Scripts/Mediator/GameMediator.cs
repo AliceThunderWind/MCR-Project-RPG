@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 namespace Assets.Scripts.Mediator
 {
        
+    /// <summary>
+    /// Classe représentant notre Mediator
+    /// </summary>
     public sealed class GameMediator : MonoBehaviour
     {
         public enum CharacterClass
@@ -176,6 +179,10 @@ namespace Assets.Scripts.Mediator
                 character.Damage(damage);
         }
 
+        /// <summary>
+        /// Méthode permettant de changer le comportement d'un ennemi à un allié
+        /// </summary>
+        /// <param name="character"></param>
         public void CharacterConfuse(ICharacter character)
         {
             if (character.GetType().IsSubclassOf(typeof(Enemy))) {
@@ -207,7 +214,10 @@ namespace Assets.Scripts.Mediator
         {
             cmd.body.AddForce(cmd.force, ForceMode2D.Impulse);
         }
-
+        /// <summary>
+        /// Méthode permettant d'exécuter le comportement d'un ennemi
+        /// </summary>
+        /// <param name="enemy"></param>
         public void EnemyBehaviour(Enemy enemy)
         {
             if (player == null || enemy.IsHit || enemy.CharacterState == CharacterState.Dead)
@@ -256,7 +266,12 @@ namespace Assets.Scripts.Mediator
             
         }
 
-
+        /// <summary>
+        /// Permet de décider l'état d'un ennemi
+        /// </summary>
+        /// <param name="enemy">Ennemi</param>
+        /// <param name="distanceToTarget">Distance à la cible</param>
+        /// <returns>Nouvel état</returns>
         private EnemyState DecideEnemyState(Enemy enemy, float distanceToTarget)
         {
             if (distanceToTarget < enemy.FightDistance)
@@ -279,7 +294,10 @@ namespace Assets.Scripts.Mediator
 
        
 
-
+        /// <summary>
+        /// Permet de décider du comportement d'un Ally
+        /// </summary>
+        /// <param name="wizzardSummon">Allié</param>
         internal void AllyBehaviour(Ally wizzardSummon)
         {
             Enemy enemy = FindClosestEnemy(wizzardSummon);
@@ -314,7 +332,12 @@ namespace Assets.Scripts.Mediator
             wizzardSummon.setState(nextState, vectorToTarget);
         }
         
-
+        /// <summary>
+        /// Permet de changer l'état des alliés
+        /// </summary>
+        /// <param name="ally">Allié concerné</param>
+        /// <param name="distanceToTarget">Distance par rapport à la cible</param>
+        /// <returns>Le nouvel état</returns>
         private AllyState DecideAllyState(Ally ally, float distanceToTarget)
         {
             if (distanceToTarget < ally.FightDistance)
@@ -329,6 +352,12 @@ namespace Assets.Scripts.Mediator
             return AllyState.Gard;
         }
 
+        /// <summary>
+        /// Permet de récupérer le Character le plus proche dans une liste
+        /// </summary>
+        /// <param name="from">Source</param>
+        /// <param name="within">Liste dans laquelle chercher</param>
+        /// <returns>Le plus proche</returns>
         private Characters.Character FindClosest(Characters.Character from, List<Characters.Character> within)
         {
             float minDistance = float.MaxValue;
@@ -345,6 +374,11 @@ namespace Assets.Scripts.Mediator
             return closest;
         }
 
+        /// <summary>
+        /// Méthode permettant de récupérer l'ennemi le plus proche
+        /// </summary>
+        /// <param name="character">Source à partir de laquelle chercher</param>
+        /// <returns>L'ennemi le plus proche</returns>
         public Enemy FindClosestEnemy(Assets.Scripts.Characters.Character character)
         {
             Enemy closestEnemy = null;
@@ -358,6 +392,12 @@ namespace Assets.Scripts.Mediator
             return closestEnemy;
         }
 
+        /// <summary>
+        /// Permet de récupérer un Vector3 représentant la différence de position entre from et to
+        /// </summary>
+        /// <param name="from">Source</param>
+        /// <param name="to">Cible</param>
+        /// <returns>Le Vector3</returns>
         private static float Direction(Vector3 from, Vector3 to)
         {
             float dir = Vector3.Angle(to - from, Vector3.right);
@@ -365,13 +405,21 @@ namespace Assets.Scripts.Mediator
             return dir;
         }
 
+        /// <summary>
+        /// Permet de récupérer un vecteur aléatoire
+        /// </summary>
+        /// <returns>Un vecteur aléatoire</returns>
         public static Vector3 RandomVector()
         {
             float random = Random.Range(0f, 360f);
             return VectorFromAngle(random);
         }
 
-
+        /// <summary>
+        /// Méthode permettant de récupérer un Vector3 à partie d'un angle
+        /// </summary>
+        /// <param name="angle">L'angle</param>
+        /// <returns>Le Vector3 correspondant</returns>
         public static Vector3 VectorFromAngle(float angle)
         {
             return new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad), 0);
