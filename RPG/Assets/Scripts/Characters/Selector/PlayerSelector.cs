@@ -12,7 +12,7 @@ namespace Assets.Scripts.Character.Selector
         [SerializeField] private Player[] archers;
         [SerializeField] private Player[] wizzards;
 
-        [SerializeField] private int selected = 0;
+        [SerializeField] private int selected;
 
         string[,] weapons = new string[3, 3] { {"sword","hammer","axe"},
                                          {"bow","dagger","crossbow"},
@@ -41,7 +41,8 @@ namespace Assets.Scripts.Character.Selector
 
         public string PlayerWeaponName()
         {
-            return weapons[(int)mediator.PlayerClass, selected];
+            Debug.Log(weapons[(int)mediator.PlayerClass, (int)mediator.PlayerLevel]);
+            return weapons[(int)mediator.PlayerClass, (int)mediator.PlayerLevel];
         }
 
         public string ChangeWeapon(int direction)
