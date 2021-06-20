@@ -38,7 +38,6 @@ namespace Assets.Scripts.Mediator
         [SerializeField] private WeaponEquipped weaponEquipped;
         [SerializeField] private PlayerSelector PlayerSelector;
         [SerializeField] private GameObject PlayersContainer;
-        [SerializeField] private GameObject AllyAI;
         [SerializeField] private CameraMovement MainCamera;
         [SerializeField] private Gate level1Gate;
 
@@ -114,6 +113,25 @@ namespace Assets.Scripts.Mediator
 
         internal void SelectPlayer(Player player)
         {
+            Player p = other.GetComponent<Player>();
+            if (p != null && sentries.Count == 0)
+            {
+                player.Selected = false;
+                PlayerLevel = Level.Level2;
+                player = null;
+                enemies.Clear();
+                PlayerPrefs.SetInt("CharacterLevel", PlayerPrefs.GetInt("CharacterClass") + 1);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+        }
+
+        public Player getPlayer()
+        {
+            return player;
+        }
+
+        public void SelectPlayer(Player player)
+        {
             this.player = player;
             player.Selected = true;
             MainCamera.SetTarget(this.player.transform);
@@ -127,6 +145,7 @@ namespace Assets.Scripts.Mediator
             GUIhp.gameObject.SetActive(false);
             PlayerSelector.gameObject.SetActive(true);
         }
+
         public void PlayerChangeHp(float newHp)
         {
             GUIhp.setHp(newHp);
@@ -161,10 +180,6 @@ namespace Assets.Scripts.Mediator
             }
         }
 
-        private void OnHitBreakable(HitBreakeableCommand cmd)
-        {
-            cmd.What.GetComponent<IBrakeable>().Brake();
-        }
 
         public void CharachterHit(ICharacter character, float damage)
         {
@@ -176,14 +191,19 @@ namespace Assets.Scripts.Mediator
         {
             if (character.GetType().IsSubclassOf(typeof(Enemy))) {
                 Enemy enemy = (Enemy) character;
-                unregisterEnemy(enemy);
-                Destroy(enemy.gameObject.GetComponent<Enemy>());
-                Ally newAlly = enemy.gameObject.AddComponent<Ally>();
-                newAlly.Mediator = this;
-                registerAlly(newAlly);
+                if (!enemy.IsSentry) { 
+                    unregisterEnemy(enemy);
+                    Destroy(enemy.gameObject.GetComponent<Enemy>());
+                    Ally newAlly = enemy.gameObject.AddComponent<Ally>();
+                    newAlly.Mediator = this;
+                    registerAlly(newAlly);
+                }
             }
         }
-
+        private void OnHitBreakable(HitBreakeableCommand cmd)
+        {
+            cmd.What.GetComponent<IBrakeable>().Brake();
+        }
         private void OnHpIncrease(HpIncreaseCommand cmd)
         {
             cmd.What.GetComponent<ICharacter>().heal(cmd.Hp);
@@ -247,21 +267,6 @@ namespace Assets.Scripts.Mediator
             
         }
 
-        private Characters.Character FindClosest(Characters.Character from, List<Characters.Character> within)
-        {
-            float minDistance = float.MaxValue;
-            Characters.Character closest = null;
-            foreach (Characters.Character character in within)
-            {
-                float currentDistance = Vector3.Distance(from.Position, character.Position);
-                if (currentDistance < minDistance)
-                {
-                    minDistance = currentDistance;
-                    closest = character;
-                }
-            }
-            return closest;
-        }
 
         private EnemyState DecideEnemyState(Enemy enemy, float distanceToTarget)
         {
@@ -283,19 +288,7 @@ namespace Assets.Scripts.Mediator
             return EnemyState.WalkRandom;
         }
 
-        public Enemy FindClosestEnemy(Assets.Scripts.Characters.Character character)
-        {
-            Enemy closestEnemy = null;
-
-            foreach(Enemy e in enemies)
-            {
-                if(closestEnemy == null || (Vector2.Distance(character.Position, e.Position) < Vector2.Distance(character.Position, closestEnemy.Position) && e != character))
-                {
-                    closestEnemy = e;
-                }
-            }
-            return closestEnemy;
-        }
+       
 
 
         internal void AllyBehaviour(Ally wizzardSummon)
@@ -345,6 +338,35 @@ namespace Assets.Scripts.Mediator
             return AllyState.Gard;
         }
 
+        private Characters.Character FindClosest(Characters.Character from, List<Characters.Character> within)
+        {
+            float minDistance = float.MaxValue;
+            Characters.Character closest = null;
+            foreach (Characters.Character character in within)
+            {
+                float currentDistance = Vector3.Distance(from.Position, character.Position);
+                if (currentDistance < minDistance)
+                {
+                    minDistance = currentDistance;
+                    closest = character;
+                }
+            }
+            return closest;
+        }
+
+        public Enemy FindClosestEnemy(Assets.Scripts.Characters.Character character)
+        {
+            Enemy closestEnemy = null;
+            foreach (Enemy e in enemies)
+            {
+                if (closestEnemy == null || (Vector2.Distance(character.Position, e.Position) < Vector2.Distance(character.Position, closestEnemy.Position) && e != character))
+                {
+                    closestEnemy = e;
+                }
+            }
+            return closestEnemy;
+        }
+
         private static float Direction(Vector3 from, Vector3 to)
         {
             float dir = Vector3.Angle(to - from, Vector3.right);
@@ -354,7 +376,7 @@ namespace Assets.Scripts.Mediator
 
         public static Vector3 RandomVector()
         {
-            float random = UnityEngine.Random.Range(0f, 360f);
+            float random = Random.Range(0f, 360f);
             return VectorFromAngle(random);
         }
 
