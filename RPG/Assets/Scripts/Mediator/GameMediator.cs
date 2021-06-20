@@ -35,11 +35,15 @@ namespace Assets.Scripts.Mediator
         
         [SerializeField] public Player player;
         [SerializeField] private GUIHPHandler GUIhp;
+        [SerializeField] private WeaponEquipped weaponEquipped;
         [SerializeField] private PlayerSelector PlayerSelector;
         [SerializeField] private GameObject PlayersContainer;
         [SerializeField] private GameObject AllyAI;
         [SerializeField] private CameraMovement MainCamera;
         [SerializeField] private Gate level1Gate;
+
+        private string selectedCharacterDataName = "CharacterClass";
+        private string selectedCharacterLevel = "CharacterLevel";
 
         internal void PlayerChangeLevel(Collider2D other, GameObject exit)
         {
@@ -47,10 +51,13 @@ namespace Assets.Scripts.Mediator
             if (p != null && sentries.Count == 0)
             {
                 player.Selected = false;
-                PlayerLevel = Level.Level2;
+                PlayerLevel++;
                 player = null;
                 enemies.Clear();
-                PlayerPrefs.SetInt("CharacterLevel", PlayerPrefs.GetInt("CharacterClass") + 1);
+                Debug.Log("fin niveau");
+                Debug.Log(PlayerLevel);
+                PlayerPrefs.SetInt(selectedCharacterLevel, (int)PlayerLevel);
+                PlayerPrefs.SetInt(selectedCharacterDataName, (int)PlayerClass);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
@@ -62,13 +69,23 @@ namespace Assets.Scripts.Mediator
 
         
         public Vector3 PlayerPosition { get { return player.Position; } }
+
+
         private void Awake()
         {
             command.Subscribe<HitBreakeableCommand>(OnHitBreakable);
             command.Subscribe<HpIncreaseCommand>(OnHpIncrease);
             command.Subscribe<HpDecreaseCommand>(OnHpDecrease);
             command.Subscribe<KnockbackCommand>(OnKnockback);
-          
+
+            PlayerLevel = (Level)PlayerPrefs.GetInt(selectedCharacterLevel, 0);
+            PlayerClass = (CharacterClass)PlayerPrefs.GetInt(selectedCharacterDataName, 0);
+
+            Debug.Log("debut niveau");
+            Debug.Log(PlayerLevel);
+            Debug.Log(PlayerClass);
+
+            weaponEquipped.changeText((int)PlayerClass, (int)PlayerLevel);
 
             if (player == null)
             {
@@ -82,6 +99,17 @@ namespace Assets.Scripts.Mediator
                 GUIhp.gameObject.SetActive(true);
                 PlayerSelector.gameObject.SetActive(false);
             }
+        }
+
+        public void changeWeapon(int direction, float health)
+        {
+            Debug.Log("mediator trying to change weapon");
+            Vector3 oldPosition = player.Position;
+            PlayerSelector.changeWeapon(direction);
+            weaponEquipped.changeText((int)PlayerClass, (int)PlayerLevel);
+            player.transform.position = oldPosition;
+            player.setHealth(health);
+            Debug.Log("mediator finished to change weapon");
         }
 
         internal void SelectPlayer(Player player)

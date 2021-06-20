@@ -8,6 +8,9 @@ public class Player : Character, ICharacter
 
     public bool Selected { get; set; } = false;
     // Start is called before the first frame update
+
+    protected KeyCode nextKey = KeyCode.E;
+    protected KeyCode previousKey = KeyCode.Q;
     
 
     private IEnumerator DisplayHp()
@@ -42,6 +45,25 @@ public class Player : Character, ICharacter
             MoveCharacter(speed);
         }
 
+        if (Input.GetKeyDown(nextKey))
+        {
+            Debug.Log("trying to change weapon");
+            mediator.changeWeapon(1, health);
+        }
+
+        if (Input.GetKeyDown(previousKey))
+        {
+            Debug.Log("trying to change weapon");
+            mediator.changeWeapon(-1, health);
+        }
+
+        
+
+    }
+
+    public void setHealth(float newHealth)
+    {
+        this.health = newHealth;
     }
 
     public override float Damage(float damage)

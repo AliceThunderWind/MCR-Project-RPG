@@ -8,50 +8,48 @@ namespace Assets.Scripts.Character.Selector
     public class PlayerSelector : MonoBehaviour
     {
         [SerializeField] private GameMediator mediator;
-        [SerializeField] private Button previousButton;
-        [SerializeField] private Button nextButton;
-        [SerializeField] private Button chooseButton;
         [SerializeField] private Player[] warriors;
         [SerializeField] private Player[] archers;
         [SerializeField] private Player[] wizzards;
 
         [SerializeField] private int selected = 0;
 
-        public void Awake()
+        public void Start()
         {
-            
-            // Must Have EventSystem somewhere in hiearchy
-            // (check prefabs) for buttons to work
-            previousButton.onClick.AddListener(PreviousClick);
-            nextButton.onClick.AddListener(NextClick);
-            chooseButton.onClick.AddListener(ChooseClick);
 
-            if (mediator.PlayerLevel == GameMediator.Level.Level1)
-                ChooseClick();
+            selected = (int)mediator.PlayerLevel;
+            Debug.Log("PlayerSelector");
+            Debug.Log(mediator.PlayerLevel);
+            Debug.Log(mediator.PlayerClass);
+            ChooseClick();
 
-           
             switch (mediator.PlayerClass)
             {
                 case GameMediator.CharacterClass.Warrior:
-                    warriors[0].gameObject.SetActive(true);
+                    warriors[selected].gameObject.SetActive(true);
                     break;
                 case GameMediator.CharacterClass.Archer:
-                    archers[0].gameObject.SetActive(true);
+                    archers[selected].gameObject.SetActive(true);
                     break;
                 case GameMediator.CharacterClass.Wizzard:
-                    wizzards[0].gameObject.SetActive(true);
+                    wizzards[selected].gameObject.SetActive(true);
                     break;
             }
             
            
         }
 
+        public void changeWeapon(int direction)
+        {
+            Debug.Log("changingWeapon");
+            if (direction < 0) PreviousClick();
+            if (direction > 0) NextClick();
+            ChooseClick();
+        }
+
         private void ChooseClick()
         {
-            mediator.PlayerClass = GameMediator.CharacterClass.Wizzard;
-            selected = 1;
-            wizzards[0].gameObject.SetActive(false);
-            wizzards[selected].gameObject.SetActive(true);
+
             switch (mediator.PlayerClass)
             {
                 case GameMediator.CharacterClass.Warrior:
@@ -70,8 +68,7 @@ namespace Assets.Scripts.Character.Selector
         private void PreviousClick()
         {
             int previous = selected--;
-            if (selected < 0) selected = 0;
-
+            if (selected < 0) selected = (int) mediator.PlayerLevel;
             switch (mediator.PlayerClass)
             {
                 case GameMediator.CharacterClass.Warrior:
@@ -93,8 +90,7 @@ namespace Assets.Scripts.Character.Selector
         public void NextClick()
         {
             int previous = selected++;
-            if (selected > (int) mediator.PlayerLevel) selected = (int) mediator.PlayerLevel;
-
+            if (selected > (int) mediator.PlayerLevel) selected = 0;
             switch (mediator.PlayerClass)
             {
                 case GameMediator.CharacterClass.Warrior:

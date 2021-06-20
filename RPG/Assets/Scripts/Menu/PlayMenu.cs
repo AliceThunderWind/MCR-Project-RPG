@@ -12,27 +12,25 @@ public class PlayMenu : MonoBehaviour
 
     private void selectLevel1()
     {
-        PlayerPrefs.SetInt(selectedCharacterLevel, (int) GameMediator.Level.Level1);
+        PlayerPrefs.SetInt(selectedCharacterLevel, (int) GameMediator.Level.Level2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void playAsWarrior()
     {
         PlayerPrefs.SetInt(selectedCharacterDataName, (int) GameMediator.CharacterClass.Warrior);
         selectLevel1();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void playAsRanger()
     {
         PlayerPrefs.SetInt(selectedCharacterDataName, (int)GameMediator.CharacterClass.Archer);
         selectLevel1();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void playAsWizard()
     {
         PlayerPrefs.SetInt(selectedCharacterDataName, (int)GameMediator.CharacterClass.Wizzard);
         selectLevel1();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
