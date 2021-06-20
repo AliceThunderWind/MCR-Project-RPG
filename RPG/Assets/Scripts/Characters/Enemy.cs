@@ -94,7 +94,6 @@ abstract public class Enemy : Character, ICharacter
     /// </summary>
     protected void randomWalk()
     {
-        // Debug.Log("Time : " + Time.time + " start : " + nextStartTime + " stop : " + nextStopTime);
         animator.SetBool("moving", false);
         if (Time.time > nextStartTime && Time.time < nextStopTime)
         {
