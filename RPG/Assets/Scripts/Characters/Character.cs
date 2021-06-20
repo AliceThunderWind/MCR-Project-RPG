@@ -106,9 +106,9 @@ namespace Assets.Scripts.Characters
         {
             if (CharacterState != CharacterState.Dead)
             {
-                
-                animator.SetBool("attacking", true);
+
                 CharacterState = CharacterState.Attack;
+                animator.SetBool("attacking", true);
                 yield return new WaitForSeconds(attackDuration); // attack duration wait
                 animator.SetBool("attacking", false);
                 yield return new WaitForSeconds(attackCoolDown);    // attack cool down wait

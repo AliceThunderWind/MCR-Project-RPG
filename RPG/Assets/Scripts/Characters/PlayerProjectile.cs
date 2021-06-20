@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class PlayerProjectile : Player
 {
-
     protected override IEnumerator AttackCo()
     {
         if (CharacterState != CharacterState.Dead)
@@ -27,45 +26,13 @@ public class PlayerProjectile : Player
                 animator.SetBool("attacking", false);
                 yield return new WaitForSeconds(attackCoolDown);
                 animator.SetBool("moving", true);
-                CharacterState = CharacterState.Idle;
             }
             else
             {
-                yield return null;
+                yield return null;                
             }
+            CharacterState = CharacterState.Idle;
         }
     }
-
-    public override void Update()
-    {
-        animator.SetBool("moving", false);
-        vectorToTarget = Vector3.zero;
-        vectorToTarget.x = Input.GetAxisRaw("Horizontal");
-        vectorToTarget.y = Input.GetAxisRaw("Vertical");
-
-        if (Input.GetButtonDown("SwordAttack") && CharacterState != CharacterState.Attack)
-        {
-            StartCoroutine(AttackCo());
-        }
-
-        if (vectorToTarget != Vector3.zero)
-        {
-            MoveCharacter(speed);
-        }
-
-        if (Input.GetKeyDown(nextKey))
-        {
-            Debug.Log("trying to change weapon");
-            mediator.changeWeapon(1, health);
-        }
-
-        if (Input.GetKeyDown(previousKey))
-        {
-            Debug.Log("trying to change weapon");
-            mediator.changeWeapon(-1, health);
-        }
-
-    }
-    
 
 }

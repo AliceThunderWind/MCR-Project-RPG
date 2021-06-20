@@ -52,8 +52,6 @@ namespace Assets.Scripts.Mediator
                 PlayerLevel++;
                 player = null;
                 enemies.Clear();
-                Debug.Log("fin niveau");
-                Debug.Log(PlayerLevel);
                 PlayerPrefs.SetInt(selectedCharacterLevel, (int)PlayerLevel);
                 PlayerPrefs.SetInt(selectedCharacterDataName, (int)PlayerClass);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -94,13 +92,11 @@ namespace Assets.Scripts.Mediator
 
         public void changeWeapon(int direction, float health)
         {
-            Debug.Log("mediator trying to change weapon");
             Vector3 oldPosition = player.Position;
             string weapon = PlayerSelector.ChangeWeapon(direction);
             weaponEquipped.changeText(weapon);
             player.transform.position = oldPosition;
             player.setHealth(health);
-            Debug.Log("mediator finished to change weapon");
         }
         /*
         internal void SelectPlayer(Player player)
@@ -124,7 +120,9 @@ namespace Assets.Scripts.Mediator
         */
         public void SelectPlayer(Player player)
         {
+            if (this.player != null) this.player.Selected = false;
             this.player = player;
+            this.player.Selected = true;
             MainCamera.SetTarget(this.player.transform);
             //PlayerSelector.gameObject.SetActive(false);
             //GUIhp.gameObject.SetActive(true);

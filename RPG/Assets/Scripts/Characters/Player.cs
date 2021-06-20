@@ -10,7 +10,8 @@ public class Player : Character, ICharacter
 
     protected KeyCode nextKey = KeyCode.E;
     protected KeyCode previousKey = KeyCode.Q;
-    
+
+    public bool Selected { get; internal set; } = false;
 
     private IEnumerator DisplayHp()
     {
@@ -27,32 +28,23 @@ public class Player : Character, ICharacter
     // Update is called once per frame
     public override void Update()
     {
+        if (!Selected) return;
         animator.SetBool("moving", false);
         vectorToTarget = Vector3.zero;
         vectorToTarget.x = Input.GetAxisRaw("Horizontal");
         vectorToTarget.y = Input.GetAxisRaw("Vertical");
 
         if (Input.GetButtonDown("SwordAttack") && CharacterState != CharacterState.Attack)
-        {
             StartCoroutine(AttackCo());
-        }
+
+        if (Input.GetKeyDown(nextKey) && CharacterState != CharacterState.Attack)
+            mediator.changeWeapon(1, health);
+
+        if (Input.GetKeyDown(previousKey) && CharacterState != CharacterState.Attack)
+            mediator.changeWeapon(-1, health);
 
         if (vectorToTarget != Vector3.zero)
-        {
-            MoveCharacter(speed);
-        }
-
-        if (Input.GetKeyDown(nextKey))
-        {
-            if(CharacterState != CharacterState.Attack)
-                mediator.changeWeapon(1, health);
-        }
-
-        if (Input.GetKeyDown(previousKey))
-        {
-            if (CharacterState != CharacterState.Attack)
-                mediator.changeWeapon(-1, health);
-        }        
+             MoveCharacter(speed);
 
     }
 
