@@ -110,7 +110,7 @@ namespace Assets.Scripts.Mediator
             player.setHealth(health);
             Debug.Log("mediator finished to change weapon");
         }
-
+        /*
         internal void SelectPlayer(Player player)
         {
             Player p = other.GetComponent<Player>();
@@ -129,7 +129,7 @@ namespace Assets.Scripts.Mediator
         {
             return player;
         }
-
+        */
         public void SelectPlayer(Player player)
         {
             this.player = player;

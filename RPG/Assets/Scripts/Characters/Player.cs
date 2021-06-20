@@ -55,9 +55,7 @@ public class Player : Character, ICharacter
         {
             Debug.Log("trying to change weapon");
             mediator.changeWeapon(-1, health);
-        }
-
-        
+        }        
 
     }
 
