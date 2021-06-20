@@ -47,7 +47,7 @@ namespace Assets.Scripts.Mediator
         private string selectedCharacterDataName = "CharacterClass";
         private string selectedCharacterLevel = "CharacterLevel";
 
-        internal void PlayerChangeLevel(Collider2D other, GameObject exit)
+        internal void PlayerChangeLevel(Collider2D other)
         {
             Player p = other.GetComponent<Player>();
             if (p != null && sentries.Count == 0)

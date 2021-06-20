@@ -12,7 +12,6 @@ public class Gate : MonoBehaviour
     // Start is called before the first frame update
 
     [SerializeField] private GameMediator mediator;
-    [SerializeField] private GameObject exit;
 
     public bool isOpen { get; set; } = false;
     private Animator animator;
@@ -34,7 +33,7 @@ public class Gate : MonoBehaviour
     {
         if (isOpen && other.CompareTag("attackable"))
         {
-            mediator.PlayerChangeLevel(other, exit);
+            mediator.PlayerChangeLevel(other);
         }
     }
 
