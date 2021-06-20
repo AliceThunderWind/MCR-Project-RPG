@@ -141,8 +141,6 @@ namespace Assets.Scripts.Mediator
             this.player = player;
             this.player.Selected = true;
             MainCamera.SetTarget(this.player.transform);
-            //PlayerSelector.gameObject.SetActive(false);
-            //GUIhp.gameObject.SetActive(true);
         }
 
         /// <summary>
