@@ -1,6 +1,9 @@
 using Assets.Scripts.Hit;
 using UnityEngine;
 
+/// <summary>
+/// Classe représentant un dommage standard
+/// </summary>
 public class WeaponHit : MonoBehaviour
 {
     [SerializeField] private float damage;

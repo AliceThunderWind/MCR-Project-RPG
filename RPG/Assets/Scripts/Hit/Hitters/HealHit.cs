@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Classe représentant un heal
+/// </summary>
 public class HealHit : MonoBehaviour
 {
 

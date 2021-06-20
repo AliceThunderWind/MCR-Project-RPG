@@ -2,6 +2,9 @@
 
 namespace Assets.Scripts.StateMachineBehaviour
 {
+    /// <summary>
+    /// Classe qui créé des projectiles à la fin d'une animation
+    /// </summary>
     class ProjectileAttackStateExit : ProjectileAttack
     {
         public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

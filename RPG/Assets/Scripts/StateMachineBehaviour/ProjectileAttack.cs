@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 
 /// <summary>
-/// Classe qui représente de comportement de créer un projectile
+/// Classe qui permet de créer des projectiles
 /// </summary>
 public abstract class ProjectileAttack : StateMachineBehaviour
 {

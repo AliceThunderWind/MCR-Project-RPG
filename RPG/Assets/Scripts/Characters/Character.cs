@@ -16,6 +16,7 @@ namespace Assets.Scripts.Characters
     /// <summary>
     /// Classe représentant un personnage
     /// </summary>
+    /// <inheritdoc/>
     abstract public class Character : MonoBehaviour, ICharacter
     {
         protected CommandDispatcher command = CommandDispatcher.Instance;
@@ -167,10 +168,6 @@ namespace Assets.Scripts.Characters
 
         public abstract void Update();
 
-        /// <summary>
-        /// Getter du médiateur
-        /// </summary>
-        /// <returns>Le médiateur</returns>
         public GameMediator getMediator()
         {
             return mediator;
