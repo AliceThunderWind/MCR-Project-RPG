@@ -11,6 +11,11 @@ public enum EnemyState
     BackToPos,
     NoAction
 }
+
+/// <summary>
+/// Classe représentant un ennemi
+/// </summary>
+/// <inheritdoc/>
 abstract public class Enemy : Character, ICharacter
 {
     [SerializeField] protected float visibility;
@@ -74,13 +79,19 @@ abstract public class Enemy : Character, ICharacter
         }
 
     }
-
+    /// <summary>
+    /// Méthode permettant de changer l'état de l'ennemi
+    /// </summary>
+    /// <param name="state">Nouvel état</param>
+    /// <param name="vectorToTarget">Direction vers la cible</param>
     public void setState(EnemyState state, Vector3 vectorToTarget)
     {
         this.currentState = state;
         if (state != EnemyState.WalkRandom) this.vectorToTarget = vectorToTarget;
     }
-
+    /// <summary>
+    /// Méthode permettant de déplacer un ennemi aléatoirement
+    /// </summary>
     protected void randomWalk()
     {
         // Debug.Log("Time : " + Time.time + " start : " + nextStartTime + " stop : " + nextStopTime);

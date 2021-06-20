@@ -1,6 +1,10 @@
 using System.Collections;
 using UnityEngine;
 
+/// <summary>
+/// Classe représentant un archer ennemie
+/// </summary>
+/// <inheritdoc/>
 public class Archer : Enemy
 {
 
@@ -41,11 +45,6 @@ public class Archer : Enemy
         launchedAttack = false;
        
     }
-
-
-
-    //Move these in Enemy
-
 }
 
 

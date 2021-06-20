@@ -11,6 +11,10 @@ public enum AllyState
     Attack,
     NoAction
 }
+/// <summary>
+/// Classe représentant un allié du joueur
+/// </summary>
+/// <inheritdoc/>
 public class Ally : Character, ICharacter
 {
         
@@ -65,6 +69,11 @@ public class Ally : Character, ICharacter
         }
     }
 
+    /// <summary>
+    /// Méthode permettant de changer l'état d'un allié
+    /// </summary>
+    /// <param name="state">Nouvel état</param>
+    /// <param name="vectorToTarget">Vector vers la cible</param>
     public void setState(AllyState state, Vector3 vectorToTarget)
     {
         this.allyState = state;

@@ -13,6 +13,9 @@ public enum CharacterState
 
 namespace Assets.Scripts.Characters
 {
+    /// <summary>
+    /// Classe représentant un personnage
+    /// </summary>
     abstract public class Character : MonoBehaviour, ICharacter
     {
         protected CommandDispatcher command = CommandDispatcher.Instance;
@@ -43,6 +46,9 @@ namespace Assets.Scripts.Characters
 
         public float HP { get { return health; } }
 
+        /// <summary>
+        /// Méthode appelée juste avant la première frame
+        /// </summary>
         virtual protected void Start()
         {
             animator = GetComponent<Animator>();
@@ -56,6 +62,11 @@ namespace Assets.Scripts.Characters
            
         }
 
+        /// <summary>
+        /// Applique un certain nombre de points de dommage
+        /// </summary>
+        /// <param name="hp">Nombre de points de dommage</param>
+        /// <returns>Les points de vie après application</returns>
         virtual public float Damage(float damage)
         {
             if (!IsHit)
@@ -75,7 +86,11 @@ namespace Assets.Scripts.Characters
             return health;
         }
 
-
+        /// <summary>
+        /// Applique un certain nombre de points de soin
+        /// </summary>
+        /// <param name="hp">Nombre de points à heal</param>
+        /// <returns>Les points de vie après application</returns>
         virtual public float heal(float hp)
         {
             this.health += hp;
@@ -84,6 +99,10 @@ namespace Assets.Scripts.Characters
 
         }
 
+        /// <summary>
+        /// Coroutine permettant d'éviter de recevoir plusieurs coups en même temps
+        /// </summary>
+        /// <returns></returns>
         private IEnumerator HitCooldownCo()
         {
             // prevent multiple hits triggered by a single hit -> multiple collider objects
@@ -91,6 +110,10 @@ namespace Assets.Scripts.Characters
             IsHit = false;
         }
 
+        /// <summary>
+        /// Coroutine permettant de faire mourir le personnage
+        /// </summary>
+        /// <returns></returns>
         virtual protected IEnumerator DieCo()
         {
             CharacterState = CharacterState.Dead;
@@ -102,6 +125,10 @@ namespace Assets.Scripts.Characters
             
         }
 
+        /// <summary>
+        /// Coroutine permettant d'attaquer
+        /// </summary>
+        /// <returns></returns>
         virtual protected IEnumerator AttackCo()
         {
             if (CharacterState != CharacterState.Dead)
@@ -119,6 +146,11 @@ namespace Assets.Scripts.Characters
             }
         }
 
+        /// <summary>
+        /// Méthode permettant de déplacer le personnage
+        /// </summary>
+        /// <param name="speed">La vitesse de déplacement</param>
+        /// <returns>Nouvelle position</returns>
         virtual protected Vector3 MoveCharacter(float speed)
         {
             Vector3 newPosition = transform.position;
@@ -136,6 +168,10 @@ namespace Assets.Scripts.Characters
 
         public abstract void Update();
 
+        /// <summary>
+        /// Getter du médiateur
+        /// </summary>
+        /// <returns>Le médiateur</returns>
         public GameMediator getMediator()
         {
             return mediator;
