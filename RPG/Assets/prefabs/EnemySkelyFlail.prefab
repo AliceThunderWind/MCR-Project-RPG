@@ -187,15 +187,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mediator: {fileID: 0}
   speed: 6
-  health: 80
+  health: 100
   attackDuration: 1
   attackCoolDown: 1
-  Visibility: 5
-  FightDistance: 1.4
+  visibility: 5
+  fightDistance: 1.7
   chaseSpeed: 8
   period: 5
   sentry: 0
-  GetConfuse: 0
 --- !u!1 &5543016869619218657
 GameObject:
   m_ObjectHideFlags: 0
