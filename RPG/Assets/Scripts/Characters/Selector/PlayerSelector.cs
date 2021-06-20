@@ -17,11 +17,13 @@ namespace Assets.Scripts.Character.Selector
 
         [SerializeField] private int selected;
 
-        string[,] weapons = new string[3, 3] { {"sword","hammer","axe"},
+        string[,] weapons = new string[3, 3] {{"sword","hammer","axe"},
                                          {"bow","dagger","crossbow"},
                                          {"fire","confusion","summon"}};
-
-        public void Start()
+        /// <summary>
+        /// Appelé une seule fois, au début par le GameMediator
+        /// </summary>
+        public void StartOnce()
         {
 
             selected = (int)mediator.PlayerLevel;
@@ -48,8 +50,7 @@ namespace Assets.Scripts.Character.Selector
         /// <returns>Le nom</returns>
         public string PlayerWeaponName()
         {
-            Debug.Log(weapons[(int)mediator.PlayerClass, (int)mediator.PlayerLevel]);
-            return weapons[(int)mediator.PlayerClass, (int)mediator.PlayerLevel];
+            return weapons[(int)mediator.PlayerClass, selected];
         }
 
         /// <summary>

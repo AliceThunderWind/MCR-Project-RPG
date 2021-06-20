@@ -136,6 +136,7 @@ namespace Assets.Scripts.Mediator
             MainCamera.SetTarget(PlayersContainer.transform);
             GUIhp.gameObject.SetActive(true);
             PlayerSelector.gameObject.SetActive(true);
+            PlayerSelector.StartOnce();
         }
 
         public void PlayerChangeHp(float newHp)
