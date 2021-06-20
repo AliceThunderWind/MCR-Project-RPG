@@ -16,9 +16,8 @@ public class Teleporter : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        //if (other.tag == target.tag)
-        //{
+
             other.transform.position = transform.GetChild(0).position;
-        //}
+
     }
 }
