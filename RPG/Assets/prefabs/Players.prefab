@@ -4872,6 +4872,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1009486666902389295, guid: aa2acec8aa139eb43aab8c8e2df17cee, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1051032200210627759, guid: aa2acec8aa139eb43aab8c8e2df17cee, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -5228,6 +5232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WizardCreatures
       objectReference: {fileID: 0}
+    - target: {fileID: 1051032200210627766, guid: 89a7092a2079cc343bebf3c115ecff68, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89a7092a2079cc343bebf3c115ecff68, type: 3}
 --- !u!4 &1178185037612556330 stripped
@@ -5548,11 +5556,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4887910716938163560, guid: b8d430837e3d3cd468d97553c721dae5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4887910716938163560, guid: b8d430837e3d3cd468d97553c721dae5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.54
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4887910716938163560, guid: b8d430837e3d3cd468d97553c721dae5, type: 3}
       propertyPath: m_LocalPosition.z
