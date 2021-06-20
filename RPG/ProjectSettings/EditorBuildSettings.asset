@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/level03.unity
     guid: 39c43e83dbdd98b4bb1a6409e0002292
+  - enabled: 1
+    path: Assets/Scenes/menuVictory.unity
+    guid: 4cd6a8bb2e2203e4485ea4f87b3ee04a
+  - enabled: 1
+    path: Assets/Scenes/menuMort.unity
+    guid: 4cabb4d92518cff49a8a6c3f1ae1bad4
   m_configObjects: {}
