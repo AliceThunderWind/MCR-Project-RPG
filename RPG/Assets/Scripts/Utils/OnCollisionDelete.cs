@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Classe représentant le comportement afin de détruire un objet lors d'une collision
+/// </summary>
 public class OnCollisionDelete : MonoBehaviour
 {
     // Start is called before the first frame update

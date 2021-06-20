@@ -4,6 +4,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Classe représentant une porte (de fin de niveau)
+/// </summary>
 public class Gate : MonoBehaviour
 {
     // Start is called before the first frame update

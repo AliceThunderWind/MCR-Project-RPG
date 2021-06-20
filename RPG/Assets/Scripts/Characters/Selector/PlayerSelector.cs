@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 namespace Assets.Scripts.Character.Selector
 {
+    /// <summary>
+    /// Objet permettant de choisir la classe du joueur
+    /// </summary>
     public class PlayerSelector : MonoBehaviour
     {
         [SerializeField] private GameMediator mediator;
@@ -39,11 +42,20 @@ namespace Assets.Scripts.Character.Selector
            
         }
 
+        /// <summary>
+        /// Retourne le nom de l'arme du joueur
+        /// </summary>
+        /// <returns>Le nom</returns>
         public string PlayerWeaponName()
         {
             return weapons[(int)mediator.PlayerClass, selected];
         }
 
+        /// <summary>
+        /// Méthode permettant de changer d'arme
+        /// </summary>
+        /// <param name="direction">Direction du changement (gauche, droit)</param>
+        /// <returns>Le nom de l'arme</returns>
         public string ChangeWeapon(int direction)
         {
             if (direction < 0) Previous();
@@ -51,6 +63,10 @@ namespace Assets.Scripts.Character.Selector
             return Choose();
         }
 
+        /// <summary>
+        /// Méthode permettant d'obtenir l'arme correspondant à la bonne classe
+        /// </summary>
+        /// <returns></returns>
         private string Choose()
         {
             switch (mediator.PlayerClass)
@@ -71,6 +87,9 @@ namespace Assets.Scripts.Character.Selector
 
         }
 
+        /// <summary>
+        /// Méthode permettant d'obtenir l'arme précédente, correspondant à la bonne classe
+        /// </summary>
         private void Previous()
         {
             int previous = selected--;
@@ -93,6 +112,9 @@ namespace Assets.Scripts.Character.Selector
            
         }
 
+        /// <summary>
+        /// Méthode permettant d'obtenir l'arme suivante, correspondant à la bonne classe
+        /// </summary>
         public void Next()
         {
             int previous = selected++;

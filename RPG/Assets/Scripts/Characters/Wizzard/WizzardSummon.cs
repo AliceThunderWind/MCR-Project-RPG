@@ -3,6 +3,9 @@ using Assets.Scripts.Wizzard;
 
 namespace Assets.Scripts
 {
+    /// <summary>
+    /// Classe représentant les invocations du mage
+    /// </summary>
     class WizzardSummon : Ally
     {
         public WizzardCreatureSlot mySlot { get; set; }
