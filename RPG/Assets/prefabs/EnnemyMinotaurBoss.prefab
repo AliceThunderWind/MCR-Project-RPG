@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9217138065921653378}
   - component: {fileID: 9217138065921653379}
   - component: {fileID: 9217138065921653381}
-  - component: {fileID: 9217138065921653380}
+  - component: {fileID: 1952941237266676456}
   m_Layer: 6
   m_Name: EnnemyMinotaurBoss
   m_TagString: attackable
@@ -173,7 +173,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &9217138065921653380
+--- !u!114 &1952941237266676456
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,14 +182,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 9217138065921653382}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6739f285d2c912c47a95778f2027b7a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d86406131626d64ebad14d636d361fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mediator: {fileID: 8126727556995594325, guid: 2904c696dd47d4a4785a5e1d79751869, type: 3}
-  speed: 15
-  health: 100
-  attackDuration: 0.5
+  speed: 7
+  health: 200
+  attackDuration: 0.8
   attackCoolDown: 0
+  visibility: 5
+  fightDistance: 1.7
+  chaseSpeed: 0
+  period: 5
+  sentry: 0
 --- !u!1 &9217138066145902152
 GameObject:
   m_ObjectHideFlags: 0

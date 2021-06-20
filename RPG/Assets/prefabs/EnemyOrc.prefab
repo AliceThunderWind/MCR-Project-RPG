@@ -168,15 +168,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mediator: {fileID: 8126727556995594325, guid: 2904c696dd47d4a4785a5e1d79751869, type: 3}
   speed: 5
-  health: 150
+  health: 100
   attackDuration: 0.5
-  attackCoolDown: 1
-  Visibility: 7
-  FightDistance: 1.5
+  attackCoolDown: 1.5
+  visibility: 5
+  fightDistance: 1.7
   chaseSpeed: 7
   period: 5
   sentry: 0
-  GetConfuse: 0
 --- !u!95 &4783049926843411861
 Animator:
   serializedVersion: 3

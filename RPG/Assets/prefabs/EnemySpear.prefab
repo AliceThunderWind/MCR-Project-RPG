@@ -45,6 +45,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 20
+--- !u!114 &8244773540794827425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6289896430196351740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c85a9eb2d0af764f83075375ed9abb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 20
 --- !u!60 &266916954
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -96,19 +109,6 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6289896430179217040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c85a9eb2d0af764f83075375ed9abb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 20
---- !u!114 &8244773540794827425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6289896430196351740}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c85a9eb2d0af764f83075375ed9abb0, type: 3}
@@ -271,8 +271,20 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6363220489409883481, guid: 50d88aadf301dd241aedf63bd9667b58, type: 3}
+      propertyPath: visibility
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363220489409883481, guid: 50d88aadf301dd241aedf63bd9667b58, type: 3}
       propertyPath: FightDistance
       value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363220489409883481, guid: 50d88aadf301dd241aedf63bd9667b58, type: 3}
+      propertyPath: fightDistance
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363220489409883481, guid: 50d88aadf301dd241aedf63bd9667b58, type: 3}
+      propertyPath: attackCoolDown
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6363220489409883481, guid: 50d88aadf301dd241aedf63bd9667b58, type: 3}
       propertyPath: attackDuration
